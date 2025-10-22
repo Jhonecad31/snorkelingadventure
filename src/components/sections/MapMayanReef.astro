@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import { getI18N } from "@/i18n";
+import { BgMap, Turtle } from "@public/img/allImages";
+import TagH2 from "@/components/global/TagH2.astro";
+import TagP from "@/components/global/TagP.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+<div class="bg-linear-to-br from-sky-700 via-sky-400 to-cyan-600 relative">
+    <div>
+        <TagH2 class="text-white text-center py-16">
+            {i18n.HOME_PAGE.BEST_SNORKEL.TITLE}
+        </TagH2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-10">
+            <Image src={BgMap} alt="mapa de snorkeling en cancun" class="w-full h-full object-cover mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-left" />
+            <div class="px-5 sm:px-10 lg:px-20 py-8">
+                <TagP class="text-white">{i18n.HOME_PAGE.BEST_SNORKEL.DESCRIPTION}</TagP>
+            </div>
+        </div>
+    </div>
+    <Image src={Turtle} alt="tortuga marina en el parque nacional arrecife de puerto morelos" class="absolute -top-14 md:-top-28 -left-10 md:-left-20 w-40 sm:w-60 lg:w-80 rotate-[12deg]" />
+</div>
