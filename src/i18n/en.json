@@ -1,0 +1,130 @@
+{
+    "SEO": {
+        "HOME_PAGE": {
+            "TITLE": "Puerto Morelos Snorkeling Tour",
+            "DESCRIPTION": "Join The Best Snorkeling in Cancun and enjoy an unforgettable experience in Puerto Morelos, at the Mexican Caribbean.",
+            "META_TITLE": "The original Snorkeling Adventure: The Best Snorkel in Cancun"
+        },
+        "MAYAN_REEF": {
+            "TITLE": "Great Mayan Reef Barrier in Puerto Morelos",
+            "DESCRIPTION": "Experience the breathtaking beauty of the National Reef Park of Puerto Morelos, the second-largest barrier reef in the world.",
+            "META_TITLE": "The original Snorkeling Adventure: The Great Mayan Reef"
+        },
+        "PUERTO_MORELOS": {
+            "TITLE": "Discover Puerto Morelos",
+            "DESCRIPTION": "Explore the charming town of Puerto Morelos, a hidden gem on the Riviera Maya, known for its laid-back vibe and stunning natural beauty.",
+            "META_TITLE": "The original Snorkeling Adventure: Discover Puerto Morelos"
+        },
+        "CONTACT": {
+            "TITLE": "Contact Us for Your Snorkeling Adventure",
+            "DESCRIPTION": "Get in touch with us to book your unforgettable snorkeling tour in Puerto Morelos and experience the wonders of the Mexican Caribbean.",
+            "META_TITLE": "The original Snorkeling Adventure: Contact Us"
+        },
+        "NOT_FOUND_PAGE": {
+            "TITLE": "Page Not Found",
+            "DESCRIPTION": "The page you are looking for does not exist. Please return to the home page."
+        },
+        "ERROR_SERVER_PAGE": {
+            "TITLE": "Error 500 - Server Error",
+            "DESCRIPTION": "An error occurred on the server. Please try again later."
+        }
+    },
+    "ACCESSIBILITY": {
+        "LOGO": "Logo of The Original Snorkeling Adventure",
+        "CHANGE_LANGUAGE": "Change language",
+        "GO_TO_HOME": "Go to Home",
+        "COPYRIGHT": "All rights reserved to Snorkeling Adventure",
+        "MENU": {
+            "OPEN_MENU": "Open menu",
+            "CLOSE_MENU": "Close menu"
+        },
+        "CONTACT": {
+            "CALL_US": "Call for saving",
+            "EMAIL_US": "Email us for booking",
+            "LOCATION": "We are located at Rafael E. Melgar Street, Puerto Morelos, Quintana Roo, México"
+        },
+        "SOCIAL_MEDIA": {
+            "FOLLOW": "Follow us",
+            "GO_TO_FACEBOOK": "Follow us on Facebook",
+            "GO_TO_INSTAGRAM": "Follow us on Instagram",
+            "GO_TO_YOUTUBE": "Follow us on YouTube",
+            "GO_TO_TIKTOK": "Follow us on TikTok",
+            "GO_TO_TRIPADVISOR": "Check our reviews on TripAdvisor"
+        },
+        "SHARE_ACTIVITY": {
+            "COPY_LINK": "Copy link to clipboard",
+            "FACEBOOK": "Share activity on Facebook",
+            "TWITTER": "Share activity on Twitter",
+            "WHATSAPP": "Share activity on WhatsApp",
+            "LINKEDIN": "Share activity on LinkedIn"
+        }
+    },
+    "HOME_PAGE": {
+        "INTRO": {
+            "TITLE": "Why visit the National Reef Park near Cancun?",
+            "DESCRIPTION": "The Great Mayan Reef Barrier is an underwater paradise teeming with vibrant marine life and stunning coral formations. <strong>It is located on the coasts of Quintana Roo, south of Cancun, in Puerto Morelos</strong>. This protected area is home to endangered species like the elkhorn coral. Snorkeling here offers a unique glimpse into a diverse and thriving ecosystem."
+        },
+        "BEST_SNORKEL": {
+            "TITLE": "The best snorkeling in cancun",
+            "DESCRIPTION": "Experience the unparalleled snorkeling adventure in Cancun with us. Explore the vibrant underwater world of the Great Mayan Reef, home to diverse marine life and stunning coral formations. Our expert guides ensure a safe and unforgettable experience for all skill levels. Join us for the best snorkeling in Cancun and create memories that will last a lifetime.",
+            "BUTTON": "Book now"
+        },
+        "GALLERY": {
+            "TITLE": "Discover what Puerto Morelos and the Great Mayan Reef have to offer",
+            "DESCRIPTION": "Discover the breathtaking underwater world of the Great Mayan Reef through our stunning gallery. See vibrant coral formations, diverse marine life, and unforgettable moments from our snorkeling tours in Puerto Morelos.",
+            "BUTTON": "Explore gallery"
+        },
+        "FAQS": {
+            "TITLE": "Explore our FAQ section for answers on common questions",
+            "DESCRIPTION": "We've compiled answers to the most common inquiries to help you prepare for your adventure.",
+            "CARD_CONTACT": {
+                "TITLE": "Still have questions?",
+                "DESCRIPTION": "Our team is here to assist you with any question or special requests you may have.",
+                "BUTTON": "Contact us"
+            },
+            "FAQS": [
+                {
+                    "question": "Are our cenote tours in Cancun family-friendly?",
+                    "answer": "Yes, cenote adventures are ideal for families and suitable for children, teenagers, and adults. With guided tours, safe swimming areas, and life jackets in child sizes, families can explore these natural wonders together while enjoying a fun and educational experience."
+                },
+                {
+                    "question": "What safety measures are in place for ATV tours in Cancun?",
+                    "answer": "Your safety is a top priority. All ATV tours in Cancun include helmets, goggles, and professional supervision at every stage of the ride. Before the tour begins, guides provide a full briefing and practice run to ensure you feel confident handling the vehicle. Trails are regularly maintained, and the ATVs are inspected daily to guarantee a safe and reliable adventure."
+                },
+                {
+                    "question": "What marine life can I expect to see while snorkeling in Cancun?",
+                    "answer": "Snorkelers in Cancun often encounter colorful tropical fish, coral formations, sea turtles, and sometimes even stingrays. The reefs are home to hundreds of marine species, offering an unforgettable underwater experience for both beginners and seasoned adventurers."
+                },
+                {
+                    "question": "Do I need horseback riding experience to join the tour in Cancun?",
+                    "answer": "No prior horseback riding experience is required. The tour is designed for both beginners and experienced riders. Professional guides provide clear instructions and assign each participant a horse suited to their skill level. This way, everyone can feel safe and comfortable while enjoying the scenic jungle trails in Cancun."
+                }
+            ]
+        }
+    },
+    "NOT_FOUND_PAGE": {
+        "TITLE": "Page not found!",
+        "DESCRIPTION": "We're sorry, but the page you're looking for has been moved or does not exist. Please check the URL and try again. If you think this is an error, please contact us.",
+        "BUTTON": "Go back to home"
+    },
+    "ERROR_SERVER_PAGE": {
+        "TITLE": "Oops! Something went wrong",
+        "DESCRIPTION": "We are sorry, but it seems there was a problem with the server. Please try again later. Thank you for your understanding!",
+        "BUTTON": "Go back to home"
+    },
+    "THANKS_PAGE": {
+        "TITLE": "Thanks for your reservation",
+        "DESCRIPTION": {
+            "TEXT_1": "We have received your message and will contact you shortly.",
+            "TEXT_2": "If you have any questions or need immediate assistance, please call us at +52 998 249 0003 or send us an email at info@snorkeladventuring.com."
+        }
+    },
+    "FORM_SUCCESS_PAGE": {
+        "TITLE": "Thank you for contacting us",
+        "DESCRIPTION": "Your message has been sent and we will get back to you shortly. If you have any questions or need immediate assistance, please call us at +52 998 249 00031 or email us at info@snorkeladventuring.com."
+    },
+    "FORM_ERROR_PAGE": {
+        "TITLE": "Oops! Something went wrong",
+        "DESCRIPTION": "We are sorry, but it seems there was a problem making your email. Please try again later or contact us directly at +52 998 249 00031. Thank you for your understanding!"
+    }
+}
