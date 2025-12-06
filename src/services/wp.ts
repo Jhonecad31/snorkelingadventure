@@ -96,7 +96,7 @@ export const getPostInfo = async (slug: string) => {
         date,
     } = data;
 
-    const featuredImage = data._embedded['wp:featuredmedia']?.[0]?.source_url;
+    const featuredImage = data._embedded['wp:featuredmedia']?.[0]?.['media_details'].sizes?.medium_large.source_url;
 
     const categories = data._embedded['wp:term'][0];
 
@@ -129,7 +129,7 @@ export const getLatestPosts = async ({ perPage = 3 }: { perPage?: number }) => {
             },
         } = post;
 
-        const featuredImage = post.uagb_featured_image_src['medium']?.[0];
+        const featuredImage = post._embedded['wp:featuredmedia']?.[0]?.['media_details'].sizes?.medium_large.source_url;;
 
         const categories = post._embedded['wp:term'][0];
 
@@ -164,7 +164,7 @@ export const getLastPost = async () => {
         },
     } = post;
 
-    const featuredImage = post.uagb_featured_image_src['medium_large']?.[0];
+    const featuredImage = post._embedded['wp:featuredmedia']?.[0]?.['media_details'].sizes?.medium_large.source_url;
 
     const categories = post._embedded['wp:term'][0];
 
@@ -197,7 +197,7 @@ export const getPostsByPage = async ({ perPage = 12, page = 1 }: { perPage?: num
             }
         } = post;
 
-        const featuredImage = post.uagb_featured_image_src['medium_large']?.[0];
+        const featuredImage = post._embedded['wp:featuredmedia']?.[0]?.['media_details'].sizes?.medium_large.source_url;
 
         const categories = post._embedded['wp:term'][0];
 
@@ -263,7 +263,7 @@ export const getPostsByCategoryByPage = async (idCategory: number, { perPage = 1
             }
         } = post;
 
-        const featuredImage = post.uagb_featured_image_src['medium_large']?.[0];
+        const featuredImage = post._embedded['wp:featuredmedia']?.[0]?.['media_details'].sizes?.medium_large.source_url;
 
         const categories = post._embedded['wp:term'][0];
 

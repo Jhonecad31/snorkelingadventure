@@ -13,7 +13,7 @@ const i18n = getI18N({ currentLocale });
 ---
 
 <BlockContainer>
-    <div class="py-12 grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
         <div class="lg:col-span-2">
             <TagH2>{i18n.HOME_PAGE.FAQS.TITLE}</TagH2>
             <TagP>{i18n.HOME_PAGE.FAQS.DESCRIPTION}</TagP>
@@ -32,9 +32,9 @@ const i18n = getI18N({ currentLocale });
                     <TagH3 class="text-center"
                         >{i18n.HOME_PAGE.FAQS.CARD_CONTACT.TITLE}</TagH3
                     >
-                    <p class="text-sm/loose md:text-base text-justify my-5">
+                    <TagP>
                         {i18n.HOME_PAGE.FAQS.CARD_CONTACT.DESCRIPTION}
-                    </p>
+                    </TagP>
                     <div class="text-center">
                         <BtnLinkCustom
                             client:visible

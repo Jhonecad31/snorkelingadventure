@@ -2,6 +2,6 @@
 const { class: className = "", ...props } = Astro.props;
 ---
 
-<h3 class={`text-lg/normal lg:text-xl/relaxed font-bold mt-5 ${className}`} {...props}>
+<h3 class={`text-lg/normal lg:text-xl/relaxed font-semibold mt-5 ${className}`} {...props}>
     <slot />
 </h3>

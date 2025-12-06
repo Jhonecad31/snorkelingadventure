@@ -1,7 +1,12 @@
 @import "tailwindcss";
 @variant hover (&:hover);
+@plugin '@tailwindcss/typography';
 @plugin '@/utils/hero.ts';
 @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+}
 
 /* Import Fonts */
 @font-face {
@@ -20,21 +25,16 @@
     font-display: swap;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #fff;
-    font-weight: 300;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
+    @apply bg-white font-poppins font-light;
 }
 
 strong {
