@@ -14,8 +14,6 @@ import HandLikeSnorkel from "./bg/persona-pulgares-arriba-en-snorkel.webp"
 import MainHero from "./bg/snorkeling-adventure-en-puerto-morelos.webp"
 import SnorkelMayanReef from "./bg/grupo-en-snorkeling-en-arrecife-maya.webp";
 import MiddleViewSnorkel from "./bg/vista-snorkel-con-fauna-marina.webp";
-
-
 import ShapeMap from "./extras/shape-map-world.png";
 import SeaweedMinimalistWhite from "./extras/seaweed-minimalist-white.png";
 import SeaweedBlue from "./extras/seaweed-blue.png";
