@@ -1,6 +1,6 @@
 ---
 import { getI18N } from "@/i18n";
-import { PMAereal, MujerSalvavidas, SnorkelHorizontal, SeaweedMinimalistWhite, SeaweedWhite, PersonSnorkel, CoverSA, SnorkelMayanReef } from "@public/img/allImages";
+import { PMAereal, MujerSalvavidas, SnorkelHorizontal, SeaweedMinimalistWhite, SeaweedWhite, PersonOkSnorkel, SnorkelMayanReef, User1, User2, User3 } from "@public/img/allImages";
 import { FlipFlop, Towel, Cash, Swimwear } from "@/icons/allIcons";
 import { Exclamation, Check, Close, Star } from "@/icons/allIcons"
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -37,9 +37,9 @@ const seoMetaData = {
 ---
 
 
-<BaseLayout {seoMetaData}>
+<BaseLayout seo={seoMetaData}>
     <!-- Hero -->
-    <section class="h-100 md:h-140 relative overflow-hidden">
+    <section class="min-h-100 md:min-h-140 relative overflow-hidden">
         <div class="absolute inset-0 w-full h-full bg-gradient-to-t from-white via-cyan-400 to-sky-700">
             <BlockContainer class="relative !mt-0">
                 <div class="py-20 max-w-3xl mx-auto">
@@ -52,22 +52,22 @@ const seoMetaData = {
                                 class="size-7 rounded-full border-2 border-white"
                                 height={50}
                                 width={50}
-                                src="/assets/img/testimonials/user-1.webp"
-                                alt="userImage1"
+                                src={User1.src}
+                                alt=""
                             />
                             <img
                                 class="size-7 rounded-full border-2 border-white"
                                 height={50}
                                 width={50}
-                                src="/assets/img/testimonials/user-2.webp"
-                                alt="userImage2"
+                                src={User2.src}
+                                alt=""
                             />
                             <img
                                 class="size-7 rounded-full border-2 border-white"
                                 height={50}
                                 width={50}
-                                src="/assets/img/testimonials/user-3.webp"
-                                alt="userImage3"
+                                src={User3.src}
+                                alt=""
                             />
                         </div>
                         <p class="text-xs">
@@ -78,13 +78,13 @@ const seoMetaData = {
                 </div>
             </BlockContainer>
         </div>
-        <img src={SeaweedWhite.src} alt="algas de mar" class="absolute top-0 -left-10 md:-left-20 w-40 sm:w-60 lg:w-80 rotate-[130deg]" />
-        <img src={SeaweedMinimalistWhite.src} alt="algas de mar" class="absolute bottom-10 md:bottom-0 -right-10 md:-right-16 w-40 sm:w-60 lg:w-80 -rotate-[110deg]" />
+        <img src={SeaweedWhite.src} alt={i18n.ACCESSIBILITY.IMAGES.SEAWEED} class="absolute top-0 -left-10 md:-left-20 w-40 sm:w-60 lg:w-80 rotate-[130deg]" />
+        <img src={SeaweedMinimalistWhite.src} alt={i18n.ACCESSIBILITY.IMAGES.SEAWEED} class="absolute bottom-10 md:bottom-0 -right-10 md:-right-16 w-40 sm:w-60 lg:w-80 -rotate-[110deg]" />
     </section>
     <BlockContainer>
         <!-- Texts Puerto Morelos -->
         <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-10">
-            <img src={PMAereal.src} alt="Puerto Morelos Aerial View" class="object-cover w-full h-full rounded-lg" />
+            <img src={PMAereal.src} alt={i18n.ACCESSIBILITY.IMAGES.PUERTO_MORELOS_AEREAL} class="object-cover w-full h-full rounded-lg" />
             <div class="lg:p-10">
                 <TagH2>{i18n.DETAIL_PAGE.TEXTS.EXPLORE_PUERTO_MORELOS.TITLE}</TagH2>
                 <TagP>{i18n.DETAIL_PAGE.TEXTS.EXPLORE_PUERTO_MORELOS.DESCRIPTION}</TagP>
@@ -109,7 +109,7 @@ const seoMetaData = {
                     ))}
                 </ul>
             </div>
-            <img src={SnorkelHorizontal.src} alt="Puerto Morelos Aerial View" class="object-cover w-full rounded-lg" />
+            <img src={SnorkelHorizontal.src} alt={i18n.ACCESSIBILITY.IMAGES.SNORKEL_HORIZONTAL} class="object-cover w-full rounded-lg" />
         </div>
         <!-- What You Should Know -->
         <TagH2 class="text-center max-w-2xl mx-auto mt-20 mb-10">
@@ -129,7 +129,7 @@ const seoMetaData = {
             <div class="lg:col-span-2">
                 <img
                     src={MujerSalvavidas.src}
-                    alt="mujer salvavidas"
+                    alt={i18n.ACCESSIBILITY.IMAGES.LIFEGUARD_WOMAN}
                     class="w-full object-cover mask-[url('/assets/img/extras/shape-splash.png')] mask-center mask-no-repeat mask-contain"
                 />
             </div>
@@ -196,9 +196,9 @@ const seoMetaData = {
         <!-- Important Information -->
         <div class="rounded-lg mt-20 grid items-center grid-cols-1 lg:grid-cols-5 gap-10">
             <img
-                src={MujerSalvavidas.src}
-                alt="mujer salvavidas"
-                class="w-full h-100 lg:h-150 object-cover object-bottom row-start-2 lg:row-start-auto lg:col-span-2 mask-[url('/assets/img/bg/mask-img.png')] mask-center mask-no-repeat mask-size-[100%_100%]"
+                src={PersonOkSnorkel.src}
+                alt={i18n.ACCESSIBILITY.IMAGES.PERSON_OK_SNORKEL}
+                class="w-full h-100 lg:h-150 object-cover object-bottom row-start-2 lg:row-start-auto lg:col-span-2 mask-[url('/assets/img/extras/shape-splash.png')] mask-center mask-no-repeat mask-size-[100%_100%]"
             />
             <div class="lg:p-10 lg:col-span-3 row-start-1 lg:row-start-auto">
                 <TagH2 class="mb-5">{i18n.DETAIL_PAGE.IMPORTANT_INFO.TITLE}</TagH2>
@@ -236,14 +236,14 @@ const seoMetaData = {
                         height={50}
                         width={50}
                         src={PMAereal.src}
-                        alt="userImage1"
+                        alt=""
                     />
                     <img
                         class="h-18 w-13 sm:size-18 rounded-lg border-3 border-white object-cover shadow rotate-3"
                         height={50}
                         width={50}
                         src={SnorkelMayanReef.src}
-                        alt="userImage2"
+                        alt=""
                     />
                 </div>
                 <div class="pl-3 pt-2">

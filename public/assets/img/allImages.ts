@@ -7,7 +7,7 @@ import SnorkelHorizontal from "./bg/formacion-snorkel-en-puerto-morelos.webp";
 import MujerSalvavidas from "./bg/mujer-posando-con-salvavidas.webp";
 import SwimMayanReef from "./bg/nadando-en-el-arrecife-maya.webp";
 import BgFishes from "./bg/peces-sargento-puerto-morelos.webp";
-import PersonSnorkel from "./bg/persona-haciendo-ok-snorkel.webp";
+import PersonOkSnorkel from "./bg/persona-haciendo-ok-snorkel.webp";
 import CoverSA from "./bg/puerto-morelos-reef-snorkel-adventuring-tour-in-cancun.webp";
 import PMAereal from "./bg/puerto-morelos-vista-aereal.webp";
 import HandLikeSnorkel from "./bg/persona-pulgares-arriba-en-snorkel.webp"
@@ -20,15 +20,17 @@ import SeaweedBlue from "./extras/seaweed-blue.png";
 import SeaweedWhite from "./extras/seaweed-white.png";
 import Turtle from "./extras/sea-turtle-in-national-reef-park-of-puerto-morelos.webp";
 
-import MainHeroSnorkeling from "./bg/snorkeling-adventure-en-puerto-morelos.webp";
 // More Activities
 import CenoteAdventuring from "./cover-activities/cenote-adventuring-ruta-de-los-cenotes-fb.webp";
 import ExtremeAdventuring from "./cover-activities/extreme-adventuring-eco-park-in-cancun-fb.webp";
 import CityTacoTour from "./cover-activities/city-taco-tour-puerto-morelos-fb.webp";
+// thumbnail Testimonials
+import User1 from "./testimonials/user-1.webp";
+import User2 from "./testimonials/user-2.webp";
+import User3 from "./testimonials/user-3.webp";
 
 export {
     Logo,
-    MainHeroSnorkeling,
     Turtle,
     FaroInclinado,
     CenoteAdventuring,
@@ -44,11 +46,14 @@ export {
     SnorkelHorizontal,
     SwimMayanReef,
     BgFishes,
-    PersonSnorkel,
+    PersonOkSnorkel,
     CoverSA,
     ShapeMap,
     SeaweedMinimalistWhite,
     SeaweedBlue,
     SeaweedWhite,
-    PMAereal
+    PMAereal,
+    User1,
+    User2,
+    User3
 }

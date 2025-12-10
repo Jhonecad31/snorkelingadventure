@@ -4,6 +4,7 @@ import { Form, Input, Textarea, Button, Modal, ModalContent, ModalHeader, ModalB
 
 interface FormContactProps {
     i18n: {
+        CLOSE_MODAL: string,
         LABELS: {
             FULLNAME: string;
             EMAIL: string;
@@ -196,7 +197,7 @@ export default function FormContact({ i18n }: FormContactProps) {
                                         }}
                                         className="px-8 py-3 bg-red-500 text-white rounded-full font-medium hover:bg-red-600 transition-all"
                                     >
-                                        Close
+                                        {i18n.CLOSE_MODAL}
                                     </button>
                                 </div>
                             </ModalBody>

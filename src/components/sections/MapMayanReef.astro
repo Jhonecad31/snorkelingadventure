@@ -13,16 +13,14 @@ const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<div
-    class="bg-linear-to-br from-sky-800 via-cyan-400 to-cyan-700 relative"
->
+<section class="bg-linear-to-br from-sky-800 via-cyan-400 to-cyan-700 relative">
     <TagH2 class="text-white text-center py-20 px-5 mx-auto">
         {i18n.HOME_PAGE.BEST_SNORKEL.TITLE}
     </TagH2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-10">
         <img
             src={ShapeMap.src}
-            alt="mapa de snorkeling en cancun"
+            alt={i18n.ACCESSIBILITY.IMAGES.MAP_SNORKEL}
             class="w-full h-full object-cover mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-top lg:mask-radial-at-left"
         />
         <div class="px-5 sm:px-10 lg:px-20 py-5 lg:py-8">
@@ -41,8 +39,8 @@ const translatePath = useTranslatedPath(lang);
         </div>
         <img
             src={Turtle.src}
-            alt="tortuga marina en el parque nacional arrecife de puerto morelos"
+            alt={i18n.ACCESSIBILITY.IMAGES.TURTLE}
             class="absolute z-10 -top-14 md:-top-28 -left-10 md:-left-20 w-40 sm:w-60 lg:w-80 rotate-[12deg]"
         />
     </div>
-</div>
+</section>

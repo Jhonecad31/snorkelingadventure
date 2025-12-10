@@ -21,8 +21,8 @@
             "META_TITLE": "The original Snorkeling Adventure: Contact Us"
         },
         "DETAIL_PAGE": {
-            "TITLE": "The Best Snorkeling in Cancun - Puerto Morelos Reef Snorkel Adventure",
-            "DESCRIPTION": "Experience the breathtaking beauty of the National Reef Park of Puerto Morelos, the second-largest barrier reef in the world.",
+            "TITLE": "The Best Snorkeling in Cancun - Puerto Morelos Reef Snorkeling Adventure",
+            "DESCRIPTION": "Experience the ultimate Snorkeling Adventure at the National Reef Park of Puerto Morelos one of the top snorkeling destinations in the Riviera Maya.",
             "META_TITLE": "The original Snorkeling Adventure: Puerto Morelos Reef Snorkel Adventure"
         },
         "NOT_FOUND_PAGE": {
@@ -67,6 +67,24 @@
             "TWITTER": "Share activity on Twitter",
             "WHATSAPP": "Share activity on WhatsApp",
             "LINKEDIN": "Share activity on LinkedIn"
+        },
+        "IMAGES": {
+            "HERO": "Person snorkeling in the Great Mayan Reef at Puerto Morelos",
+            "INTRO_HOME": {
+                "FISHES": "Sergeant fish swimming in the Great Mayan Reef",
+                "CORALS": "Vibrant coral formations in the Great Mayan Reef",
+                "HAND_LIKE_SNORKEL": "Person snorkeling in the Great Mayan Reef at Puerto Morelos"
+            },
+            "SEAWEED": "Blue seaweed decoration",
+            "TURTLE": "Sea turtle in the Puerto Morelos Reef National Park",
+            "MAP_SNORKEL": "Location of the Puerto Morelos Reef National Park on the map",
+            "PUERTO_MORELOS_AEREAL": "Aerial view of Puerto Morelos town and the Great Mayan Reef",
+            "SNORKEL_HORIZONTAL": "Group of people snorkeling in a line in the Great Mayan Reef",
+            "LIFEGUARD_WOMAN": "Lifeguard woman posing on the beach",
+            "PERSON_OK_SNORKEL": "Person giving OK sign while snorkeling in the Great Mayan Reef",
+            "EXPLORE_MAYAN_REEF": "Group of people exploring the Great Mayan Reef while snorkeling",
+            "SWIM_MAYAN_REEF": "People swimming above the coral formations in the Great Mayan Reef",
+            "FARO_INCLINADO": "Leaning Lighthouse in Puerto Morelos"
         }
     },
     "HOME_PAGE": {
@@ -127,6 +145,7 @@
             }
         },
         "FORM": {
+            "CLOSE_MODAL": "Close",
             "LABELS": {
                 "FULLNAME": "Full Name",
                 "EMAIL": "Email",
@@ -356,11 +375,11 @@
         "TEXTS": {
             "EXPLORE_PUERTO_MORELOS": {
                 "TITLE": "Explore puerto morelos underwater paradise",
-                "DESCRIPTION": "Discover the enchanting marine paradise of Puerto Morelos, home to the world’s 2nd largest Great Barrier Reef. Join Snorkel Extreme for an approximately 1-hour snorkeling excursion that will leave you in awe. Glide through crystal-clear waters, surrounded by colorful corals and thriving marine life."
+                "DESCRIPTION": "Discover one of the most breathtaking ecosystems in the Caribbean: the Mesoamerican Barrier Reef, the second‑largest reef system in the world. This marine sanctuary offers incredible biodiversity, including rays, sea turtles, colorful fish, and living coral gardens."
             },
             "SNORKELING_EXPERIENCE": {
                 "TITLE": "Your unforgettable snorkeling experience",
-                "DESCRIPTION": "Your adventure begins with convenient round-trip transportation from your hotel. Immerse yourself in the reef’s beauty during an approximate 1-hour snorkel session. After your aquatic exploration, unwind and savor a delicious beachside snack at a charming restaurant."
+                "DESCRIPTION": "Your Snorkeling Adventure starts with comfortable transportation from your hotel to Puerto Morelos. Once onboard the boat, expert guides will brief you on safety and marine preservation. Then, dive into crystal‑clear waters for a full hour of guided reef exploration. After snorkeling, enjoy a beachside snack and free time in town."
             }
         },
         "GALLERY": {
@@ -377,7 +396,6 @@
                 "Aprox 1hr. of snorkeling",
                 "Security gear (lifejacket)",
                 "Snorkel gear (Mask, fins and snorkeltube)",
-                "Passenger insurance",
                 "Tequila Tasting"
             ],
             "NOT_INCLUDES": [
@@ -411,19 +429,19 @@
             "TITLE": "Information you should know for your snorkeling adventure",
             "KNOW_BEFORE_YOU_GO": {
                 "TITLE": "Know before you go",
-                "DESCRIPTION": "Please note: A $10.00 USD per person reef tax is required for sea life preservation. Snorkel with ease, knowing you’re covered by passenger insurance. Capture memories with optional pictures. Respect the marine environment and consider optional tips for guides."
+                "DESCRIPTION": "Before beginning your Snorkeling Adventure, keep in mind several important details to ensure a smooth, responsible, and fully enjoyable experience. A $10.00 USD reef tax per person is required to support sea-life conservation at the National Reef Park of Puerto Morelos—one of the most protected ecosystems in the Riviera Maya. This contribution helps preserve coral reefs, fish habitats, and the overall health of the marine environment."
             },
             "DIVE_INTO_UNSEEN": {
                 "TITLE": "Dive into the unseen beauty",
-                "DESCRIPTION": "Unleash your inner explorer with the Best Snorkeling in Cancun. Book now for an extraordinary aquatic adventure, and let nature’s marvels amaze you."
+                "DESCRIPTION": "Prepare to awaken your inner adventurer as you dive into the crystalline waters of Puerto Morelos, home to some of the best snorkeling in Cancun. This section of the Mesoamerican Reef invites you to glide over colorful coral formations, observe tropical fish, and encounter marine life in its natural environment. Every moment reveals a new underwater marvel—rays, sea turtles, angelfish, and vibrant coral gardens thriving beneath the surface."
             },
             "EASY_TO_GET": {
                 "TITLE": "Easy to get there",
-                "DESCRIPTION": "The transportation from Cancun is included in this reef snorkel adventure tour, check the availability from your hotel or meeting point. This fisher town is 15 minutes next from Cancun, and very easy to arrive at."
+                "DESCRIPTION": "Reaching this snorkeling paradise is simple and convenient. Round-trip transportation from Cancun is included with your tour, ensuring a hassle-free experience from start to finish. Your shuttle will pick you up directly from your hotel or designated meeting point and take you to Puerto Morelos, a charming fishing village located just 15 minutes south of Cancun."
             },
             "TASTY_BEACHSIDE": {
                 "TITLE": "Tasty beachside snack",
-                "DESCRIPTION": "When you get back to the coast your will feel hungry, so we can pamper you in a beachside restaurant to enjoy a snack. You will love the view."
+                "DESCRIPTION": "After your reef exploration, you’ll return to the coast ready to relax—and likely ready to eat. To complete the experience, you’ll enjoy a delicious beachside snack at a local oceanfront restaurant. With a refreshing sea breeze and panoramic Caribbean views, it’s the perfect moment to unwind after your Snorkeling Adventure."
             },
             "SAFETY_STANDARDS": {
                 "LIFEJACKET": "Lifejacket present at all time and snorkeling gear",
@@ -447,20 +465,20 @@
             "TITLE": "Frequently Asked Questions about the Snorkeling Adventure in Puerto Morelos",
             "FAQS": [
                 {
-                    "question": "What is included in the Puerto Morelos Reef Snorkel Adventure?",
-                    "answer": "The adventure includes round-trip transportation, snorkeling gear, a guided snorkeling session, a beachside snack, and passenger insurance."
+                    "question": "What is the best time of year for snorkeling Puerto Morelos?",
+                    "answer": "Puerto Morelos offers excellent snorkeling conditions all year, with the best visibility from November to August."
                 },
                 {
-                    "question": "Is prior snorkeling experience required?",
-                    "answer": "No prior experience is necessary. The tour is suitable for beginners and experienced snorkelers alike."
+                    "question": "Is this Snorkeling Adventure suitable for beginners?",
+                    "answer": "Yes, the calm waters of Puerto Morelos make this Cancun snorkeling tour perfect for beginners."
                 },
                 {
-                    "question": "What should I bring for the snorkeling adventure?",
-                    "answer": "We recommend bringing comfortable clothing, a swimsuit, water sandals, a towel, and cash for additional expenses."
+                    "question": "How long is the snorkeling portion of the tour?",
+                    "answer": "The guided snorkeling session lasts approximately 1 hour."
                 },
                 {
-                    "question": "Are there any age restrictions for the snorkeling tour?",
-                    "answer": "Yes, participants must be at least 6 years old to snorkel. Children under 6 can ride on the boat but cannot snorkel."
+                    "question": "Is transportation included in the tour?",
+                    "answer": "Yes, round‑trip air‑conditioned transportation from Cancun or Riviera Maya is included for your convenience."
                 }
             ]
         },

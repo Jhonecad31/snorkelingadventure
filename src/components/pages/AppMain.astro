@@ -17,13 +17,10 @@ const seoMetaData = {
 };
 ---
 
-<BaseLayout {seoMetaData}>
+<BaseLayout seo={seoMetaData}>
     <Hero />
-    <IntroHome
-        title={i18n.HOME_PAGE.INTRO.TITLE}
-        description={i18n.HOME_PAGE.INTRO.DESCRIPTION}
-    />
+    <IntroHome />
     <MapMayanReef />
-    <GalleryHome texts={i18n.HOME_PAGE.GALLERY} />
+    <GalleryHome />
     <FaqsHome />
 </BaseLayout>

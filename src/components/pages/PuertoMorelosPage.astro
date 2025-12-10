@@ -5,7 +5,6 @@ import HeroGradient from "@/components/sections/HeroGradient.astro";
 import ExplorePuertoMorelos from "@/components/sections/ExplorePuertoMorelos.astro";
 import GridTextsPM from "@/components/sections/GridTextsPM.astro";
 import CTASection from "@/components/sections/CTASection.astro";
-import MoreActivities from "@/components/sections/MoreActivities.astro";
 import FaqsHome from "@/components/sections/FaqsHome.astro";
 
 const { currentLocale } = Astro;
@@ -18,7 +17,7 @@ const seoMetaData = {
 };
 ---
 
-<BaseLayout {seoMetaData}>
+<BaseLayout seo={seoMetaData}>
     <HeroGradient
         title={i18n.PUERTO_MORELOS_PAGE.HERO.TITLE}
         text={i18n.PUERTO_MORELOS_PAGE.HERO.DESCRIPTION}
@@ -26,6 +25,5 @@ const seoMetaData = {
     <ExplorePuertoMorelos />
     <GridTextsPM />
     <CTASection />
-    <MoreActivities />
     <FaqsHome />
 </BaseLayout>
