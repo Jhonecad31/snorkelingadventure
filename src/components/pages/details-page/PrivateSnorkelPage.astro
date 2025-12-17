@@ -1,8 +1,7 @@
 ---
 import { getI18N } from "@/i18n";
 import { PMAereal, MujerSalvavidas, SnorkelHorizontal, SeaweedMinimalistWhite, SeaweedWhite, PersonOkSnorkel, SnorkelMayanReef, Turtle, User1, User2, User3 } from "@public/img/allImages";
-import { FlipFlop, Towel, Cash, Swimwear } from "@/icons/allIcons";
-import { Exclamation, Check, Close, Star } from "@/icons/allIcons"
+import { FlipFlop, Towel, Cash, Swimwear, PlayerPause, PlayerPlay, Exclamation, Check, Close, Star } from "@/icons/allIcons";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import GalleryDetail from "@/components/sections/GalleryDetail.astro";
@@ -11,7 +10,7 @@ import TagH1 from "@/components/global/TagH1.astro";
 import TagH2 from "@/components/global/TagH2.astro";
 import TagH3 from "@/components/global/TagH3.astro";
 import TagP from "@/components/global/TagP.astro";
-import Faqs from "../extras/Faqs";
+import Faqs from "@/components/extras/Faqs";
 import BtnModalBokun from "@/components/extras/BtnModalBokun";
 
 const { currentLocale } = Astro;
@@ -24,59 +23,97 @@ const bookingChannel = "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1";
 
 const dataForm = {
     bookingChannel: bookingChannel,
-    title: i18n.DETAIL_PAGE.FORM_FLOATER.TITLE,
-    btnBook: i18n.DETAIL_PAGE.FORM_FLOATER.BUTTON_BOOK,
-    btnCloseText: i18n.DETAIL_PAGE.FORM_FLOATER.BUTTON_CLOSE
+    title: i18n.PRIVATE_SNORKELING_PAGE.FORM_FLOATER.TITLE,
+    btnBook: i18n.PRIVATE_SNORKELING_PAGE.FORM_FLOATER.BUTTON_BOOK,
+    btnCloseText: i18n.PRIVATE_SNORKELING_PAGE.FORM_FLOATER.BUTTON_CLOSE
 }
 
 const seoMetaData = {
-    title: i18n.SEO.DETAIL_PAGE.TITLE,
-    description: i18n.SEO.DETAIL_PAGE.DESCRIPTION,
-    metaTitle: i18n.SEO.DETAIL_PAGE.META_TITLE,
+    title: i18n.SEO.PRIVATE_SNORKELING_PAGE.TITLE,
+    description: i18n.SEO.PRIVATE_SNORKELING_PAGE.DESCRIPTION,
+    metaTitle: i18n.SEO.PRIVATE_SNORKELING_PAGE.META_TITLE,
 };
 ---
 
 
 <BaseLayout seo={seoMetaData}>
     <!-- Hero -->
-    <section class="min-h-100 md:min-h-140 relative overflow-hidden">
-        <div class="absolute inset-0 w-full h-full bg-gradient-to-t from-white via-cyan-400 to-sky-700">
-            <BlockContainer class="relative !mt-0">
-                <div class="py-20 max-w-3xl mx-auto">
-                    <TagH1 class="text-center text-white text-shadow-lg/10">
-                        {i18n.DETAIL_PAGE.HERO.TITLE}
-                    </TagH1>
-                    <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white/70">
-                        <div class="flex items-center -space-x-3">
-                            <img
-                                class="size-7 rounded-full border-2 border-white"
-                                height={50}
-                                width={50}
-                                src={User1.src}
-                                alt=""
-                            />
-                            <img
-                                class="size-7 rounded-full border-2 border-white"
-                                height={50}
-                                width={50}
-                                src={User2.src}
-                                alt=""
-                            />
-                            <img
-                                class="size-7 rounded-full border-2 border-white"
-                                height={50}
-                                width={50}
-                                src={User3.src}
-                                alt=""
-                            />
-                        </div>
-                        <p class="text-xs">
-                            {reviewsCount}
-                            {i18n.ACCESSIBILITY.PEOPLE_ENJOYED}
-                        </p>
+    <section class="min-h-150 md:min-h-200 relative overflow-hidden">
+        <video
+            id="video-hero"
+            autoplay
+            muted
+            loop
+            preload="auto"
+            class="absolute top-0 left-0 w-full h-full object-cover object-center z-0 brightness-65"
+        >
+            <source
+                src="https://res.cloudinary.com/di68oymeh/video/upload/v1765832105/video-hero-snorkeling-adventure-puerto-morelos_wjqfom.mp4"
+                type="video/mp4"
+            />
+        </video>
+        <button
+            id="btn-video-hero"
+            class="absolute bottom-10 right-10 bg-linear-to-br from-sky-700 via-cyan-400 to-sky-500 transition rounded-full p-3 shadow-lg group cursor-pointer"
+        >
+            <span class="sr-only">{i18n.ACCESSIBILITY.PLAY_PAUSE}</span>
+            <PlayerPlay class="size-8 text-white hidden group-hover:scale-110 transition duration-300" />
+            <PlayerPause class="size-8 text-white group-hover:scale-110 transition duration-300" />
+        </button>
+        <script is:inline>
+            const videoHero = document.getElementById('video-hero');
+            const btnVideoHero = document.getElementById('btn-video-hero');
+            const iconPlay = btnVideoHero.querySelector('svg:nth-child(2)');
+            const iconPause = btnVideoHero.querySelector('svg:nth-child(3)');
+
+            btnVideoHero.addEventListener('click', () => {
+                if (videoHero.paused) {
+                    videoHero.play();
+                    iconPlay.classList.add('hidden');
+                    iconPause.classList.remove('hidden');
+                } else {
+                    videoHero.pause();
+                    iconPlay.classList.remove('hidden');
+                    iconPause.classList.add('hidden');
+                }
+            });
+        </script>
+        <BlockContainer class="relative !mt-0">
+            <div class="py-20 max-w-3xl mx-auto">
+                <TagH1 class="text-center text-white text-shadow-lg/10">
+                    {i18n.DETAIL_PAGE.HERO.TITLE}
+                </TagH1>
+                <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white/70">
+                    <div class="flex items-center -space-x-3">
+                        <img
+                            class="size-7 rounded-full border-2 border-white"
+                            height={50}
+                            width={50}
+                            src={User1.src}
+                            alt=""
+                        />
+                        <img
+                            class="size-7 rounded-full border-2 border-white"
+                            height={50}
+                            width={50}
+                            src={User2.src}
+                            alt=""
+                        />
+                        <img
+                            class="size-7 rounded-full border-2 border-white"
+                            height={50}
+                            width={50}
+                            src={User3.src}
+                            alt=""
+                        />
                     </div>
+                    <p class="text-xs">
+                        {reviewsCount}
+                        {i18n.ACCESSIBILITY.PEOPLE_ENJOYED}
+                    </p>
                 </div>
-            </BlockContainer>
+            </div>
+        </BlockContainer>
         </div>
         <img src={SeaweedWhite.src} alt={i18n.ACCESSIBILITY.IMAGES.SEAWEED} class="absolute top-0 -left-10 md:-left-20 w-40 sm:w-60 lg:w-80 rotate-[130deg]" />
         <img src={SeaweedMinimalistWhite.src} alt={i18n.ACCESSIBILITY.IMAGES.SEAWEED} class="absolute top-20 -right-10 md:-right-16 w-40 sm:w-60 lg:w-80 -rotate-[110deg]" />

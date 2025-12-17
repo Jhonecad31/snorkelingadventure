@@ -10,16 +10,17 @@ import BgFishes from "./bg/peces-sargento-puerto-morelos.webp";
 import PersonOkSnorkel from "./bg/persona-haciendo-ok-snorkel.webp";
 import CoverSA from "./bg/puerto-morelos-reef-snorkel-adventuring-tour-in-cancun.webp";
 import PMAereal from "./bg/puerto-morelos-vista-aereal.webp";
-import HandLikeSnorkel from "./bg/persona-pulgares-arriba-en-snorkel.webp"
-import MainHero from "./bg/snorkeling-adventure-en-puerto-morelos.webp"
+import HandLikeSnorkel from "./bg/persona-pulgares-arriba-en-snorkel.webp";
+import MainHero from "./bg/snorkeling-adventure-en-puerto-morelos.webp";
 import SnorkelMayanReef from "./bg/grupo-en-snorkeling-en-arrecife-maya.webp";
 import MiddleViewSnorkel from "./bg/vista-snorkel-con-fauna-marina.webp";
+// Extras
+import Corals from "./extras/corals-mayan-reef.webp";
 import ShapeMap from "./extras/shape-map-world.png";
-import SeaweedMinimalistWhite from "./extras/seaweed-minimalist-white.png";
-import SeaweedBlue from "./extras/seaweed-blue.png";
-import SeaweedWhite from "./extras/seaweed-white.png";
+import SeaweedMinimalistWhite from "./extras/seaweed-minimalist-white.webp";
+import SeaweedBlue from "./extras/seaweed-blue.webp";
+import SeaweedWhite from "./extras/seaweed-white.webp";
 import Turtle from "./extras/sea-turtle-in-national-reef-park-of-puerto-morelos.webp";
-
 // More Activities
 import CenoteAdventuring from "./cover-activities/cenote-adventuring-ruta-de-los-cenotes-fb.webp";
 import ExtremeAdventuring from "./cover-activities/extreme-adventuring-eco-park-in-cancun-fb.webp";
@@ -48,6 +49,7 @@ export {
     BgFishes,
     PersonOkSnorkel,
     CoverSA,
+    Corals,
     ShapeMap,
     SeaweedMinimalistWhite,
     SeaweedBlue,

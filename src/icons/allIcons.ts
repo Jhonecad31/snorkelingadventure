@@ -1,6 +1,13 @@
 // Flags
 import IconFlagUSA from "./flags/usa.svg";
 import IconFlagMEX from "./flags/mex.svg";
+// Awards
+import TripadvisorBOTB from "./awards/tripadvisor-tbotb.svg";
+import NatGeoTraveller from "./awards/natgeo-traveller-black.svg";
+import WorldTravelAwards from "./awards/world-travel-awards.svg";
+// Brands
+import PrivateSnorkeling from "./brands/private-snorkeling-experience.svg";
+import SnorkelingAdventure from "./brands/snorkeling-adventure.svg";
 // Icons
 import BranX from "./brand-x.svg";
 import BtnPrev from "./chevron-left.svg";
@@ -21,6 +28,8 @@ import Mail from "./mail.svg";
 import MapPin from "./map-pin.svg";
 import Menu from "./menu.svg";
 import Phone from "./phone-fill.svg";
+import PlayerPause from "./player-pause.svg";
+import PlayerPlay from "./player-play.svg";
 import ScubaMask from "./scuba-mask.svg";
 import Share from "./share.svg";
 import Star from "./star.svg";
@@ -35,6 +44,11 @@ import WhatsApp from "./whatsapp.svg";
 export {
     IconFlagUSA,
     IconFlagMEX,
+    TripadvisorBOTB,
+    NatGeoTraveller,
+    WorldTravelAwards,
+    PrivateSnorkeling,
+    SnorkelingAdventure,
     BranX,
     BtnPrev,
     BtnNext,
@@ -54,6 +68,8 @@ export {
     MapPin,
     Menu,
     Phone,
+    PlayerPause,
+    PlayerPlay,
     ScubaMask,
     Share,
     Star,
