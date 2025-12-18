@@ -1,15 +1,12 @@
 ---
 import { getI18N } from "@/i18n";
-import { PMAereal, MujerSalvavidas, SnorkelHorizontal, SeaweedMinimalistWhite, SeaweedWhite, PersonOkSnorkel, SnorkelMayanReef, Turtle, User1, User2, User3 } from "@public/img/allImages";
+import { PMAereal, SnorkelMayanReef, User1, User2, User3 } from "@public/img/allImages";
 import { FlipFlop, Towel, Cash, Swimwear, PlayerPause, PlayerPlay, Exclamation, Check, Close, Star } from "@/icons/allIcons";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
-import GalleryDetail from "@/components/sections/GalleryDetail.astro";
 import MoreActivities from "@/components/sections/MoreActivities.astro";
 import TagH1 from "@/components/global/TagH1.astro";
 import TagH2 from "@/components/global/TagH2.astro";
-import TagH3 from "@/components/global/TagH3.astro";
-import TagP from "@/components/global/TagP.astro";
 import Faqs from "@/components/extras/Faqs";
 import BtnModalBokun from "@/components/extras/BtnModalBokun";
 
@@ -23,22 +20,21 @@ const bookingChannel = "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1";
 
 const dataForm = {
     bookingChannel: bookingChannel,
-    title: i18n.PRIVATE_SNORKELING_PAGE.FORM_FLOATER.TITLE,
-    btnBook: i18n.PRIVATE_SNORKELING_PAGE.FORM_FLOATER.BUTTON_BOOK,
-    btnCloseText: i18n.PRIVATE_SNORKELING_PAGE.FORM_FLOATER.BUTTON_CLOSE
+    title: i18n.DETAIL_PAGE.PRIVATE_SNORKELING.FORM_FLOATER.TITLE,
+    btnBook: i18n.DETAIL_PAGE.PRIVATE_SNORKELING.FORM_FLOATER.BUTTON_BOOK,
+    btnCloseText: i18n.DETAIL_PAGE.PRIVATE_SNORKELING.FORM_FLOATER.BUTTON_CLOSE
 }
 
 const seoMetaData = {
-    title: i18n.SEO.PRIVATE_SNORKELING_PAGE.TITLE,
-    description: i18n.SEO.PRIVATE_SNORKELING_PAGE.DESCRIPTION,
-    metaTitle: i18n.SEO.PRIVATE_SNORKELING_PAGE.META_TITLE,
+    title: i18n.SEO.DETAIL_PAGE.PRIVATE_SNORKELING.TITLE,
+    description: i18n.SEO.DETAIL_PAGE.PRIVATE_SNORKELING.DESCRIPTION,
+    metaTitle: i18n.SEO.DETAIL_PAGE.PRIVATE_SNORKELING.META_TITLE,
 };
 ---
 
-
 <BaseLayout seo={seoMetaData}>
     <!-- Hero -->
-    <section class="min-h-150 md:min-h-200 relative overflow-hidden">
+    <section class="min-h-120 md:min-h-180 relative overflow-hidden">
         <video
             id="video-hero"
             autoplay
@@ -48,17 +44,17 @@ const seoMetaData = {
             class="absolute top-0 left-0 w-full h-full object-cover object-center z-0 brightness-65"
         >
             <source
-                src="https://res.cloudinary.com/di68oymeh/video/upload/v1765832105/video-hero-snorkeling-adventure-puerto-morelos_wjqfom.mp4"
+                src="https://res.cloudinary.com/videosextreme/video/upload/v1766090249/private-snorkeling-experience-video_jjnwtj.mp4"
                 type="video/mp4"
             />
         </video>
         <button
             id="btn-video-hero"
-            class="absolute bottom-10 right-10 bg-linear-to-br from-sky-700 via-cyan-400 to-sky-500 transition rounded-full p-3 shadow-lg group cursor-pointer"
+            class="absolute bottom-10 right-5 md:right-10 bg-linear-to-br from-sky-700 via-cyan-400 to-sky-500 transition rounded-full p-2 md:p-3 shadow-lg group cursor-pointer"
         >
             <span class="sr-only">{i18n.ACCESSIBILITY.PLAY_PAUSE}</span>
-            <PlayerPlay class="size-8 text-white hidden group-hover:scale-110 transition duration-300" />
-            <PlayerPause class="size-8 text-white group-hover:scale-110 transition duration-300" />
+            <PlayerPlay class="size-6 md:size-8 text-white hidden group-hover:scale-110 transition duration-300" />
+            <PlayerPause class="size-6 md:size-8 text-white group-hover:scale-110 transition duration-300" />
         </button>
         <script is:inline>
             const videoHero = document.getElementById('video-hero');
@@ -81,9 +77,9 @@ const seoMetaData = {
         <BlockContainer class="relative !mt-0">
             <div class="py-20 max-w-3xl mx-auto">
                 <TagH1 class="text-center text-white text-shadow-lg/10">
-                    {i18n.DETAIL_PAGE.HERO.TITLE}
+                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}
                 </TagH1>
-                <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white/70">
+                <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white/60">
                     <div class="flex items-center -space-x-3">
                         <img
                             class="size-7 rounded-full border-2 border-white"
@@ -114,151 +110,17 @@ const seoMetaData = {
                 </div>
             </div>
         </BlockContainer>
-        </div>
-        <img src={SeaweedWhite.src} alt={i18n.ACCESSIBILITY.IMAGES.SEAWEED} class="absolute top-0 -left-10 md:-left-20 w-40 sm:w-60 lg:w-80 rotate-[130deg]" />
-        <img src={SeaweedMinimalistWhite.src} alt={i18n.ACCESSIBILITY.IMAGES.SEAWEED} class="absolute top-20 -right-10 md:-right-16 w-40 sm:w-60 lg:w-80 -rotate-[110deg]" />
     </section>
     <BlockContainer>
-        <!-- Texts Puerto Morelos -->
-        <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-10">
-            <img src={PMAereal.src} alt={i18n.ACCESSIBILITY.IMAGES.PUERTO_MORELOS_AEREAL} class="object-cover w-full h-full rounded-lg" />
-            <div class="lg:p-10">
-                <TagH2>{i18n.DETAIL_PAGE.TEXTS.EXPLORE_PUERTO_MORELOS.TITLE}</TagH2>
-                <TagP>{i18n.DETAIL_PAGE.TEXTS.EXPLORE_PUERTO_MORELOS.DESCRIPTION}</TagP>
-                <TagH3>{i18n.DETAIL_PAGE.TEXTS.SNORKELING_EXPERIENCE.TITLE}</TagH3>
-                <TagP>{i18n.DETAIL_PAGE.TEXTS.SNORKELING_EXPERIENCE.DESCRIPTION}</TagP>
-            </div>
-        </div>
-        <!-- Inclusions -->
-        <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-10 mt-20">
-            <div class="lg:p-10">
-                <TagH2>{i18n.DETAIL_PAGE.INCLUSIONS.TITLE}</TagH2>
-                <ul class="mt-10 space-y-4 text-base/loose sm:columns-2">
-                    {i18n.DETAIL_PAGE.INCLUSIONS.INCLUDES.map((item) => (
-                        <li>
-                            <p><Check class="size-5 text-green-600 inline-block mr-1" />{item}</p>
-                        </li>
-                    ))}
-                    {i18n.DETAIL_PAGE.INCLUSIONS.NOT_INCLUDES.map((item) => (
-                        <li>
-                            <p><Close class="size-5 text-red-600 inline-block mr-1" />{item}</p>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <img src={SnorkelHorizontal.src} alt={i18n.ACCESSIBILITY.IMAGES.SNORKEL_HORIZONTAL} class="object-cover w-full rounded-lg" />
-        </div>
-        <!-- What You Should Know -->
-        <TagH2 class="text-center max-w-2xl mx-auto mt-20 mb-10">
-            {i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.TITLE}
-        </TagH2>
-        <div class="grid items-center lg:grid-cols-4 gap-5">
-            <div class="lg:col-span-1 flex flex-col lg:gap-5">
-                <div>
-                    <TagH3>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.KNOW_BEFORE_YOU_GO.TITLE}</TagH3>
-                    <TagP>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.KNOW_BEFORE_YOU_GO.DESCRIPTION}</TagP>
-                </div>
-                <div>
-                    <TagH3>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.DIVE_INTO_UNSEEN.TITLE}</TagH3>
-                    <TagP>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.DIVE_INTO_UNSEEN.DESCRIPTION}</TagP>
-                </div>
-            </div>
-            <div class="lg:col-span-2">
-                <img
-                    src={MujerSalvavidas.src}
-                    alt={i18n.ACCESSIBILITY.IMAGES.LIFEGUARD_WOMAN}
-                    class="w-full object-cover mask-[url('/assets/img/extras/shape-splash.webp')] mask-center mask-no-repeat mask-contain"
-                />
-            </div>
-            <div class="lg:col-span-1 flex flex-col lg:gap-5">
-                <div>
-                    <TagH3>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.TASTY_BEACHSIDE.TITLE}</TagH3>
-                    <TagP>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.TASTY_BEACHSIDE.DESCRIPTION}</TagP>
-                </div>
-                <div>
-                    <TagH3>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.EASY_TO_GET.TITLE}</TagH3>
-                    <TagP>{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.EASY_TO_GET.DESCRIPTION}</TagP>
-                </div>
-            </div>
-            <!-- Safety Standards -->
-            <div class="grid sm:grid-cols-2 place-items-center gap-10 lg:col-span-4">
-                <div class="flex items-center gap-3">
-                    <div class="p-2 bg-amber-300 rounded-full">
-                        <Exclamation class="size-5 text-black" />
-                    </div>
-                    <p class="text-sm/loose font-semibold text-justify">{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.SAFETY_STANDARDS.LIFEJACKET}</p>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div class="p-2 bg-amber-300 rounded-full">
-                        <Exclamation class="size-5 text-black" />
-                    </div>
-                    <p class="text-sm/loose font-semibold text-justify">{i18n.DETAIL_PAGE.WHAT_YOU_SHOULD_KNOW.SAFETY_STANDARDS.KICKING}</p>
-                </div>
-            </div>
-        </div>
-        <!-- What You Bring -->
-        <TagH2 class="text-center max-w-2xl mx-auto mt-20 mb-10">
-            {i18n.DETAIL_PAGE.WHAT_TO_BRING.TITLE}
-        </TagH2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="bg-sky-100 rounded-lg p-7">
-                <div class="rounded-full p-5 bg-white w-fit">
-                    <Swimwear class="size-10 text-sky-500" />
-                </div>
-                <TagH3>{i18n.DETAIL_PAGE.WHAT_TO_BRING.SWIMSUIT.TITLE}</TagH3>
-                <TagP>{i18n.DETAIL_PAGE.WHAT_TO_BRING.SWIMSUIT.DESCRIPTION}</TagP>
-            </div>
-            <div class="bg-sky-100 rounded-lg p-7">
-                <div class="rounded-full p-5 bg-white w-fit">
-                    <Towel class="size-10 text-sky-500" />
-                </div>
-                <TagH3>{i18n.DETAIL_PAGE.WHAT_TO_BRING.TOWEL.TITLE}</TagH3>
-                <TagP>{i18n.DETAIL_PAGE.WHAT_TO_BRING.TOWEL.DESCRIPTION}</TagP>
-            </div>
-            <div class="bg-sky-100 rounded-lg p-7">
-                <div class="rounded-full p-5 bg-white w-fit">
-                    <FlipFlop class="size-10 text-sky-500" />
-                </div>
-                <TagH3>{i18n.DETAIL_PAGE.WHAT_TO_BRING.WATER_SANDALS.TITLE}</TagH3>
-                <TagP>{i18n.DETAIL_PAGE.WHAT_TO_BRING.WATER_SANDALS.DESCRIPTION}</TagP>
-            </div>
-            <div class="bg-sky-100 rounded-lg p-7">
-                <div class="rounded-full p-5 bg-white w-fit">
-                    <Cash class="size-10 text-sky-500" />
-                </div>
-                <TagH3>{i18n.DETAIL_PAGE.WHAT_TO_BRING.CASH.TITLE}</TagH3>
-                <TagP>{i18n.DETAIL_PAGE.WHAT_TO_BRING.CASH.DESCRIPTION}</TagP>
-            </div>
-        </div>
-        <!-- Important Information -->
-        <div class="rounded-lg mt-20 grid items-center grid-cols-1 lg:grid-cols-5 gap-10">
-            <img
-                src={PersonOkSnorkel.src}
-                alt={i18n.ACCESSIBILITY.IMAGES.PERSON_OK_SNORKEL}
-                class="w-full h-100 lg:h-150 object-cover object-bottom row-start-2 lg:row-start-auto lg:col-span-2 mask-[url('/assets/img/extras/shape-splash.webp')] mask-center mask-no-repeat mask-size-[100%_100%]"
-            />
-            <div class="lg:p-10 lg:col-span-3 row-start-1 lg:row-start-auto">
-                <TagH2 class="mb-5">{i18n.DETAIL_PAGE.IMPORTANT_INFO.TITLE}</TagH2>
-                <ul class="list-disc list-inside space-y-3 text-base/loose text-justify">
-                    {i18n.DETAIL_PAGE.IMPORTANT_INFO.LIST.map((item) => (
-                        <li>{item}</li>
-                    ))}
-                </ul>
-            </div>
-        </div>
+
     </BlockContainer>
-    <!-- Gallery -->
-    <GalleryDetail
-        title={i18n.DETAIL_PAGE.GALLERY.TITLE}
-        description={i18n.DETAIL_PAGE.GALLERY.DESCRIPTION}
-    />
     <!-- Faqs -->
     <BlockContainer>
         <TagH2 class="text-center max-w-2xl mx-auto mb-10 mt-10">
-            {i18n.DETAIL_PAGE.FAQS.TITLE}
+            {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.FAQS.TITLE}
         </TagH2>
         <div class="max-w-4xl mx-auto">
-            <Faqs client:visible faqs={i18n.DETAIL_PAGE.FAQS.FAQS} />
+            <Faqs client:visible faqs={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.FAQS.FAQS} />
         </div>  
     </BlockContainer>
     <!-- More Activities -->
@@ -284,7 +146,7 @@ const seoMetaData = {
                     />
                 </div>
                 <div class="pl-3 pt-2">
-                    <p class="font-semibold text-xs sm:text-lg w-fit">{i18n.DETAIL_PAGE.HERO.TITLE}</p>
+                    <p class="font-semibold text-xs sm:text-lg w-fit">{i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}</p>
                     <div class="flex items-center my-1">
                         <div class="flex items-center gap-1">
                             <Star class="size-4 text-amber-500"/> <span class="text-xs sm:text-sm font-semibold">{countStars}</span>
