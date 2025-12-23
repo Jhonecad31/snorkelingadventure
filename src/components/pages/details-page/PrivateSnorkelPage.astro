@@ -1,7 +1,7 @@
 ---
 import { getI18N } from "@/i18n";
-import { PMAereal, SnorkelMayanReef, User1, User2, User3 } from "@public/img/allImages";
-import { FlipFlop, Towel, Cash, Swimwear, PlayerPause, PlayerPlay, Exclamation, Check, Close, Star } from "@/icons/allIcons";
+import { PMAereal, SnorkelMayanReef, User1, User2, User3, MiddleViewSnorkel, MujerSalvavidas, PersonOkSnorkel } from "@public/img/allImages";
+import { PlayerPause, PlayerPlay, Check, Close, Star, Exclamation, Swimwear, Cash, FlipFlop, Towel } from "@/icons/allIcons";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import MoreActivities from "@/components/sections/MoreActivities.astro";
@@ -9,6 +9,10 @@ import TagH1 from "@/components/global/TagH1.astro";
 import TagH2 from "@/components/global/TagH2.astro";
 import Faqs from "@/components/extras/Faqs";
 import BtnModalBokun from "@/components/extras/BtnModalBokun";
+import TagP from "@/components/global/TagP.astro";
+import GalleryDetail from "@/components/sections/GalleryDetail.astro";
+import AccordionComponent from "@/components/sections/AccordionComponent";
+import TagH3 from "@/components/global/TagH3.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -34,7 +38,7 @@ const seoMetaData = {
 
 <BaseLayout seo={seoMetaData}>
     <!-- Hero -->
-    <section class="min-h-120 md:min-h-180 relative overflow-hidden">
+    <section class="min-h-150 md:min-h-180 relative overflow-hidden">
         <video
             id="video-hero"
             autoplay
@@ -79,7 +83,7 @@ const seoMetaData = {
                 <TagH1 class="text-center text-white text-shadow-lg/10">
                     {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}
                 </TagH1>
-                <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white/60">
+                <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white">
                     <div class="flex items-center -space-x-3">
                         <img
                             class="size-7 rounded-full border-2 border-white"
@@ -111,8 +115,152 @@ const seoMetaData = {
             </div>
         </BlockContainer>
     </section>
+    <TagH2 class="max-w-3xl mx-auto text-center [&_span]:text-cyan-500 py-20" set:html={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.DESCRIPTION} />
+    <section class="bg-linear-to-br from-sky-600 via-cyan-400 to-cyan-800 relative">
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-0 z-10">
+            <svg class="relative block w-[calc(100%+1.3px)] h-10 sm:h-20" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="fill-white"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="fill-white"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="fill-white"></path>
+            </svg>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <img
+                src={MiddleViewSnorkel.src}
+                alt=""
+                class="w-full h-full min-h-80 object-cover mask-radial-[100%_100%] mask-radial-from-80% mask-radial-at-top lg:mask-radial-at-left"
+            />
+            <div class="px-5 md:px-10 pt-5 pb-25 lg:py-25">
+                <TagH2 class="text-white mb-5">
+                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.TEXTS.EXCLUSIVE_SNORKELING_EXPERIENCE.TITLE}
+                </TagH2>
+                <TagP
+                    class="text-white"
+                    set:html={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.TEXTS.EXCLUSIVE_SNORKELING_EXPERIENCE.DESCRIPTION}
+                />
+                <TagH3 class="text-white mb-5">
+                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.TEXTS.PRIVATE_BOAT.TITLE}
+                </TagH3>
+                <TagP
+                    class="text-white"
+                    set:html={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.TEXTS.PRIVATE_BOAT.DESCRIPTION}
+                />
+                <TagH3 class="text-white mb-5">
+                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.TEXTS.RELAXING_RIDE.TITLE}
+                </TagH3>
+                <TagP
+                    class="text-white"
+                    set:html={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.TEXTS.RELAXING_RIDE.DESCRIPTION}
+                />
+            </div>
+        </div>
+        <div class="absolute bottom-0 rotate-180 left-0 w-full overflow-hidden leading-0 z-10">
+            <svg class="relative block w-[calc(100%+1.3px)] h-10 sm:h-20" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="fill-white"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="fill-white"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="fill-white"></path>
+            </svg>
+        </div>
+    </section>
     <BlockContainer>
-
+        <!-- Inclusions -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
+            <div class="row-start-2 lg:row-auto">
+                <AccordionComponent
+                    client:visible
+                    title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.TITLE}
+                >
+                    <ul class="mt-10 space-y-4 text-base/loose text-justify sm:columns-2">
+                        {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.INCLUDES.map((item) => (
+                            <li>
+                                <p><Check class="size-5 text-green-600 inline-block mr-2" />{item}</p>
+                            </li>
+                        ))}
+                        {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.NOT_INCLUDES.map((item) => (
+                            <li>
+                                <p><Close class="size-5 text-red-600 inline-block mr-2" />{item}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </AccordionComponent>
+            </div>
+            <div class="row-start-1 lg:row-auto">
+                <img
+                    src={MujerSalvavidas.src}
+                    alt={i18n.ACCESSIBILITY.IMAGES.LIFEGUARD_WOMAN}
+                    class="w-full object-cover mask-[url('/assets/img/extras/shape-splash.webp')] mask-center mask-no-repeat mask-contain"
+                />
+                <!-- Safety Standards -->
+                <div class="grid sm:grid-cols-2 place-items-center gap-10 lg:col-span-4">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 bg-amber-300 rounded-full">
+                            <Exclamation class="size-5 text-black" />
+                        </div>
+                        <p class="text-sm/loose font-semibold text-justify">{i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.SAFETY_STANDARDS.LIFEJACKET}</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 bg-amber-300 rounded-full">
+                            <Exclamation class="size-5 text-black" />
+                        </div>
+                        <p class="text-sm/loose font-semibold text-justify">{i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.SAFETY_STANDARDS.KICKING}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What You Should Know -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
+            <div class="hidden lg:block">
+                <img
+                    src={PersonOkSnorkel.src}
+                    alt={i18n.ACCESSIBILITY.IMAGES.LIFEGUARD_WOMAN}
+                    class="w-full object-cover mask-[url('/assets/img/extras/shape-splash.webp')] mask-center mask-no-repeat mask-contain"
+                />
+            </div>
+            <AccordionComponent
+                client:visible
+                title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.TITLE}
+            >
+                <ul class="mt-10 list-disc list-inside space-y-2 text-base/loose text-justify">
+                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.LIST.map((item) => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            </AccordionComponent>
+        </div>
+        <!-- What You Bring -->
+        <TagH2 class="text-center max-w-2xl mx-auto mb-10">
+            {i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.TITLE}
+        </TagH2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-sky-100 rounded-lg p-7">
+                <div class="rounded-full p-5 bg-white w-fit">
+                    <Swimwear class="size-10 text-sky-500" />
+                </div>
+                <TagH3>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.SWIMSUIT.TITLE}</TagH3>
+                <TagP>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.SWIMSUIT.DESCRIPTION}</TagP>
+            </div>
+            <div class="bg-sky-100 rounded-lg p-7">
+                <div class="rounded-full p-5 bg-white w-fit">
+                    <Towel class="size-10 text-sky-500" />
+                </div>
+                <TagH3>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.TOWEL.TITLE}</TagH3>
+                <TagP>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.TOWEL.DESCRIPTION}</TagP>
+            </div>
+            <div class="bg-sky-100 rounded-lg p-7">
+                <div class="rounded-full p-5 bg-white w-fit">
+                    <FlipFlop class="size-10 text-sky-500" />
+                </div>
+                <TagH3>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.WATER_SANDALS.TITLE}</TagH3>
+                <TagP>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.WATER_SANDALS.DESCRIPTION}</TagP>
+            </div>
+            <div class="bg-sky-100 rounded-lg p-7">
+                <div class="rounded-full p-5 bg-white w-fit">
+                    <Cash class="size-10 text-sky-500" />
+                </div>
+                <TagH3>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.CASH.TITLE}</TagH3>
+                <TagP>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.WHAT_TO_BRING.CASH.DESCRIPTION}</TagP>
+            </div>
+        </div>
     </BlockContainer>
     <!-- Faqs -->
     <BlockContainer>
@@ -126,7 +274,7 @@ const seoMetaData = {
     <!-- More Activities -->
     <MoreActivities />
     <!-- Form Bokun -->
-    <div class="sticky bottom-5 max-w-4xl mx-auto">
+    <div class="sticky bottom-5 max-w-4xl mx-auto z-5000">
         <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 bg-white p-2 md:px-6 md:py-2 rounded-xl border border-zinc-200 shadow mx-4">
             <div class="flex items-center gap-2">
                 <div class="flex items-center -space-x-4">

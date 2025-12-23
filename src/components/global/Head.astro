@@ -23,7 +23,7 @@ const metaTitle = Astro.props.metaTitle || title;
 const metaDescription = Astro.props.metaDescription || description;
 const keywords = Astro.props.keywords || "";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const image = new URL(Astro.props.image || "/assets/favicons/favicon-96x96.png", Astro.site);
+const image = new URL(Astro.props.image || "/assets/favicons/apple-touch-icon.png", Astro.site);
 const metaType = Astro.props.metaType || "website";
 const robots = Astro.props.robots || "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";

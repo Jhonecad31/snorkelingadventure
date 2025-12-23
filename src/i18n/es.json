@@ -28,8 +28,8 @@
             },
             "PRIVATE_SNORKELING": {
                 "TITLE": "Tour privado de snorkel en Puerto Morelos",
-                "DESCRIPTION": "Disfruta de un tour privado VIP de snorkel en Puerto Morelos. Explora el Arrecife Mesoamericano en un barco privado con guías, bebidas y transporte incluido.",
-                "META_TITLE": "Snorkel privado en Puerto Morelos | Tour VIP desde Cancún"
+                "DESCRIPTION": "Disfruta de un tour privado de snorkel en Puerto Morelos. Explora el Arrecife Mesoamericano en un barco privado con guías, bebidas y transporte incluido.",
+                "META_TITLE": "Snorkel privado en Puerto Morelos | Bote Privado en Puerto Morelos"
             }
         },
         "NOT_FOUND_PAGE": {
@@ -519,13 +519,12 @@
                 "LIST": [
                     "El uso de cualquier tipo de bloqueador solar está estrictamente prohibido durante la actividad de snorkel para proteger el ecosistema marino.",
                     "Por medidas de conservación y con el fin de proteger el arrecife, se requiere una ducha antes de ingresar al agua.",
-                    "Tarifa de muelle y arrecife de $10.00 USD por persona (pagadero en efectivo)",
+                    "Tarifa de muelle y arrecife de $10.00 USD por persona (pago en efectivo)",
                     "Las mujeres embarazadas no pueden participar",
                     "La edad mínima para participar en la actividad de snorkel es de 6 años.",
                     "Los niños menores de 6 años pueden viajar en el barco pero no se les permite participar en la actividad de snorkel; deben estar acompañados en todo momento por un adulto responsable.",
                     "La actividad está permitida para personas de hasta 65 años, siempre que no tengan problemas respiratorios, cardíacos o de movilidad.",
                     "Aquellos con cirugías recientes no pueden participar",
-                    "Por favor contáctenos con anticipación para confirmar la hora y lugar exactos de recogida.",
                     "Nos comunicaremos con usted para confirmar la hora exacta de recogida poco después de recibir su reserva."
                 ]
             },
@@ -563,13 +562,13 @@
         },
         "PRIVATE_SNORKELING": {
             "HERO": {
-                "TITLE": "Tour privado de snorkel VIP en Puerto Morelos",
-                "DESCRIPTION": "Experimenta un tour privado exclusivo de snorkel en Puerto Morelos. Explora el Arrecife Mesoamericano en un barco privado con guías expertos, bebidas y transporte incluido."
+                "TITLE": "Tour privado de snorkel en Puerto Morelos",
+                "DESCRIPTION": "Experimenta un <span>Exclusivo tour Privado de snorkel en Puerto Morelos</span>. Explora el Arrecife Mesoamericano en un barco privado con guías expertos, bebidas y transporte incluido."
             },
             "TEXTS": {
                 "EXCLUSIVE_SNORKELING_EXPERIENCE": {
-                    "TITLE": "Experiencia exclusiva de snorkel VIP en Puerto Morelos",
-                    "DESCRIPTION": "Su <strong>aventura privada de snorkel VIP en Puerto Morelos</strong> comienza con la recogida en el hotel en un vehículo cómodo con aire acondicionado. Mientras viaja hacia <strong>Puerto Morelos</strong>, un encantador pueblo de pescadores y la puerta de entrada a la <strong>Barrera de Coral Mesoamericana</strong>, inmediatamente notará la diferencia: sin aglomeraciones, sin itinerarios fijos y con total atención a su comodidad y preferencias. Este tour privado ofrece una experiencia de snorkel elevada adaptada a familias, parejas o viajeros que buscan exclusividad."
+                    "TITLE": "Experiencia exclusiva de snorkel en Puerto Morelos",
+                    "DESCRIPTION": "Su <strong>aventura privada de snorkel en Puerto Morelos</strong> comienza con la recogida en el hotel en un vehículo cómodo con aire acondicionado. Mientras viaja hacia <strong>Puerto Morelos</strong>, un encantador pueblo de pescadores y la puerta de entrada a la <strong>Barrera de Coral Mesoamericana</strong>, inmediatamente notará la diferencia: sin aglomeraciones, sin itinerarios fijos y con total atención a su comodidad y preferencias. Este tour privado ofrece una experiencia de snorkel elevada adaptada a familias, parejas o viajeros que buscan exclusividad."
                 },
                 "PRIVATE_BOAT": {
                     "TITLE": "Barco privado para una experiencia de snorkel inigualable",
@@ -581,8 +580,8 @@
                 }
             },
             "GALLERY": {
-                "TITLE": "Descubre la experiencia exclusiva de nuestro Tour Privado de Snorkel VIP",
-                "DESCRIPTION": "Explora los momentos únicos y el servicio personalizado de nuestro Tour Privado VIP de Snorkel en Puerto Morelos a través de nuestra cautivadora galería. Sea testigo del lujo, la comodidad y las inolvidables experiencias submarinas que le esperan."
+                "TITLE": "Descubre la experiencia exclusiva de nuestro Tour Privado de Snorkel",
+                "DESCRIPTION": "Explora los momentos únicos y el servicio personalizado de nuestro Tour Privado de Snorkel en Puerto Morelos a través de nuestra cautivadora galería. Sea testigo del lujo, la comodidad y las inolvidables experiencias submarinas que le esperan."
             },
             "SCHEDULES": {
                 "TITLE": "Horarios disponibles para tu tour privado de snorkel",
@@ -619,57 +618,37 @@
                 ]
             },
             "WHAT_YOU_SHOULD_KNOW": {
-                "TITLE": "Información que debes saber para tu aventura de snorkel",
-                "KNOW_BEFORE_YOU_GO": {
-                    "TITLE": "Conoce antes de ir",
-                    "DESCRIPTION": "Antes de comenzar tu aventura de snorkel, ten en cuenta varios detalles importantes para garantizar una experiencia fluida, responsable y completamente disfrutable. Se requiere un impuesto arrecife de $10.00 USD por persona para apoyar la conservación de la vida marina en el Parque Nacional Arrecife de Puerto Morelos, uno de los ecosistemas más protegidos de la Riviera Maya. Esta contribución ayuda a preservar los arrecifes de coral, los hábitats de los peces y la salud general del entorno marino."
-                },
-                "DIVE_INTO_UNSEEN": {
-                    "TITLE": "Sumérgete en la belleza oculta",
-                    "DESCRIPTION": "Prepárate para despertar tu aventurero interior mientras te sumerges en las aguas cristalinas de Puerto Morelos, hogar de uno de los mejores lugares para hacer snorkel en Cancún. Esta sección del Arrecife Mesoamericano te invita a deslizarte sobre coloridas formaciones de coral, observar peces tropicales y encontrarte con la vida marina en su entorno natural. Cada momento revela una nueva maravilla submarina: rayas, tortugas marinas, peces ángel y vibrantes jardines de coral que prosperan bajo la superficie."
-                },
-                "EASY_TO_GET": {
-                    "TITLE": "Fácil de llegar",
-                    "DESCRIPTION": "Llegar a este paraíso de snorkel es simple y conveniente. El transporte de ida y vuelta desde Cancún está incluido en tu tour, asegurando una experiencia sin complicaciones de principio a fin. Tu transporte te recogerá directamente en tu hotel o punto de encuentro designado y te llevará a Puerto Morelos, un encantador pueblo pesquero ubicado a solo 15 minutos al sur de Cancún."
-                },
-                "TASTY_BEACHSIDE": {
-                    "TITLE": "Delicioso refrigerio junto a la playa",
-                    "DESCRIPTION": "Después de explorar el arrecife, regresarás a la costa listo para relajarte y probablemente para comer. Para completar la experiencia, disfrutarás de un delicioso refrigerio junto al mar en un restaurante local frente al océano. Con una refrescante brisa marina y vistas panorámicas del Caribe, es el momento perfecto para relajarte después de tu aventura de snorkel."
-                },
-                "SAFETY_STANDARDS": {
-                    "LIFEJACKET": "Chaleco salvavidas presente en todo momento y equipo de snorkel",
-                    "KICKING": "Ten cuidado con tus patadas para no dañar el arrecife"
-                }
-            },
-            "IMPORTANT_INFO": {
-                "TITLE": "Información que debes saber antes de reservar tu aventura de snorkel",
+                "TITLE": "Información que debes conocer para tu tour privado de snorkel",
                 "LIST": [
                     "El uso de cualquier tipo de protector solar está estrictamente prohibido durante la actividad de snorkel para proteger el ecosistema marino.",
                     "Por medidas de conservación y para proteger el arrecife, se requiere una ducha antes de entrar al agua.",
-                    "Tarifa de muelle y arrecife de $10.00 USD por persona (pagadero en efectivo)",
+                    "Tarifa de muelle y arrecife de $10.00 USD por persona (pago en efectivo)",
                     "Las mujeres embarazadas no pueden participar",
                     "La edad mínima para participar en la actividad de snorkel es de 6 años.",
                     "Los niños menores de 6 años pueden viajar en el barco pero no se les permite participar en la actividad de snorkel; deben estar acompañados en todo momento por un adulto responsable.",
                     "La actividad está permitida para personas de hasta 65 años de edad, siempre que no tengan problemas respiratorios, cardíacos o de movilidad.",
                     "Las personas con cirugías recientes no pueden participar",
-                    "Por favor contáctanos con anticipación para confirmar tu hora y lugar exactos de recogida.",
                     "Nos comunicaremos contigo para confirmar la hora exacta de recogida poco después de recibir tu reserva."
-                ]
+                ],
+                "SAFETY_STANDARDS": {
+                    "LIFEJACKET": "Chaleco salvavidas presente en todo momento y equipo de snorkel",
+                    "KICKING": "Ten cuidado con tus patadas para evitar dañar el arrecife"
+                }
             },
             "FAQS": {
-                "TITLE": "Preguntas frecuentes sobre el tour privado VIP de snorkel en Puerto Morelos",
+                "TITLE": "Preguntas frecuentes sobre el tour privado de snorkel en Puerto Morelos",
                 "FAQS": [
                     {
                         "question": "¿Qué vida marina puedo ver durante el tour?",
                         "answer": "Puedes esperar ver peces tropicales, arrecifes de coral, rayas y ocasionalmente tortugas marinas dentro del parque marino protegido de Puerto Morelos."
                     },
                     {
-                        "question": "¿Este tour privado VIP incluye transporte?",
+                        "question": "¿Este tour privado incluye transporte?",
                         "answer": "Sí, se incluye transporte compartido de ida y vuelta con aire acondicionado desde Cancún o Riviera Maya. Si prefieres transporte privado, por favor contáctanos."
                     },
                     {
-                        "question": "¿En qué se diferencia este tour de snorkel privado VIP de los tours regulares en Cancún?",
-                        "answer": "Este tour privado VIP ofrece una experiencia exclusiva con un barco privado, servicio personalizado, bebidas ilimitadas y un horario flexible, a diferencia de los tours grupales estándar. Está diseñado para quienes buscan una aventura de snorkel más lujosa e íntima."
+                        "question": "¿En qué se diferencia este tour de snorkel privado de los tours regulares en Cancún?",
+                        "answer": "Este tour privado ofrece una experiencia exclusiva con un barco privado, servicio personalizado, bebidas ilimitadas y un horario flexible, a diferencia de los tours grupales estándar. Está diseñado para quienes buscan una aventura de snorkel más lujosa e íntima."
                     },
                     {
                         "question": "¿Pueden unirse a este tour niños o personas mayores?",
