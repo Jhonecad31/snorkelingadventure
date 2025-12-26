@@ -1,0 +1,95 @@
+---
+import { getI18N } from "@/i18n";
+import { PlayerPause, PlayerPlay } from "@/icons/allIcons";
+import { User1, User2, User3 } from "@public/img/allImages";
+import BlockContainer from "@/components/global/BlockContainer.astro";
+import TagH1 from "@/components/global/TagH1.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+interface Props {
+    title: string;
+    videoSrc: string;
+    reviews: string;
+};
+
+const { title, videoSrc, reviews } = Astro.props;
+---
+<section class="min-h-150 md:min-h-180 relative overflow-hidden">
+        <video
+            id="video-hero"
+            autoplay
+            muted
+            loop
+            preload="auto"
+            class="absolute top-0 left-0 w-full h-full object-cover object-center z-0 brightness-65"
+        >
+            <source
+                src={videoSrc}
+                type="video/mp4"
+            />
+        </video>
+        <button
+            id="btn-video-hero"
+            class="absolute bottom-10 right-5 md:right-10 bg-linear-to-br from-sky-700 via-cyan-400 to-sky-500 transition rounded-full p-2 md:p-3 shadow-lg group cursor-pointer"
+        >
+            <span class="sr-only">{i18n.ACCESSIBILITY.PLAY_PAUSE}</span>
+            <PlayerPlay id="iconPlay" class="size-6 md:size-8 text-white hidden group-hover:scale-110 transition duration-300" />
+            <PlayerPause id="iconPause" class="size-6 md:size-8 text-white group-hover:scale-110 transition duration-300" />
+        </button>
+        <script is:inline>
+            const videoHero = document.getElementById('video-hero');
+            const btnVideoHero = document.getElementById('btn-video-hero');
+            const iconPlay = btnVideoHero.querySelector('#iconPlay');
+            const iconPause = btnVideoHero.querySelector('#iconPause');
+
+            btnVideoHero.addEventListener('click', () => {
+                if (videoHero.paused) {
+                    videoHero.play();
+                    iconPlay.classList.add('hidden');
+                    iconPause.classList.remove('hidden');
+                } else {
+                    videoHero.pause();
+                    iconPlay.classList.remove('hidden');
+                    iconPause.classList.add('hidden');
+                }
+            });
+        </script>
+        <BlockContainer class="relative !mt-0">
+            <div class="py-20 max-w-3xl mx-auto">
+                <TagH1 class="text-center text-white text-shadow-lg/10">
+                    {title}
+                </TagH1>
+                <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white">
+                    <div class="flex items-center -space-x-3">
+                        <img
+                            class="size-7 rounded-full border-2 border-white"
+                            height={50}
+                            width={50}
+                            src={User1.src}
+                            alt=""
+                        />
+                        <img
+                            class="size-7 rounded-full border-2 border-white"
+                            height={50}
+                            width={50}
+                            src={User2.src}
+                            alt=""
+                        />
+                        <img
+                            class="size-7 rounded-full border-2 border-white"
+                            height={50}
+                            width={50}
+                            src={User3.src}
+                            alt=""
+                        />
+                    </div>
+                    <p class="text-xs">
+                        {reviews}
+                        {i18n.ACCESSIBILITY.PEOPLE_ENJOYED}
+                    </p>
+                </div>
+            </div>
+        </BlockContainer>
+    </section>

@@ -20,7 +20,7 @@ export default function BtnModalBokun({ data }: { data: BtnModalBokunProps }) {
             >
                 {data.btnBook}
             </button>
-            <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="opaque" placement="center" scrollBehavior="inside" size="2xl">
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="opaque" placement="bottom-center" scrollBehavior="inside" size="2xl">
                 <ModalContent>
                     {(onClose) => (
                         <>

@@ -15,7 +15,7 @@ export default function AccordionComponent({ title, children }: { title: string,
         base: "w-full border-b border-zinc-300 shadow-b-sm pb-8",
         title: "text-xl/normal lg:text-3xl/relaxed font-bold",
         trigger: "data-[hover=true]:cursor-pointer rounded-lg h-20 flex items-center",
-        indicator: "bg-zinc-100 text-black p-2 md:p-3 rounded-full data-[open=true]:rotate-135",
+        indicator: "text-black p-2 md:p-3 rounded-full data-[open=true]:rotate-135",
     };
 
     return (

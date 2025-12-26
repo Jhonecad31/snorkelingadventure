@@ -1,11 +1,10 @@
 ---
 import { getI18N } from "@/i18n";
-import { PMAereal, SnorkelMayanReef, User1, User2, User3, MiddleViewSnorkel, MujerSalvavidas, PersonOkSnorkel } from "@public/img/allImages";
-import { PlayerPause, PlayerPlay, Check, Close, Star, Exclamation, Swimwear, Cash, FlipFlop, Towel } from "@/icons/allIcons";
+import { PMAereal, SnorkelMayanReef, MiddleViewSnorkel, MujerSalvavidas, PersonOkSnorkel, PrivateBoatSnorkel } from "@public/img/allImages";
+import { Check, Close, Star, Exclamation, Swimwear, Cash, FlipFlop, Towel, BtnNext, Ticket } from "@/icons/allIcons";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import MoreActivities from "@/components/sections/MoreActivities.astro";
-import TagH1 from "@/components/global/TagH1.astro";
 import TagH2 from "@/components/global/TagH2.astro";
 import Faqs from "@/components/extras/Faqs";
 import BtnModalBokun from "@/components/extras/BtnModalBokun";
@@ -13,14 +12,16 @@ import TagP from "@/components/global/TagP.astro";
 import GalleryDetail from "@/components/sections/GalleryDetail.astro";
 import AccordionComponent from "@/components/sections/AccordionComponent";
 import TagH3 from "@/components/global/TagH3.astro";
+import HeroVideo from "@/components/sections/HeroVideo.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 const priceFrom = 59;
 const countStars = 4.8;
-const reviewsCount = "1.2k";
+const reviewsCount = "325";
 const bookingChannel = "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1";
+const VideoSrc = "https://res.cloudinary.com/videosextreme/video/upload/private-snorkeling-experience-video_jjnwtj.mp4";
 
 const dataForm = {
     bookingChannel: bookingChannel,
@@ -38,84 +39,12 @@ const seoMetaData = {
 
 <BaseLayout seo={seoMetaData}>
     <!-- Hero -->
-    <section class="min-h-150 md:min-h-180 relative overflow-hidden">
-        <video
-            id="video-hero"
-            autoplay
-            muted
-            loop
-            preload="auto"
-            class="absolute top-0 left-0 w-full h-full object-cover object-center z-0 brightness-65"
-        >
-            <source
-                src="https://res.cloudinary.com/videosextreme/video/upload/v1766090249/private-snorkeling-experience-video_jjnwtj.mp4"
-                type="video/mp4"
-            />
-        </video>
-        <button
-            id="btn-video-hero"
-            class="absolute bottom-10 right-5 md:right-10 bg-linear-to-br from-sky-700 via-cyan-400 to-sky-500 transition rounded-full p-2 md:p-3 shadow-lg group cursor-pointer"
-        >
-            <span class="sr-only">{i18n.ACCESSIBILITY.PLAY_PAUSE}</span>
-            <PlayerPlay class="size-6 md:size-8 text-white hidden group-hover:scale-110 transition duration-300" />
-            <PlayerPause class="size-6 md:size-8 text-white group-hover:scale-110 transition duration-300" />
-        </button>
-        <script is:inline>
-            const videoHero = document.getElementById('video-hero');
-            const btnVideoHero = document.getElementById('btn-video-hero');
-            const iconPlay = btnVideoHero.querySelector('svg:nth-child(2)');
-            const iconPause = btnVideoHero.querySelector('svg:nth-child(3)');
-
-            btnVideoHero.addEventListener('click', () => {
-                if (videoHero.paused) {
-                    videoHero.play();
-                    iconPlay.classList.add('hidden');
-                    iconPause.classList.remove('hidden');
-                } else {
-                    videoHero.pause();
-                    iconPlay.classList.remove('hidden');
-                    iconPause.classList.add('hidden');
-                }
-            });
-        </script>
-        <BlockContainer class="relative !mt-0">
-            <div class="py-20 max-w-3xl mx-auto">
-                <TagH1 class="text-center text-white text-shadow-lg/10">
-                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}
-                </TagH1>
-                <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white">
-                    <div class="flex items-center -space-x-3">
-                        <img
-                            class="size-7 rounded-full border-2 border-white"
-                            height={50}
-                            width={50}
-                            src={User1.src}
-                            alt=""
-                        />
-                        <img
-                            class="size-7 rounded-full border-2 border-white"
-                            height={50}
-                            width={50}
-                            src={User2.src}
-                            alt=""
-                        />
-                        <img
-                            class="size-7 rounded-full border-2 border-white"
-                            height={50}
-                            width={50}
-                            src={User3.src}
-                            alt=""
-                        />
-                    </div>
-                    <p class="text-xs">
-                        {reviewsCount}
-                        {i18n.ACCESSIBILITY.PEOPLE_ENJOYED}
-                    </p>
-                </div>
-            </div>
-        </BlockContainer>
-    </section>
-    <TagH2 class="max-w-3xl mx-auto text-center [&_span]:text-cyan-500 py-20" set:html={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.DESCRIPTION} />
+    <HeroVideo
+        title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}
+        videoSrc={VideoSrc}
+        reviews={reviewsCount}
+    />
+    <h2 class="text-xl/relaxed px-4 lg:text-3xl/relaxed font-bold max-w-3xl mx-auto text-center [&_span]:text-cyan-500 py-20" set:html={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.DESCRIPTION} />
     <section class="bg-linear-to-br from-sky-600 via-cyan-400 to-cyan-800 relative">
         <div class="absolute top-0 left-0 w-full overflow-hidden leading-0 z-10">
             <svg class="relative block w-[calc(100%+1.3px)] h-10 sm:h-20" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -165,26 +94,32 @@ const seoMetaData = {
     <BlockContainer>
         <!-- Inclusions -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
+            <AccordionComponent
+                client:visible
+                title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.TITLE}
+            >
+                <ul class="mt-10 space-y-3 gap-12 text-base/loose text-justify sm:columns-2">
+                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.INCLUDES.map((item) => (
+                        <li>
+                            <p><Check class="size-5 text-green-600 inline-block mr-2" />{item}</p>
+                        </li>
+                    ))}
+                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.NOT_INCLUDES.map((item) => (
+                        <li>
+                            <p><Close class="size-5 text-red-600 inline-block mr-2" />{item}</p>
+                        </li>
+                    ))}
+                </ul>
+            </AccordionComponent>
+            <img
+                src={PersonOkSnorkel.src}
+                alt={i18n.ACCESSIBILITY.IMAGES.LIFEGUARD_WOMAN}
+                class="hidden lg:block w-5/6 mx-auto object-cover rounded-lg shadow-lg"
+            />
+        </div>
+        <!-- What You Should Know -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
             <div class="row-start-2 lg:row-auto">
-                <AccordionComponent
-                    client:visible
-                    title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.TITLE}
-                >
-                    <ul class="mt-10 space-y-4 text-base/loose text-justify sm:columns-2">
-                        {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.INCLUDES.map((item) => (
-                            <li>
-                                <p><Check class="size-5 text-green-600 inline-block mr-2" />{item}</p>
-                            </li>
-                        ))}
-                        {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.INCLUSIONS.NOT_INCLUDES.map((item) => (
-                            <li>
-                                <p><Close class="size-5 text-red-600 inline-block mr-2" />{item}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </AccordionComponent>
-            </div>
-            <div class="row-start-1 lg:row-auto">
                 <img
                     src={MujerSalvavidas.src}
                     alt={i18n.ACCESSIBILITY.IMAGES.LIFEGUARD_WOMAN}
@@ -206,26 +141,18 @@ const seoMetaData = {
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- What You Should Know -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
-            <div class="hidden lg:block">
-                <img
-                    src={PersonOkSnorkel.src}
-                    alt={i18n.ACCESSIBILITY.IMAGES.LIFEGUARD_WOMAN}
-                    class="w-full object-cover mask-[url('/assets/img/extras/shape-splash.webp')] mask-center mask-no-repeat mask-contain"
-                />
+            <div class="row-start-1 lg:row-auto">
+                <AccordionComponent
+                    client:visible
+                    title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.TITLE}
+                >
+                    <ul class="mt-10 list-disc list-inside space-y-3 text-base/loose text-justify">
+                        {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.LIST.map((item) => (
+                            <li>{item}</li>
+                        ))}
+                    </ul>
+                </AccordionComponent>
             </div>
-            <AccordionComponent
-                client:visible
-                title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.TITLE}
-            >
-                <ul class="mt-10 list-disc list-inside space-y-2 text-base/loose text-justify">
-                    {i18n.DETAIL_PAGE.PRIVATE_SNORKELING.WHAT_YOU_SHOULD_KNOW.LIST.map((item) => (
-                        <li>{item}</li>
-                    ))}
-                </ul>
-            </AccordionComponent>
         </div>
         <!-- What You Bring -->
         <TagH2 class="text-center max-w-2xl mx-auto mb-10">
@@ -274,19 +201,26 @@ const seoMetaData = {
     <!-- More Activities -->
     <MoreActivities />
     <!-- Form Bokun -->
-    <div class="sticky bottom-5 max-w-4xl mx-auto z-5000">
-        <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 bg-white p-2 md:px-6 md:py-2 rounded-xl border border-zinc-200 shadow mx-4">
+    <div class="sticky bottom-5 max-w-4xl mx-auto z-10" id="bookingWidget">
+        <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 bg-black/70 text-white backdrop-blur-xs px-2 pb-2 pt-3 md:px-6 md:py-2 rounded-xl mx-4 transition-all duration-300" id="bookingContent">
+            <button
+                id="minimizeBtn"
+                class="absolute top-0 right-1 p-1 hover:bg-white/20 rounded transition-colors"
+                aria-label="Minimize booking widget"
+            >
+                <BtnNext class="size-5 stroke-3 rotate-90 text-white" />
+            </button>
             <div class="flex items-center gap-2">
                 <div class="flex items-center -space-x-4">
                     <img
-                        class="h-18 w-13 sm:size-18 rounded-lg border-3 border-white object-cover shadow -rotate-6"
+                        class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow -rotate-6"
                         height={50}
                         width={50}
                         src={PMAereal.src}
                         alt=""
                     />
                     <img
-                        class="h-18 w-13 sm:size-18 rounded-lg border-3 border-white object-cover shadow rotate-3"
+                        class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow rotate-3"
                         height={50}
                         width={50}
                         src={SnorkelMayanReef.src}
@@ -309,5 +243,30 @@ const seoMetaData = {
                 data={dataForm}
             />
         </div>
+        <button
+            id="expandBtn"
+            class="hidden fixed bottom-5 right-5 bg-linear-to-br from-sky-800 via-cyan-400 to-cyan-700 text-white rounded-full p-5 shadow-lg transition-all duration-300"
+            aria-label="Expand booking widget"
+        >
+            <Ticket class="size-8 stroke" />
+        </button>
     </div>
+
+    <script is:inline>
+        const bookingWidget = document.getElementById('bookingWidget');
+        const bookingContent = document.getElementById('bookingContent');
+        const minimizeBtn = document.getElementById('minimizeBtn');
+        const expandBtn = document.getElementById('expandBtn');
+
+        minimizeBtn?.addEventListener('click', () => {
+            bookingContent.classList.add('hidden');
+            expandBtn?.classList.remove('hidden');
+            
+        });
+
+        expandBtn?.addEventListener('click', () => {
+            bookingContent.classList.remove('hidden');
+            expandBtn?.classList.add('hidden');
+        });
+    </script>
 </BaseLayout>

@@ -34,6 +34,7 @@ import ScubaMask from "./scuba-mask.svg";
 import Share from "./share.svg";
 import Star from "./star.svg";
 import Swimwear from "./swimwear.svg";
+import Ticket from "./ticket.svg";
 import Tiktok from "./tiktok.svg";
 import Towel from "./towel.svg";
 import Tripadvisor from "./tripadvisor.svg";
@@ -74,6 +75,7 @@ export {
     Share,
     Star,
     Swimwear,
+    Ticket,
     Tiktok,
     Towel,
     Tripadvisor,

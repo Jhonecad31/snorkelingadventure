@@ -14,6 +14,7 @@ import HandLikeSnorkel from "./bg/persona-pulgares-arriba-en-snorkel.webp";
 import MainHero from "./bg/snorkeling-adventure-en-puerto-morelos.webp";
 import SnorkelMayanReef from "./bg/grupo-en-snorkeling-en-arrecife-maya.webp";
 import MiddleViewSnorkel from "./bg/vista-snorkel-con-fauna-marina.webp";
+import PrivateBoatSnorkel from "./gallery/private-snorkeling/best-private-boat-in-puerto-morelos.webp";
 // Gallery
 import ExperiencePrivateSnorkel from "./gallery/private-snorkeling/experience-private-boat-in-puerto-morelos.webp";
 // Extras
@@ -44,6 +45,7 @@ export {
     MainHero,
     SnorkelMayanReef,
     MiddleViewSnorkel,
+    PrivateBoatSnorkel,
     ExperiencePrivateSnorkel,
     ExploreMayanReef,
     BgCorales,

@@ -427,7 +427,7 @@
         "REGULAR_SNORKELING": {
             "HERO": {
                 "TITLE": "Snorkeling Adventure en el arrecife de Puerto Morelos",
-                "DESCRIPTION": "Sumérgete en el fascinante mundo submarino de la Gran Barrera de Arrecife de Cancún con nuestro mejor tour de snorkel. Las maravillas de la naturaleza te esperan mientras exploras corales vibrantes, encuentras diversas especies de peces e incluso nadas junto a elegantes tortugas. Embárcate en esta inolvidable aventura acuática a solo un corto trayecto en coche desde Cancún, en el impresionante Puerto Morelos."
+                "DESCRIPTION": "Sumérgete en el fascinante mundo submarino del <span>Gran Arrecife Maya en Puerto Morelos</span>. Experimente vibrantes formaciones de coral, diversa vida marina y aguas cristalinas en nuestro inolvidable tour de snorkel."
             },
             "TEXTS": {
                 "EXPLORE_PUERTO_MORELOS": {
@@ -437,6 +437,10 @@
                 "SNORKELING_EXPERIENCE": {
                     "TITLE": "Tu experiencia inolvidable de snorkel",
                     "DESCRIPTION": "Tu aventura de snorkel comienza con un cómodo transporte desde tu hotel hasta Puerto Morelos. Una vez a bordo del barco, guías expertos te informarán sobre seguridad y preservación marina. Luego, sumérgete en aguas cristalinas para una hora completa de exploración guiada del arrecife. Después del snorkel, disfruta de un refrigerio junto a la playa y tiempo libre en el pueblo."
+                },
+                "DIVE_INTO_UNSEEN": {
+                    "TITLE": "Sumérgete en la belleza oculta",
+                    "DESCRIPTION": "Prepárate para despertar a tu espíritu aventurero mientras te sumerges en las aguas cristalinas de Puerto Morelos, hogar de algunos de los mejores lugares para hacer snorkel en Cancún. Esta sección del Arrecife Mesoamericano te invita a deslizarte sobre coloridas formaciones de coral, observar peces tropicales y encontrarte con vida marina en su entorno natural. Cada momento revela una nueva maravilla submarina: rayas, tortugas marinas, peces ángel y vibrantes jardines de coral que prosperan bajo la superficie."
                 }
             },
             "SCHEDULES": {
@@ -493,29 +497,6 @@
             },
             "WHAT_YOU_SHOULD_KNOW": {
                 "TITLE": "Información que debes conocer para tu aventura de snorkel",
-                "KNOW_BEFORE_YOU_GO": {
-                    "TITLE": "Antes de ir",
-                    "DESCRIPTION": "Antes de comenzar tu actividad de snorkel, ten en cuenta varios detalles importantes para asegurar una experiencia fluida, responsable y completamente disfrutable. Se requiere un impuesto de arrecife de $10.00 USD por persona para apoyar la conservación de la vida marina en el Parque Nacional Arrecifal de Puerto Morelos, uno de los ecosistemas más protegidos de la Riviera Maya. Esta contribución ayuda a preservar los arrecifes de coral, los hábitats de peces y la salud general del entorno marino."
-                },
-                "DIVE_INTO_UNSEEN": {
-                    "TITLE": "Sumérgete en la belleza oculta",
-                    "DESCRIPTION": "Prepárate para despertar a tu espíritu aventurero mientras te sumerges en las aguas cristalinas de Puerto Morelos, hogar de algunos de los mejores lugares para hacer snorkel en Cancún. Esta sección del Arrecife Mesoamericano te invita a deslizarte sobre coloridas formaciones de coral, observar peces tropicales y encontrarte con vida marina en su entorno natural. Cada momento revela una nueva maravilla submarina: rayas, tortugas marinas, peces ángel y vibrantes jardines de coral que prosperan bajo la superficie."
-                },
-                "EASY_TO_GET": {
-                    "TITLE": "Fácil de llegar",
-                    "DESCRIPTION": "Llegar a este paraíso del snorkel es simple y conveniente. El tour incluye transporte redondo desde Cancún, garantizando una experiencia sin complicaciones de principio a fin. Tu transporte te recogerá directamente en tu hotel o punto de encuentro designado y te llevará a Puerto Morelos, un encantador pueblo pesquero ubicado a solo 15 minutos al sur de Cancún."
-                },
-                "TASTY_BEACHSIDE": {
-                    "TITLE": "Delicioso snack frente al mar",
-                    "DESCRIPTION": "Después de tu exploración del arrecife, regresarás a la costa listo para relajarte —y probablemente con hambre. Para completar la experiencia, disfrutarás de un delicioso snack frente al mar en un restaurante local. Con una refrescante brisa marina y vistas panorámicas del Caribe, es el momento perfecto para descansar después de tu aventura de snorkel."
-                },
-                "SAFETY_STANDARDS": {
-                    "LIFEJACKET": "Chaleco salvavidas y equipo de snorkel en todo momento",
-                    "KICKING": "Cuida tus movimientos de patada para evitar dañar el arrecife"
-                }
-            },
-            "IMPORTANT_INFO": {
-                "TITLE": "Información que debes saber antes de reservar en Snorkeling Adventure",
                 "LIST": [
                     "El uso de cualquier tipo de bloqueador solar está estrictamente prohibido durante la actividad de snorkel para proteger el ecosistema marino.",
                     "Por medidas de conservación y con el fin de proteger el arrecife, se requiere una ducha antes de ingresar al agua.",
@@ -526,7 +507,11 @@
                     "La actividad está permitida para personas de hasta 65 años, siempre que no tengan problemas respiratorios, cardíacos o de movilidad.",
                     "Aquellos con cirugías recientes no pueden participar",
                     "Nos comunicaremos con usted para confirmar la hora exacta de recogida poco después de recibir su reserva."
-                ]
+                ],
+                "SAFETY_STANDARDS": {
+                    "LIFEJACKET": "Chaleco salvavidas y equipo de snorkel en todo momento",
+                    "KICKING": "Cuida tus movimientos de patada para evitar dañar el arrecife"
+                }
             },
             "FAQS": {
                 "TITLE": "Preguntas frecuentes sobre Snorkeling Adventure en Puerto Morelos",
