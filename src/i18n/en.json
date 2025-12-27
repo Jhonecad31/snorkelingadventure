@@ -424,6 +424,18 @@
         }
     },
     "DETAIL_PAGE": {
+        "GENERAL": {
+            "DURATION": "Duration",
+            "APPROX": "approx.",
+            "SCHEDULE": "Schedules",
+            "HOURS": "hours",
+            "TRANSPORTATION": "Transportation",
+            "ROUNDTRIP_TRANSPORTATION": "Round trip transportation",
+            "OFFERED_IN": "Offered in",
+            "OFFERED_LANG": "English & Spanish",
+            "AGE_REQUIREMENT": "Minimum Age",
+            "YEARS_AND_OLDER": "years and older"
+        },
         "REGULAR_SNORKELING": {
             "HERO": {
                 "TITLE": "Puerto Morelos Reef Snorkel Adventure",

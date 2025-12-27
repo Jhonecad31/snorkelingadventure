@@ -424,6 +424,18 @@
         }
     },
     "DETAIL_PAGE": {
+        "GENERAL": {
+            "DURATION": "Duración",
+            "APPROX": "aprox.",
+            "SCHEDULE": "Horarios",
+            "HOURS": "horas",
+            "TRANSPORTATION": "Transporte",
+            "ROUNDTRIP_TRANSPORTATION": "Transporte de ida y vuelta",
+            "OFFERED_IN": "Ofrecido en",
+            "OFFERED_LANG": "Inglés y Español",
+            "AGE_REQUIREMENT": "Edad mínima",
+            "YEARS_AND_OLDER": "años o más"
+        },
         "REGULAR_SNORKELING": {
             "HERO": {
                 "TITLE": "Snorkeling Adventure en el arrecife de Puerto Morelos",

@@ -12,9 +12,12 @@ import SnorkelingAdventure from "./brands/snorkeling-adventure.svg";
 import BranX from "./brand-x.svg";
 import BtnPrev from "./chevron-left.svg";
 import BtnNext from "./chevron-right.svg";
+import Bus from "./bus.svg";
 import Cash from "./cash.svg";
+import CalendarTime from "./calendar-time.svg";
 import Check from "./check.svg";
 import Close from "./close.svg";
+import Clock from "./clock.svg";
 import Coral from "./coral.svg";
 import Exclamation from "./exclamation-mark.svg";
 import ExternalLink from "./external-link.svg";
@@ -38,6 +41,7 @@ import Ticket from "./ticket.svg";
 import Tiktok from "./tiktok.svg";
 import Towel from "./towel.svg";
 import Tripadvisor from "./tripadvisor.svg";
+import UserUp from "./user-up.svg";
 import World from "./world.svg";
 import Youtube from "./youtube.svg";
 import WhatsApp from "./whatsapp.svg";
@@ -53,9 +57,12 @@ export {
     BranX,
     BtnPrev,
     BtnNext,
+    Bus,
     Cash,
+    CalendarTime,
     Check,
     Close,
+    Clock,
     Coral,
     Exclamation,
     ExternalLink,
@@ -79,6 +86,7 @@ export {
     Tiktok,
     Towel,
     Tripadvisor,
+    UserUp,
     World,
     Youtube,
     WhatsApp
