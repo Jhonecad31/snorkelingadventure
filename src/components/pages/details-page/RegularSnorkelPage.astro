@@ -1,7 +1,7 @@
 ---
 import { getI18N } from "@/i18n";
 import { PMAereal, MujerSalvavidas, SnorkelHorizontal, PersonOkSnorkel, SnorkelMayanReef } from "@public/img/allImages";
-import { FlipFlop, Towel, Cash, Swimwear, Clock, UserUp, CalendarTime, Bus } from "@/icons/allIcons";
+import { FlipFlop, Towel, Cash, Swimwear, Clock, UserUp, CalendarTime, Bus, Ticket, BtnNext } from "@/icons/allIcons";
 import { Exclamation, Check, Close, Star } from "@/icons/allIcons"
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
@@ -248,19 +248,26 @@ const seoMetaData = {
     <!-- More Activities -->
     <MoreActivities />
     <!-- Form Bokun -->
-    <div class="sticky bottom-5 max-w-4xl mx-auto">
-        <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 bg-black/70 text-white backdrop-blur-xs p-2 md:px-6 md:py-2 rounded-xl mx-4">
+    <div class="sticky bottom-5 max-w-4xl mx-auto z-10" id="bookingWidget">
+        <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 bg-black/70 text-white backdrop-blur-xs px-2 pb-2 pt-3 md:px-6 md:py-2 rounded-xl mx-4 transition-all duration-300" id="bookingContent">
+            <button
+                id="minimizeBtn"
+                class="absolute top-0 right-1 p-1 hover:bg-white/20 rounded transition-colors"
+                aria-label="Minimize booking widget"
+            >
+                <BtnNext class="size-5 stroke-3 rotate-90 text-white" />
+            </button>
             <div class="flex items-center gap-2">
                 <div class="flex items-center -space-x-4">
                     <img
-                        class="h-18 w-13 sm:size-18 rounded-lg border-3 border-white object-cover shadow -rotate-6"
+                        class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow -rotate-6"
                         height={50}
                         width={50}
                         src={PMAereal.src}
                         alt=""
                     />
                     <img
-                        class="h-18 w-13 sm:size-18 rounded-lg border-3 border-white object-cover shadow rotate-3"
+                        class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow rotate-3"
                         height={50}
                         width={50}
                         src={SnorkelMayanReef.src}
@@ -283,5 +290,30 @@ const seoMetaData = {
                 data={dataForm}
             />
         </div>
+        <button
+            id="expandBtn"
+            class="hidden fixed bottom-5 right-5 bg-linear-to-br from-sky-800 via-cyan-400 to-cyan-700 text-white rounded-full p-5 shadow-lg transition-all duration-300"
+            aria-label="Expand booking widget"
+        >
+            <Ticket class="size-8 stroke" />
+        </button>
     </div>
 </BaseLayout>
+
+<script is:inline>
+    const bookingWidget = document.getElementById('bookingWidget');
+    const bookingContent = document.getElementById('bookingContent');
+    const minimizeBtn = document.getElementById('minimizeBtn');
+    const expandBtn = document.getElementById('expandBtn');
+
+    minimizeBtn?.addEventListener('click', () => {
+        bookingContent.classList.add('hidden');
+        expandBtn?.classList.remove('hidden');
+        
+    });
+
+    expandBtn?.addEventListener('click', () => {
+        bookingContent.classList.remove('hidden');
+        expandBtn?.classList.add('hidden');
+    });
+</script>
