@@ -6,6 +6,9 @@ import TagP from "../global/TagP.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const imagesGlob = import.meta.glob('@public/img/gallery/snorkeling-adventure/*.webp', { eager: true });
+const images = Object.values(imagesGlob).map((img: any) => img.default);
 ---
 
 <section class="text-center">
@@ -16,71 +19,71 @@ const i18n = getI18N({ currentLocale });
             <div
                 class="rounded-lg bg-zinc-300 col-span-2"
                 data-fancybox="gallery"
-                data-src="/assets/img/gallery/1.webp"
+                data-src={images[0].src}
             >
                 <img
                     class="w-full h-full object-cover rounded-lg"
-                    src="/assets/img/gallery/1.webp"
+                    src={images[0].src}
                 />
             </div>
             <div
                 class="rounded-lg bg-zinc-300 col-span-2 col-start-3"
                 data-fancybox="gallery"
-                data-src="/assets/img/gallery/2.webp"
+                data-src={images[1].src}
             >
                 <img
                     class="w-full h-full object-cover rounded-lg"
-                    src="/assets/img/gallery/2.webp"
+                    src={images[1].src}
                 />
             </div>
             <div
                 class="rounded-lg bg-zinc-300 col-span-2 col-start-5"
                 data-fancybox="gallery"
-                data-src="/assets/img/gallery/3.webp"
+                data-src={images[2].src}
             >
                 <img
                     class="w-full h-full object-cover rounded-lg"
-                    src="/assets/img/gallery/3.webp"
+                    src={images[2].src}
                 />
             </div>
             <div
                 class="rounded-lg bg-zinc-300 col-span-3 col-start-7"
                 data-fancybox="gallery"
-                data-src="/assets/img/gallery/4.webp"
+                data-src={images[3].src}
             >
                 <img
                     class="w-full h-full object-cover rounded-lg"
-                    src="/assets/img/gallery/4.webp"
+                    src={images[3].src}
                 />
             </div>
             <div
                 class="rounded-lg bg-zinc-300 col-span-3 row-start-2"
                 data-fancybox="gallery"
-                data-src="/assets/img/gallery/5.webp"
+                data-src={images[4].src}
             >
                 <img
                     class="w-full h-full object-cover rounded-lg"
-                    src="/assets/img/gallery/5.webp"
+                    src={images[4].src}
                 />
             </div>
             <div
                 class="rounded-lg bg-zinc-300 col-span-4 col-start-4 row-start-2"
                 data-fancybox="gallery"
-                data-src="/assets/img/gallery/9.webp"
+                data-src={images[5].src}
             >
                 <img
                     class="w-full h-full object-cover rounded-lg"
-                    src="/assets/img/gallery/9.webp"
+                    src={images[5].src}
                 />
             </div>
             <div
                 class="rounded-lg bg-zinc-300 col-span-2 col-start-8 row-start-2"
                 data-fancybox="gallery"
-                data-src="/assets/img/gallery/6.webp"
+                data-src={images[6].src}
             >
                 <img
                     class="w-full h-full object-cover rounded-lg"
-                    src="/assets/img/gallery/6.webp"
+                    src={images[6].src}
                 />
             </div>
         </div>
