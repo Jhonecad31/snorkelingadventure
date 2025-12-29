@@ -16,7 +16,7 @@ import SnorkelMayanReef from "./bg/grupo-en-snorkeling-en-arrecife-maya.webp";
 import MiddleViewSnorkel from "./bg/vista-snorkel-con-fauna-marina.webp";
 import PrivateBoatSnorkel from "./gallery/private-snorkeling/best-private-boat-in-puerto-morelos.webp";
 // Gallery
-import ExperiencePrivateSnorkel from "./gallery/private-snorkeling/experience-private-boat-in-puerto-morelos.webp";
+import ExperiencePrivateSnorkel from "./gallery/private-snorkeling/ceviche-on-board-private-snorkel.webp";
 // Extras
 import Corals from "./extras/corals-mayan-reef.webp";
 import ShapeMap from "./extras/shape-map-world.png";

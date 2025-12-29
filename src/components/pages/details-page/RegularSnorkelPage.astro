@@ -1,6 +1,6 @@
 ---
 import { getI18N } from "@/i18n";
-import { PMAereal, MujerSalvavidas, SnorkelHorizontal, PersonOkSnorkel, SnorkelMayanReef } from "@public/img/allImages";
+import { PMAereal, MujerSalvavidas, PersonOkSnorkel, CoverSA } from "@public/img/allImages";
 import { FlipFlop, Towel, Cash, Swimwear, Clock, UserUp, CalendarTime, Bus, Ticket, BtnNext } from "@/icons/allIcons";
 import { Exclamation, Check, Close, Star } from "@/icons/allIcons"
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -24,7 +24,7 @@ const duration = 4;
 const minimumAge = 6;
 const reviewsCount = "1.2k";
 const bookingChannel = "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1";
-const VideoSrc = "https://res.cloudinary.com/videosextreme/video/upload/video-hero-snorkeling-adventure-puerto-morelos_wjqfom.mp4";
+const videoSrc = "https://res.cloudinary.com/videosextreme/video/upload/snorkeling-adventure-mayan-reef_za2g1k.mp4";
 
 const imagesGlob = import.meta.glob('@public/img/gallery/snorkeling-adventure/*.webp', { eager: true });
 const images = Object.values(imagesGlob).map((img: any) => img.default);
@@ -49,7 +49,7 @@ const seoMetaData = {
     <HeroVideo
         title={i18n.DETAIL_PAGE.REGULAR_SNORKELING.HERO.TITLE}
         priceFrom={priceFrom}
-        videoSrc={VideoSrc}
+        videoSrc={videoSrc}
         reviews={reviewsCount}
     />
     <h2 class="text-xl/relaxed px-4 lg:text-3xl/relaxed font-bold max-w-3xl mx-auto text-center [&_span]:text-cyan-500 py-20" set:html={i18n.DETAIL_PAGE.REGULAR_SNORKELING.HERO.DESCRIPTION} />
@@ -270,7 +270,7 @@ const seoMetaData = {
                         class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow rotate-3"
                         height={50}
                         width={50}
-                        src={SnorkelMayanReef.src}
+                        src={CoverSA.src}
                         alt=""
                     />
                 </div>
