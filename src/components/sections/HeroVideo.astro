@@ -12,10 +12,11 @@ interface Props {
     title: string;
     priceFrom: number;
     videoSrc: string;
+    posterImg: string;
     reviews: string;
 };
 
-const { title, priceFrom, videoSrc, reviews } = Astro.props;
+const { title, priceFrom, videoSrc, posterImg, reviews } = Astro.props;
 ---
 <section class="min-h-150 md:min-h-180 relative overflow-hidden">
     <video
@@ -24,6 +25,7 @@ const { title, priceFrom, videoSrc, reviews } = Astro.props;
         muted
         loop
         preload="auto"
+        poster={posterImg}
         class="absolute top-0 left-0 w-full h-full object-cover object-center z-0 brightness-65"
     >
         <source

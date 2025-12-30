@@ -20,9 +20,7 @@ export default defineConfig({
       }
     },
     filter: (page) =>
-      !page.includes('/thanks') &&
-      !page.includes('/form-error') &&
-      !page.includes('/form-success')
+      !page.includes('/thanks')
   })],
   i18n: {
     defaultLocale: 'en',

@@ -25,6 +25,7 @@ const minimumAge = 6;
 const reviewsCount = "1.2k";
 const bookingChannel = "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1";
 const videoSrc = "https://res.cloudinary.com/videosextreme/video/upload/snorkeling-adventure-mayan-reef_za2g1k.mp4";
+const posterImg = "https://res.cloudinary.com/videosextreme/video/upload/so_7/snorkeling-adventure-mayan-reef_za2g1k.jpg"
 
 const imagesGlob = import.meta.glob('@public/img/gallery/snorkeling-adventure/*.webp', { eager: true });
 const images = Object.values(imagesGlob).map((img: any) => img.default);
@@ -33,7 +34,7 @@ const dataForm = {
     bookingChannel: bookingChannel,
     title: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.TITLE,
     btnBook: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_BOOK,
-    btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE
+    btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE 
 }
 
 const seoMetaData = {
@@ -50,6 +51,7 @@ const seoMetaData = {
         title={i18n.DETAIL_PAGE.REGULAR_SNORKELING.HERO.TITLE}
         priceFrom={priceFrom}
         videoSrc={videoSrc}
+        posterImg={posterImg}
         reviews={reviewsCount}
     />
     <h2 class="text-xl/relaxed px-4 lg:text-3xl/relaxed font-bold max-w-3xl mx-auto text-center [&_span]:text-cyan-500 py-20" set:html={i18n.DETAIL_PAGE.REGULAR_SNORKELING.HERO.DESCRIPTION} />

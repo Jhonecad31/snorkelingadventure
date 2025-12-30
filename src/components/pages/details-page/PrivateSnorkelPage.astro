@@ -24,6 +24,7 @@ const minimumAge = 6;
 const reviewsCount = "325";
 const bookingChannel = "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1";
 const videoSrc = "https://res.cloudinary.com/videosextreme/video/upload/private-snorkeling-experience-video_liityg.mp4";
+const posterImg = "https://res.cloudinary.com/videosextreme/video/upload/so_1/private-snorkeling-experience-video_liityg.jpg"
 
 const imagesGlob = import.meta.glob('@public/img/gallery/private-snorkeling/*.webp', { eager: true });
 const images = Object.values(imagesGlob).map((img: any) => img.default);
@@ -48,6 +49,7 @@ const seoMetaData = {
         title={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}
         priceFrom={priceFrom}
         videoSrc={videoSrc}
+        posterImg={posterImg}
         reviews={reviewsCount}
     />
     <h2 class="text-xl/relaxed px-4 lg:text-3xl/relaxed font-bold max-w-3xl mx-auto text-center [&_span]:text-cyan-500 py-20" set:html={i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.DESCRIPTION} />
