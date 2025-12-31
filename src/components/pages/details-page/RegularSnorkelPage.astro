@@ -23,7 +23,6 @@ const countStars = 4.8;
 const duration = 4;
 const minimumAge = 6;
 const reviewsCount = "1.2k";
-const bookingChannel = "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1";
 const videoSrc = "https://res.cloudinary.com/videosextreme/video/upload/snorkeling-adventure-mayan-reef_za2g1k.mp4";
 const posterImg = "https://res.cloudinary.com/videosextreme/video/upload/so_7/snorkeling-adventure-mayan-reef_za2g1k.jpg"
 
@@ -31,7 +30,8 @@ const imagesGlob = import.meta.glob('@public/img/gallery/snorkeling-adventure/*.
 const images = Object.values(imagesGlob).map((img: any) => img.default);
 
 const dataForm = {
-    bookingChannel: bookingChannel,
+    bookingChannel: "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1",
+    idCalendar: "887245",
     title: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.TITLE,
     btnBook: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_BOOK,
     btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE 
@@ -294,10 +294,10 @@ const seoMetaData = {
         </div>
         <button
             id="expandBtn"
-            class="cursor-pointer hidden fixed bottom-5 right-5 bg-linear-to-br from-sky-800 via-cyan-400 to-cyan-700 text-white hover:scale-105 rounded-full p-5 shadow-lg transition-all duration-300"
+            class="cursor-pointer hidden fixed z-5000 bottom-15 right-5 bg-linear-to-br from-sky-800 via-cyan-400 to-cyan-700 text-white hover:scale-105 rounded-full p-5 shadow-lg transition-all duration-300"
             aria-label="Expand booking widget"
         >
-            <Ticket class="size-8 stroke" />
+            <Ticket class="size-8 stroke-2" />
         </button>
     </div>
 </BaseLayout>

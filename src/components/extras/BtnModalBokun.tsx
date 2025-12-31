@@ -3,6 +3,7 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 
 interface BtnModalBokunProps {
     bookingChannel: string;
+    idCalendar: string;
     title: string;
     btnBook: string;
     btnCloseText: string;
@@ -32,7 +33,7 @@ export default function BtnModalBokun({ data }: { data: BtnModalBokunProps }) {
                                         <LazyLoadBokunScript BookingChannel={data.bookingChannel} />
                                     </Suspense>
                                 )}
-                                <div className="bokunWidget mb-10 mt-5" data-src={`https://widgets.bokun.io/online-sales/${data.bookingChannel}/experience-calendar/887245`}></div>
+                                <div className="bokunWidget mb-10 mt-5" data-src={`https://widgets.bokun.io/online-sales/${data.bookingChannel}/experience-calendar/${data.idCalendar}`}></div>
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="danger" variant="light" onPress={onClose}>

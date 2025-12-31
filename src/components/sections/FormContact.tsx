@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { actions } from "astro:actions";
-import { Form, Input, Textarea, Button, Modal, ModalContent, ModalHeader, ModalBody, useDisclosure } from "@heroui/react";
+import { Form, Input, Textarea, Button, Modal, ModalContent, ModalBody, useDisclosure } from "@heroui/react";
 
 interface FormContactProps {
     i18n: {
@@ -162,19 +162,6 @@ export default function FormContact({ i18n }: FormContactProps) {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1">
-                                {isError ? (
-                                    <>
-                                        <h2 className="text-2xl font-semibold"> {i18n.ERROR_FORM.TITLE} </h2>
-                                        <p className="text-lg/relaxed"> {i18n.ERROR_FORM.DESCRIPTION} </p>
-                                    </>
-                                ) : (
-                                    <>
-                                        <h2 className="text-2xl font-semibold"> {i18n.SUCCESS_FORM.TITLE} </h2>
-                                        <p className="text-lg/relaxed"> {i18n.SUCCESS_FORM.DESCRIPTION} </p>
-                                    </>
-                                )}
-                            </ModalHeader>
                             <ModalBody>
                                 <div className="py-4 text-center">
                                     {isError ? (
