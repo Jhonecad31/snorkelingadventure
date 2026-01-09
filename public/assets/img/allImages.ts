@@ -1,4 +1,3 @@
-import Logo from "./logos/logo-snorkel.png"
 // Backgrounds
 import ExploreMayanReef from "./bg/explorando-el-gran-arrecife-maya.webp";
 import FaroInclinado from "./bg/faro-inclinado-puerto-morelos.webp"
@@ -34,7 +33,6 @@ import User2 from "./testimonials/user-2.webp";
 import User3 from "./testimonials/user-3.webp";
 
 export {
-    Logo,
     Turtle,
     FaroInclinado,
     CenoteAdventuring,

@@ -10,5 +10,7 @@ const i18n = getI18N({ currentLocale });
         src={MainHero}
         alt={i18n.ACCESSIBILITY.IMAGES.HERO}
         class="absolute inset-0 w-full h-full object-cover mask-b-from-80%"
+        fetchpriority="high"
+        loading="eager"
     />
 </section>

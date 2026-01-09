@@ -1,7 +1,7 @@
 ---
 import { getI18N } from "@/i18n";
 import { getLangFromUrl, useTranslatedPath, useTranslations } from "@/i18n/utils";
-import { Logo } from "@public/img/allImages";
+import { SnorkelingAdventure } from "@/icons/allIcons";
 import { Facebook, Instagram, Tiktok, Youtube, Tripadvisor } from "@/icons/allIcons";
 
 const { currentLocale } = Astro;
@@ -17,12 +17,20 @@ const navigation = [
         link: translatePath("/mayan-reef/"),
     },
     {
+        title: "Blog",
+        link: translatePath("/blog/"),
+    },
+    {
         title: t("nav.contact"),
         link: translatePath("/contact/"),
     },
     {
-        title: t("footer.terms"),
-        link: translatePath("/privacy/"),
+        title: t("footer.regularSnorkel"),
+        link: translatePath("/snorkel-adventuring-details/"),
+    },
+    {
+        title: t("footer.privateSnorkel"),
+        link: translatePath("/private-snorkeling-in-puerto-morelos/"),
     },
 ];
 
@@ -60,7 +68,7 @@ const socialMedia = [
         class="mx-auto p-4 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-0 items-center"
     >
         <a href={translatePath("/", lang)} class="mx-auto w-fit">
-            <img src={Logo.src} alt={i18n.ACCESSIBILITY.LOGO} class="w-20" />
+            <SnorkelingAdventure class="h-20" />
         </a>
         <nav>
             <ul
@@ -92,20 +100,20 @@ const socialMedia = [
             }
         </ul>
     </div>
-    <div class="text-center">
+    <div class="text-center px-2">
         <small
             class="hover:text-cyan-600 transition-colors duration-300"
             role="contentinfo"
             aria-label={i18n.ACCESSIBILITY.COPYRIGHT}
         >
-            &copy; 2025 Snorkeling Adventure. &bull; <a
+            &copy; 2026 Snorkeling Adventure. &bull; <a
                 class="hover:underline"
                 href="mailto:info@snorkeladventuring.com"
                 >info@snorkeladventuring.com</a
             >
         </small>
     </div>
-    <div class="text-center mt-2">
+    <div class="text-center mt-2 font-semibold">
         <small>{t("footer.design")}</small>
     </div>
 </footer>
