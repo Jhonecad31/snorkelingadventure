@@ -12,6 +12,7 @@ const lang = getLangFromUrl(Astro.url);
 // Se Elimina el prefijo del idioma de la ruta actual si existe
 const currentPath = Astro.url.pathname.replace(new RegExp(`^/${lang}`), "");
 interface Props {
+    offI18n?: boolean;
     title?: string;
     metaTitle?: string;
     description?: string;
@@ -21,6 +22,7 @@ interface Props {
     metaType?: string;
     robots?: string;
 }
+const { offI18n } = Astro.props;
 
 const namePage = "The Original Snorkeling Adventure";
 const title = Astro.props.title || i18n.SEO.HOME_PAGE.TITLE;
@@ -55,6 +57,15 @@ const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 <meta name="robots" content={robots} />
 <!-- Generator Astro -->
 <meta name="generator" content={Astro.generator} />
+<!-- Hreflang -->
+{offI18n! && languageList.map((locale) => (
+    <link 
+        rel="alternate" 
+        hreflang={locale.code} 
+        href={getAbsoluteLocaleUrl(locale.code, currentPath)} 
+    />
+))}
+<link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl(defaultLang, currentPath)} />
 <!-- Open Graph / Facebook -->
 <meta property="og:locale" content={ogLocale} />
 <meta property="og:type" content={metaType} />
@@ -64,15 +75,6 @@ const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 <meta property="og:image" content={image} />
 <meta property="og:image:alt" content={metaTitle} />
 <meta property="og:site_name" content={namePage} />
-<!-- Hreflang -->
-{languageList.map((locale) => (
-    <link 
-        rel="alternate" 
-        hreflang={locale.code} 
-        href={getAbsoluteLocaleUrl(locale.code, currentPath)} 
-    />
-))}
-<link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl(defaultLang, currentPath)} />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content={canonicalURL} />
