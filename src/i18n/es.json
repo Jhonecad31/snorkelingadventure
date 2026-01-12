@@ -2,8 +2,8 @@
     "SEO": {
         "HOME_PAGE": {
             "TITLE": "Tour de snorkel de Puerto Morelos",
-            "DESCRIPTION": "Únase al mejor snorkel en Cancún y disfrute de una experiencia inolvidable en Puerto Morelos, en el Caribe mexicano.",
-            "META_TITLE": "The original Snorkeling Adventure: El mejor snorkel en Cancún"
+            "DESCRIPTION": "Únase al mejor snorkel en Puerto Morelos y disfrute de una experiencia inolvidable en Puerto Morelos, en el Caribe mexicano.",
+            "META_TITLE": "The original Snorkeling Adventure: El mejor snorkel en Puerto Morelos"
         },
         "MAYAN_REEF_PAGE": {
             "TITLE": "Gran barrera de arrecife maya en Puerto Morelos",
@@ -22,7 +22,7 @@
         },
         "DETAIL_PAGE": {
             "REGULAR_SNORKELING": {
-                "TITLE": "El Mejor Snorkel en Cancún - Snorkeling Adventure en el Arrecife de Puerto Morelos",
+                "TITLE": "El Mejor Snorkel en Puerto Morelos - Snorkeling Adventure en el Arrecife de Puerto Morelos",
                 "DESCRIPTION": "Experimente la mejor aventura de snorkel en el Parque Nacional de Arrecifes de Puerto Morelos, uno de los principales destinos de snorkel en la Riviera Maya.",
                 "META_TITLE": "The Original Snorkeling Adventure: Snorkeling Adventure en el arrecife de Puerto Morelos"
             },
@@ -43,7 +43,7 @@
     },
     "ACCESIBILITY": {
         "LOGO": "Logo de The Original Snorkeling Adventure",
-        "CHANGE_LANGUAGE": "Cambiar idioma",
+        "CHANGE_LANGUAGE": "Cambiar idioma",    
         "GO_TO_HOME": "Ir a inicio",
         "COPYRIGHT": "Todos los derechos reservados a Snorkeling Adventure",
         "REVIEWS": "reseñas",
@@ -169,20 +169,20 @@
             },
             "FAQS": [
                 {
-                    "question": "¿Son nuestros tours de cenote en Cancún aptos para familias?",
+                    "question": "¿Son nuestros tours de cenote en Puerto Morelos aptos para familias?",
                     "answer": "Sí, las aventuras en cenotes son ideales para familias y aptas para niños, adolescentes y adultos. Con tours guiados, áreas de natación seguras y chalecos salvavidas en tamaños para niños, las familias pueden explorar estas maravillas naturales juntas mientras disfrutan de una experiencia divertida y educativa."
                 },
                 {
-                    "question": "¿Qué medidas de seguridad se implementan en los tours de ATV en Cancún?",
-                    "answer": "Tu seguridad es nuestra máxima prioridad. Todos los tours de ATV en Cancún incluyen cascos, gafas y supervisión profesional en cada etapa del recorrido. Antes de que comience el tour, los guías brindan una sesión informativa completa y una práctica para asegurarse de que te sientas seguro manejando el vehículo. Los senderos se mantienen regularmente y los ATV se inspeccionan a diario para garantizar una aventura segura y confiable."
+                    "question": "¿Qué medidas de seguridad se implementan en los tours de ATV en Puerto Morelos?",
+                    "answer": "Tu seguridad es nuestra máxima prioridad. Todos los tours de ATV en Puerto Morelos incluyen cascos, gafas y supervisión profesional en cada etapa del recorrido. Antes de que comience el tour, los guías brindan una sesión informativa completa y una práctica para asegurarse de que te sientas seguro manejando el vehículo. Los senderos se mantienen regularmente y los ATV se inspeccionan a diario para garantizar una aventura segura y confiable."
                 },
                 {
-                    "question": "¿Qué vida marina puedo esperar ver mientras hago snorkel en Cancún?",
-                    "answer": "Los snorkelistas en Cancún a menudo se encuentran con coloridos peces tropicales, formaciones de coral, tortugas marinas y, a veces, incluso rayas. Los arrecifes albergan cientos de especies marinas, ofreciendo una experiencia submarina inolvidable tanto para principiantes como para aventureros experimentados."
+                    "question": "¿Qué vida marina puedo esperar ver mientras hago snorkel en Puerto Morelos?",
+                    "answer": "Los snorkelistas en Puerto Morelos a menudo se encuentran con coloridos peces tropicales, formaciones de coral, tortugas marinas y, a veces, incluso rayas. Los arrecifes albergan cientos de especies marinas, ofreciendo una experiencia submarina inolvidable tanto para principiantes como para aventureros experimentados."
                 },
                 {
-                    "question": "¿Necesito experiencia en equitación para unirme al tour en Cancún?",
-                    "answer": "No se requiere experiencia previa en equitación. El tour está diseñado tanto para principiantes como para jinetes experimentados. Los guías profesionales brindan instrucciones claras y asignan a cada participante un caballo adecuado a su nivel de habilidad. De esta manera, todos pueden sentirse seguros y cómodos mientras disfrutan de los pintorescos senderos de la jungla en Cancún."
+                    "question": "¿Necesito experiencia en equitación para unirme al tour en Puerto Morelos?",
+                    "answer": "No se requiere experiencia previa en equitación. El tour está diseñado tanto para principiantes como para jinetes experimentados. Los guías profesionales brindan instrucciones claras y asignan a cada participante un caballo adecuado a su nivel de habilidad. De esta manera, todos pueden sentirse seguros y cómodos mientras disfrutan de los pintorescos senderos de la jungla en Puerto Morelos."
                 }
             ]
         }
@@ -241,7 +241,7 @@
     "MAYAN_REEF_PAGE": {
         "HERO": {
             "TITLE": "Parque Nacional Arrecife de Puerto Morelos",
-            "DESCRIPTION": "Experimenta la impresionante belleza del Parque Nacional Arrecife de Puerto Morelos, el segundo arrecife de coral más grande del mundo. A solo un corto viaje de Cancún y la Riviera Maya, esta maravilla natural ofrece un inolvidable Tour de Snorkel en Cancún."
+            "DESCRIPTION": "Experimenta la impresionante belleza del Parque Nacional Arrecife de Puerto Morelos, el segundo arrecife de coral más grande del mundo. A solo un corto viaje de Cancún y la Riviera Maya, esta maravilla natural ofrece un inolvidable Tour de Snorkel en Puerto Morelos."
         },
         "INTRO": {
             "TITLE": "Un tesoro ecológico submarino en Puerto Morelos",
@@ -264,7 +264,7 @@
             ]
         },
         "WHAT_TO_EXPECT": {
-            "TITLE": "Qué esperar en los tours de snorkel en Cancún",
+            "TITLE": "Qué esperar en los tours de snorkel en Puerto Morelos",
             "LIST": [
                 {
                     "TITLE": "Experiencia Guiada",
@@ -452,7 +452,7 @@
                 },
                 "DIVE_INTO_UNSEEN": {
                     "TITLE": "Sumérgete en la belleza oculta",
-                    "DESCRIPTION": "Prepárate para despertar a tu espíritu aventurero mientras te sumerges en las aguas cristalinas de Puerto Morelos, hogar de algunos de los mejores lugares para hacer snorkel en Cancún. Esta sección del Arrecife Mesoamericano te invita a deslizarte sobre coloridas formaciones de coral, observar peces tropicales y encontrarte con vida marina en su entorno natural. Cada momento revela una nueva maravilla submarina: rayas, tortugas marinas, peces ángel y vibrantes jardines de coral que prosperan bajo la superficie."
+                    "DESCRIPTION": "Prepárate para despertar a tu espíritu aventurero mientras te sumerges en las aguas cristalinas de Puerto Morelos, hogar de algunos de los mejores lugares para hacer snorkel en Puerto Morelos. Esta sección del Arrecife Mesoamericano te invita a deslizarte sobre coloridas formaciones de coral, observar peces tropicales y encontrarte con vida marina en su entorno natural. Cada momento revela una nueva maravilla submarina: rayas, tortugas marinas, peces ángel y vibrantes jardines de coral que prosperan bajo la superficie."
                 }
             },
             "SCHEDULES": {
@@ -534,7 +534,7 @@
                     },
                     {
                         "question": "¿Es adecuado Snorkeling Adventure para principiantes?",
-                        "answer": "Sí, las aguas tranquilas de Puerto Morelos hacen que este tour de snorkel en Cancún sea perfecto para principiantes."
+                        "answer": "Sí, las aguas tranquilas de Puerto Morelos hacen que este tour de snorkel en Puerto Morelos sea perfecto para principiantes."
                     },
                     {
                         "question": "¿Cuánto dura la parte de snorkel del tour?",
@@ -645,7 +645,7 @@
                         "answer": "Sí, se incluye transporte compartido de ida y vuelta con aire acondicionado desde Cancún o Riviera Maya. Si prefieres transporte privado, por favor contáctanos."
                     },
                     {
-                        "question": "¿En qué se diferencia este tour de snorkel privado de los tours regulares en Cancún?",
+                        "question": "¿En qué se diferencia este tour de snorkel privado de los tours regulares en Puerto Morelos?",
                         "answer": "Este tour privado ofrece una experiencia exclusiva con un barco privado, servicio personalizado, bebidas ilimitadas y un horario flexible, a diferencia de los tours grupales estándar. Está diseñado para quienes buscan una aventura de snorkel más lujosa e íntima."
                     },
                     {

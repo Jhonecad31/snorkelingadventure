@@ -2,8 +2,8 @@
     "SEO": {
         "HOME_PAGE": {
             "TITLE": "Puerto Morelos Snorkeling Tour",
-            "DESCRIPTION": "Join The Best Snorkeling in Cancun and enjoy an unforgettable experience in Puerto Morelos, at the Mexican Caribbean.",
-            "META_TITLE": "The original Snorkeling Adventure: The Best Snorkel in Cancun"
+            "DESCRIPTION": "Join The Best Snorkeling in Puerto Morelos and enjoy an unforgettable experience in Puerto Morelos, at the Mexican Caribbean.",
+            "META_TITLE": "The original Snorkeling Adventure: The Best Snorkel in Puerto Morelos"
         },
         "MAYAN_REEF_PAGE": {
             "TITLE": "Great Mayan Reef Barrier in Puerto Morelos",
@@ -22,7 +22,7 @@
         },
         "DETAIL_PAGE": {
             "REGULAR_SNORKELING": {
-                "TITLE": "The Best Snorkeling in Cancun - Puerto Morelos Reef Snorkeling Adventure",
+                "TITLE": "The Best Snorkeling in Puerto Morelos - Puerto Morelos Reef Snorkeling Adventure",
                 "DESCRIPTION": "Experience the ultimate Snorkeling Adventure at the National Reef Park of Puerto Morelos one of the top snorkeling destinations in the Riviera Maya.",
                 "META_TITLE": "The original Snorkeling Adventure: Puerto Morelos Reef Snorkel Adventure"
             },
@@ -169,20 +169,20 @@
             },
             "FAQS": [
                 {
-                    "question": "Are our cenote tours in Cancun family-friendly?",
+                    "question": "Are our cenote tours in Puerto Morelos family-friendly?",
                     "answer": "Yes, cenote adventures are ideal for families and suitable for children, teenagers, and adults. With guided tours, safe swimming areas, and life jackets in child sizes, families can explore these natural wonders together while enjoying a fun and educational experience."
                 },
                 {
-                    "question": "What safety measures are in place for ATV tours in Cancun?",
-                    "answer": "Your safety is a top priority. All ATV tours in Cancun include helmets, goggles, and professional supervision at every stage of the ride. Before the tour begins, guides provide a full briefing and practice run to ensure you feel confident handling the vehicle. Trails are regularly maintained, and the ATVs are inspected daily to guarantee a safe and reliable adventure."
+                    "question": "What safety measures are in place for ATV tours in Puerto Morelos?",
+                    "answer": "Your safety is a top priority. All ATV tours in Puerto Morelos include helmets, goggles, and professional supervision at every stage of the ride. Before the tour begins, guides provide a full briefing and practice run to ensure you feel confident handling the vehicle. Trails are regularly maintained, and the ATVs are inspected daily to guarantee a safe and reliable adventure."
                 },
                 {
-                    "question": "What marine life can I expect to see while snorkeling in Cancun?",
-                    "answer": "Snorkelers in Cancun often encounter colorful tropical fish, coral formations, sea turtles, and sometimes even stingrays. The reefs are home to hundreds of marine species, offering an unforgettable underwater experience for both beginners and seasoned adventurers."
+                    "question": "What marine life can I expect to see while snorkeling in Puerto Morelos?",
+                    "answer": "Snorkelers in Puerto Morelos often encounter colorful tropical fish, coral formations, sea turtles, and sometimes even stingrays. The reefs are home to hundreds of marine species, offering an unforgettable underwater experience for both beginners and seasoned adventurers."
                 },
                 {
-                    "question": "Do I need horseback riding experience to join the tour in Cancun?",
-                    "answer": "No prior horseback riding experience is required. The tour is designed for both beginners and experienced riders. Professional guides provide clear instructions and assign each participant a horse suited to their skill level. This way, everyone can feel safe and comfortable while enjoying the scenic jungle trails in Cancun."
+                    "question": "Do I need horseback riding experience to join the tour in Puerto Morelos?",
+                    "answer": "No prior horseback riding experience is required. The tour is designed for both beginners and experienced riders. Professional guides provide clear instructions and assign each participant a horse suited to their skill level. This way, everyone can feel safe and comfortable while enjoying the scenic jungle trails in Puerto Morelos."
                 }
             ]
         }
@@ -241,7 +241,7 @@
     "MAYAN_REEF_PAGE": {
         "HERO": {
             "TITLE": "National Reef Park of Cancun",
-            "DESCRIPTION": "Experience the breathtaking beauty of the National Reef Park of Puerto Morelos, the second-largest barrier reef in the world. Just a short trip from Cancun and the Riviera Maya, this natural wonder offers an unforgettable Tour of Snorkeling in Cancun."
+            "DESCRIPTION": "Experience the breathtaking beauty of the National Reef Park of Puerto Morelos, the second-largest barrier reef in the world. Just a short trip from Cancun and the Riviera Maya, this natural wonder offers an unforgettable Tour of Snorkeling in Puerto Morelos."
         },
         "INTRO": {
             "TITLE": "An Underwater Eco Treasure at Puerto Morelos",
@@ -287,7 +287,7 @@
         "GRID_TEXTS": {
             "SNORKEL_TOURS": {
                 "TITLE": "Snorkel Tours in the Great Mayan Reef",
-                "DESCRIPTION": "Snorkel tours in the Great Mayan Reef are a must-do for any visitor to the Riviera Maya. These tours offer an easy and accessible way to explore the vibrant underwater world. Tours often include guided <strong>best snorkeling in cancun</strong>, equipment rental, and educational briefings on the reef's ecology."
+                "DESCRIPTION": "Snorkel tours in the Great Mayan Reef are a must-do for any visitor to the Riviera Maya. These tours offer an easy and accessible way to explore the vibrant underwater world. Tours often include guided <strong>best snorkeling in Puerto Morelos</strong>, equipment rental, and educational briefings on the reef's ecology."
             },
             "IMPORTANCE_NATIONAL_PARK": {
                 "TITLE": "The National Reef Park and Its Importance",
@@ -420,7 +420,7 @@
         "TITLE": "Thanks for your reservation",
         "DESCRIPTION": {
             "TEXT_1": "We have received your message and will contact you shortly.",
-            "TEXT_2": "If you have any questions or need immediate assistance, please call us at +52 998 249 0003 or send us an email at info@snorkeladventuring.com."
+            "TEXT_2": "If you have any questions or need immediate assistance, please call us at +52 998 249 0003 or send us an email at    ."
         }
     },
     "DETAIL_PAGE": {
@@ -438,7 +438,7 @@
         },
         "REGULAR_SNORKELING": {
             "HERO": {
-                "TITLE": "Puerto Morelos Reef Snorkel Adventure",
+                "TITLE": "Puerto Morelos Reef Snorkeling Adventure",
                 "DESCRIPTION": "Dive into the mesmerizing underwater world of the <span>Great Mayan Reef in Puerto Morelos</span>. Experience vibrant coral formations, diverse marine life, and crystal clear waters on our unforgettable snorkeling tour."
             },
             "TEXTS": {
@@ -452,7 +452,7 @@
                 },
                 "DIVE_INTO_UNSEEN": {
                     "TITLE": "Dive into the unseen beauty",
-                    "DESCRIPTION": "Prepare to awaken your inner adventurer as you dive into the crystalline waters of Puerto Morelos, home to some of the best snorkeling in Cancun. This section of the Mesoamerican Reef invites you to glide over colorful coral formations, observe tropical fish, and encounter marine life in its natural environment. Every moment reveals a new underwater marvel—rays, sea turtles, angelfish, and vibrant coral gardens thriving beneath the surface."
+                    "DESCRIPTION": "Prepare to awaken your inner adventurer as you dive into the crystalline waters of Puerto Morelos, home to some of the best snorkeling in Puerto Morelos. This section of the Mesoamerican Reef invites you to glide over colorful coral formations, observe tropical fish, and encounter marine life in its natural environment. Every moment reveals a new underwater marvel—rays, sea turtles, angelfish, and vibrant coral gardens thriving beneath the surface."
                 }
             },
             "GALLERY": {
@@ -645,7 +645,7 @@
                         "answer": "Yes, round trip shared air conditioned transportation from Cancun or Riviera Maya is included. If you prefer private transportation, please contact us."
                     },
                     {
-                        "question": "How is this tour different from regular snorkeling tours in Cancun?",
+                        "question": "How is this tour different from regular snorkeling tours in Puerto Morelos?",
                         "answer": "This private tour offers an exclusive experience with a private boat, personalized service, unlimited drinks, and a flexible schedule, unlike standard group tours. It’s designed for those seeking a more luxurious and intimate snorkeling adventure."
                     },
                     {
