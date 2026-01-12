@@ -1,12 +1,16 @@
 ---
 import "@/styles/global.css";
 import { getI18N } from "@/i18n";
-import { languages } from "@/i18n/ui";
+import { languages, defaultLang } from "@/i18n/ui";
+import { getAbsoluteLocaleUrl } from "astro:i18n";
+import { getLangFromUrl } from "@/i18n/utils";
+const languageList = Object.values(languages);
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
-const languageList = Object.values(languages);
-
+const lang = getLangFromUrl(Astro.url);
+// Se Elimina el prefijo del idioma de la ruta actual si existe
+const currentPath = Astro.url.pathname.replace(new RegExp(`^/${lang}`), "");
 interface Props {
     title?: string;
     metaTitle?: string;
@@ -61,15 +65,14 @@ const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 <meta property="og:image:alt" content={metaTitle} />
 <meta property="og:site_name" content={namePage} />
 <!-- Hreflang -->
-{languageList.map((lang) => {
-    const hrefLangURL = new URL(Astro.url.pathname, Astro.site);
-    if (lang.code !== currentLocale) {
-        hrefLangURL.pathname = `/${lang.code}${hrefLangURL.pathname}`;
-    }
-    return (
-        <link rel="alternate" hreflang={lang.code} href={hrefLangURL.toString()} />
-    );
-})}
+{languageList.map((locale) => (
+    <link 
+        rel="alternate" 
+        hreflang={locale.code} 
+        href={getAbsoluteLocaleUrl(locale.code, currentPath)} 
+    />
+))}
+<link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl(defaultLang, currentPath)} />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content={canonicalURL} />
