@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://snorkelingadventure.vercel.app',
+  site: 'https://snorkelingadventure.com',
   adapter: vercel(),
   output: 'server',
   trailingSlash: 'always',
