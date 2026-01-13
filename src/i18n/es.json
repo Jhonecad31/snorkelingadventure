@@ -43,7 +43,7 @@
     },
     "ACCESIBILITY": {
         "LOGO": "Logo de The Original Snorkeling Adventure",
-        "CHANGE_LANGUAGE": "Cambiar idioma",    
+        "CHANGE_LANGUAGE": "Cambiar idioma",
         "GO_TO_HOME": "Ir a inicio",
         "COPYRIGHT": "Todos los derechos reservados a Snorkeling Adventure",
         "REVIEWS": "reseñas",
@@ -169,20 +169,20 @@
             },
             "FAQS": [
                 {
-                    "question": "¿Son nuestros tours de cenote en Puerto Morelos aptos para familias?",
-                    "answer": "Sí, las aventuras en cenotes son ideales para familias y aptas para niños, adolescentes y adultos. Con tours guiados, áreas de natación seguras y chalecos salvavidas en tamaños para niños, las familias pueden explorar estas maravillas naturales juntas mientras disfrutan de una experiencia divertida y educativa."
+                    "question": "¿Cuál es la mejor época del año para hacer snorkel en Puerto Morelos?",
+                    "answer": "Puerto Morelos ofrece excelentes condiciones para hacer snorkel durante todo el año, con la mejor visibilidad de noviembre a agosto."
                 },
                 {
-                    "question": "¿Qué medidas de seguridad se implementan en los tours de ATV en Puerto Morelos?",
-                    "answer": "Tu seguridad es nuestra máxima prioridad. Todos los tours de ATV en Puerto Morelos incluyen cascos, gafas y supervisión profesional en cada etapa del recorrido. Antes de que comience el tour, los guías brindan una sesión informativa completa y una práctica para asegurarse de que te sientas seguro manejando el vehículo. Los senderos se mantienen regularmente y los ATV se inspeccionan a diario para garantizar una aventura segura y confiable."
+                    "question": "¿Por qué no se permite el uso de bloqueador solar durante la actividad de snorkel?",
+                    "answer": "El uso de bloqueador solar está prohibido para proteger el ecosistema marino y evitar daños a los corales y la vida marina. Se recomienda usar ropa de protección solar en su lugar."
                 },
                 {
                     "question": "¿Qué vida marina puedo esperar ver mientras hago snorkel en Puerto Morelos?",
                     "answer": "Los snorkelistas en Puerto Morelos a menudo se encuentran con coloridos peces tropicales, formaciones de coral, tortugas marinas y, a veces, incluso rayas. Los arrecifes albergan cientos de especies marinas, ofreciendo una experiencia submarina inolvidable tanto para principiantes como para aventureros experimentados."
                 },
                 {
-                    "question": "¿Necesito experiencia en equitación para unirme al tour en Puerto Morelos?",
-                    "answer": "No se requiere experiencia previa en equitación. El tour está diseñado tanto para principiantes como para jinetes experimentados. Los guías profesionales brindan instrucciones claras y asignan a cada participante un caballo adecuado a su nivel de habilidad. De esta manera, todos pueden sentirse seguros y cómodos mientras disfrutan de los pintorescos senderos de la jungla en Puerto Morelos."
+                    "question": "¿El tour de Snorkeling Adventure incluye transportación hacia puerto morelos?",
+                    "answer": "Sí, el tour incluye transporte redondo con aire acondicionado desde Cancún o la Riviera Maya para tu comodidad, haciéndolo fácil llegar al punto de snorkel en Puerto Morelos."
                 }
             ]
         }
