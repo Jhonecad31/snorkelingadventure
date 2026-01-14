@@ -37,6 +37,16 @@ const robots = Astro.props.robots || "index, follow, max-image-preview:large, ma
 const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVN1ZL6NV2"></script>
+<script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KVN1ZL6NV2');
+</script>
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="author" content={namePage}>
