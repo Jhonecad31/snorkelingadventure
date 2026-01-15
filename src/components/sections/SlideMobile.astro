@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonNext, SwiperButtonPrev } from "astro-swiper";
+import { BtnNext, BtnPrev } from "@/icons/allIcons";
+
+interface Props {
+    slides: Array<{
+        img: ImageMetadata;
+        alt: string;
+        href?: string;
+        target?: boolean;
+    }>;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const translatedPath = useTranslatedPath(lang);
+
+const { slides } = Astro.props;
+---
+
+<Swiper
+    class="block! lg:hidden!"
+    options={{
+        loop: true,
+        navigation: {
+            nextEl: ".btn-next-desktop",
+            prevEl: ".btn-prev-desktop",
+            disabledClass: "hidden",
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        spaceBetween: 10,
+    }}
+>
+    <SwiperWrapper>
+        {
+            slides.map((slide) => (
+                <SwiperSlide>
+                    <div class="relative w-full sm:h-[calc(100vh-13rem)]">
+                        {slide.href ? (
+                            <a
+                                href={slide.target ? slide.href : translatedPath(slide.href)}
+                                target={slide.target ? '_blank' : ''}
+                                aria-label={slide.alt}
+                                class="block w-full h-full"
+                            >
+                                <Image
+                                    src={slide.img}
+                                    alt={slide.alt}
+                                    fetchpriority="high"
+                                    loading="eager"
+                                    class="w-full h-full object-cover mask-b-from-80%"
+                                />
+                            </a>
+                        ) : (
+                            <Image
+                                src={slide.img}
+                                alt={slide.alt}
+                                fetchpriority="high"
+                                loading="eager"
+                                class="w-full h-full object-cover mask-b-from-80%"
+                            />
+                        )}
+                    </div>
+                </SwiperSlide>
+            ))
+        }
+    </SwiperWrapper>
+    
+</Swiper>

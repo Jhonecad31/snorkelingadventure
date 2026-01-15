@@ -10,7 +10,6 @@ import PersonOkSnorkel from "./bg/persona-haciendo-ok-snorkel.webp";
 import CoverSA from "./bg/puerto-morelos-reef-snorkel-adventuring-tour-in-cancun.webp";
 import PMAereal from "./bg/puerto-morelos-vista-aereal.webp";
 import HandLikeSnorkel from "./bg/persona-pulgares-arriba-en-snorkel.webp";
-import MainHero from "./bg/snorkeling-adventure-en-puerto-morelos.webp";
 import SnorkelMayanReef from "./bg/grupo-en-snorkeling-en-arrecife-maya.webp";
 import MiddleViewSnorkel from "./bg/vista-snorkel-con-fauna-marina.webp";
 import PrivateBoatSnorkel from "./gallery/private-snorkeling/best-private-boat-in-puerto-morelos.webp";
@@ -40,7 +39,6 @@ export {
     CityTacoTour,
     MujerSalvavidas,
     HandLikeSnorkel,
-    MainHero,
     SnorkelMayanReef,
     MiddleViewSnorkel,
     PrivateBoatSnorkel,
