@@ -284,40 +284,42 @@ const seoMetaData = {
     <MoreActivities />
     <!-- Form Bokun -->
     <div class="sticky bottom-5 max-w-4xl mx-auto z-10" id="bookingWidget">
-        <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 bg-black/70 text-white backdrop-blur-xs px-2 pb-2 pt-3 md:px-6 md:py-2 rounded-xl mx-4 transition-all duration-300" id="bookingContent">
-            <button
-                id="minimizeBtn"
-                class="absolute top-0 right-1 p-1 hover:bg-white/20 rounded-full cursor-pointer transition-colors"
-                aria-label="Minimize booking widget"
-            >
-                <BtnNext class="size-5 stroke-3 rotate-90 text-white" />
-            </button>
-            <div class="flex items-center gap-2">
-                <div class="flex items-center -space-x-4">
-                    <img
-                        class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow -rotate-6"
-                        height={50}
-                        width={50}
-                        src={ExperiencePrivateSnorkel.src}
-                        alt=""
-                    />
-                    <img
-                        class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow rotate-3"
-                        height={50}
-                        width={50}
-                        src={PrivateBoatSnorkel.src}
-                        alt=""
-                    />
-                </div>
-                <div class="pl-3 pt-2">
-                    <p class="font-semibold text-xs sm:text-lg w-fit">{i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}</p>
-                    <div class="flex items-center my-1">
-                        <div class="flex items-center gap-1">
-                            <Star class="size-4 text-amber-500"/> <span class="text-xs sm:text-sm font-semibold">{countStars}</span>
-                        </div>
-                        <p class="text-xs sm:text-sm ml-2">({reviewsCount} {i18n.ACCESSIBILITY.REVIEWS})</p>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-2 sm:gap-4 bg-black/70 text-white backdrop-blur-xs px-2 pb-2 pt-3 md:px-6 md:py-2 rounded-xl mx-4 transition-all duration-300" id="bookingContent">
+            <div>
+                <button
+                    id="minimizeBtn"
+                    class="absolute top-0 right-1 p-1 hover:bg-white/20 rounded-full cursor-pointer transition-colors"
+                    aria-label="Minimize booking widget"
+                >
+                    <BtnNext class="size-5 stroke-3 rotate-90 text-white" />
+                </button>
+                <div class="flex items-center gap-2">
+                    <div class="flex items-center -space-x-4">
+                        <img
+                            class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow -rotate-6"
+                            height={50}
+                            width={50}
+                            src={ExperiencePrivateSnorkel.src}
+                            alt=""
+                        />
+                        <img
+                            class="h-18 w-13 sm:size-18 rounded-lg border-2 border-white object-cover shadow rotate-3"
+                            height={50}
+                            width={50}
+                            src={PrivateBoatSnorkel.src}
+                            alt=""
+                        />
                     </div>
-                    <p class="font-semibold text-xs sm:text-lg"><span class="text-sm">{i18n.ACCESSIBILITY.PRICE_FROM}</span> ${priceFrom.toFixed(2)} USD</p>
+                    <div class="pl-3 pt-2">
+                        <p class="font-semibold text-xs sm:text-lg w-fit">{i18n.DETAIL_PAGE.PRIVATE_SNORKELING.HERO.TITLE}</p>
+                        <div class="flex items-center my-1">
+                            <div class="flex items-center gap-1">
+                                <Star class="size-4 text-amber-500"/> <span class="text-xs sm:text-sm font-semibold">{countStars}</span>
+                            </div>
+                            <p class="text-xs sm:text-sm ml-2">({reviewsCount} {i18n.ACCESSIBILITY.REVIEWS})</p>
+                        </div>
+                        <p class="font-semibold text-xs sm:text-lg"><span class="text-sm">{i18n.ACCESSIBILITY.PRICE_FROM}</span> ${priceFrom.toFixed(2)} USD</p>
+                    </div>
                 </div>
             </div>
             <BtnModalBokun  

@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
-import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonNext, SwiperButtonPrev } from "astro-swiper";
-import { BtnNext, BtnPrev } from "@/icons/allIcons";
+import { Swiper, SwiperWrapper, SwiperSlide} from "astro-swiper";
 
 interface Props {
     slides: Array<{
@@ -23,10 +22,12 @@ const { slides } = Astro.props;
     class="hidden! lg:block!"
     options={{
         loop: true,
-        navigation: {
-            nextEl: ".btn-next-desktop",
-            prevEl: ".btn-prev-desktop",
-            disabledClass: "hidden",
+        pagination: {
+            clickable: true,
+            bulletClass: 'border border-cyan-500 rounded-full w-10 h-3 inline-block mx-1 cursor-pointer',
+            bulletActiveClass: 'bg-cyan-500',
+            el: '.slide-pagination-desktop',
+            type: 'bullets',
         },
         autoplay: {
             delay: 5000,
@@ -52,7 +53,7 @@ const { slides } = Astro.props;
                                     alt={slide.alt}
                                     fetchpriority="high"
                                     loading="eager"
-                                    class="w-full h-full object-cover mask-b-from-80%"
+                                    class="w-full h-full object-cover mask-b-from-90%"
                                 />
                             </a>
                         ) : (
@@ -61,7 +62,7 @@ const { slides } = Astro.props;
                                 alt={slide.alt}
                                 fetchpriority="high"
                                 loading="eager"
-                                class="w-full h-full object-cover mask-b-from-80%"
+                                class="w-full h-full object-cover mask-b-from-90%"
                             />
                         )}
                     </div>
@@ -69,5 +70,5 @@ const { slides } = Astro.props;
             ))
         }
     </SwiperWrapper>
-    
+    <div class="slide-pagination-desktop text-center"></div>
 </Swiper>
