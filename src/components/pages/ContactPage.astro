@@ -65,8 +65,13 @@ const seoMetaData = {
     />
     <BlockContainer>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
+            <FormContact
+                client:visible
+                i18n={i18n.CONTACT_PAGE.FORM}
+                TITLE_FORM={i18n.CONTACT_PAGE.INFO.TITLE}
+            />
             <div class="py-5">
-                <TagH2>{i18n.CONTACT_PAGE.INFO.TITLE}</TagH2>
+                <TagH2 class="mt-0!">{i18n.CONTACT_PAGE.HERO.TITLE}</TagH2>
                 <TagP>{i18n.CONTACT_PAGE.INFO.DESCRIPTION}</TagP>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {
@@ -105,10 +110,6 @@ const seoMetaData = {
                     }
                 </div>
             </div>
-            <FormContact
-                client:visible
-                i18n={i18n.CONTACT_PAGE.FORM}
-            />
         </div>
     </BlockContainer>
     <FaqsHome />
