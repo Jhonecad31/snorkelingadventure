@@ -37,6 +37,9 @@ const robots = Astro.props.robots || "index, follow, max-image-preview:large, ma
 const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 ---
 
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="author" content={namePage}>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVN1ZL6NV2"></script>
 <script is:inline>
@@ -48,7 +51,7 @@ const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 </script>
 
 <!-- Meta Pixel Code -->
-<script is:inline>
+<script type="text/partytown">
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -62,9 +65,6 @@ const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=804562681635258&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="author" content={namePage}>
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
