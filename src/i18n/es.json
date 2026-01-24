@@ -106,18 +106,15 @@
             "DESCRIPTION": "Estamos orgullosos de ser reconocidos por nuestro compromiso de brindar experiencias excepcionales de snorkel en Puerto Morelos.",
             "TRIPADVISOR": {
                 "TITLE": "Travelers’ Choice Best of the Best",
-                "DATES": "2019, 2024, 2025",
-                "DESCRIPTION": "Otorgado por recibir consistentemente excelentes críticas de viajeros y estar clasificado dentro de las mejores atracciones de todo el mundo en TripAdvisor."
+                "DESCRIPTION": "Clasificado entre el 1% de las mejores atracciones de todo el mundo en TripAdvisor."
             },
             "WORLD_TRAVEL_AWARDS": {
                 "TITLE": "World Travel Awards",
-                "DATES": "2022, 2023, 2024, 2025",
-                "DESCRIPTION": "Reconocido como el principal operador de tours de snorkel en México por nuestro servicio excepcional y aventuras inolvidables de snorkel en Puerto Morelos."
+                "DESCRIPTION": "Reconocido como el Tour Operador Líder de Snorkel en México por múltiples años."
             },
             "NATIONAL_GEOGRAPHIC": {
                 "TITLE": "National Geographic Traveller",
-                "DATES": "2025",
-                "DESCRIPTION": "Mencionado como una de las mejores experiencias en la Riviera Maya, destacando nuestro compromiso con prácticas ecológicas y un servicio al cliente excepcional."
+                "DESCRIPTION": "Mencionada como una de las mejores experiencias en la Riviera Maya."
             }
         },
         "BEST_SNORKEL": {

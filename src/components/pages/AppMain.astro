@@ -6,12 +6,10 @@ import { getLangFromUrl } from "@/i18n/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import SlideDesktop from "../sections/SlideDesktop.astro";
 import IntroHome from "@/components/sections/IntroHome.astro";
-import MapMayanReef from "@/components/sections/MapMayanReef.astro";
 import ChoosePlan from "@/components/sections/ChoosePlan.astro";
 import GalleryHome from "@/components/sections/GalleryHome.astro";
 import FaqsHome from "@/components/sections/FaqsHome.astro";
 import SlideMobile from "../sections/SlideMobile.astro";
-
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -24,6 +22,7 @@ const seoMetaData = {
     title: i18n.SEO.HOME_PAGE.TITLE,
     description: i18n.SEO.HOME_PAGE.DESCRIPTION,
     metaTitle: i18n.SEO.HOME_PAGE.META_TITLE,
+    image: slides.desktop[0].img.src
 };
 ---
 
@@ -48,7 +47,6 @@ const seoMetaData = {
     <SlideDesktop slides={slides.desktop} />
     <SlideMobile slides={slides.mobile} />
     <IntroHome />
-    <MapMayanReef />
     <ChoosePlan />
     <GalleryHome />
     <FaqsHome />

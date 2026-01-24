@@ -6,7 +6,7 @@ import TripadvisorBOTB from "./awards/tripadvisor-tbotb.svg";
 import NatGeoTraveller from "./awards/natgeo-traveller-black.svg";
 import WorldTravelAwards from "./awards/world-travel-awards.svg";
 // Brands
-import PrivateSnorkeling from "./brands/private-snorkeling-experience.svg";
+import PrivateSnorkeling from "./brands/snorkeling-private.svg";
 import SnorkelingAdventure from "./brands/snorkeling-adventure.svg";
 // Icons
 import BranX from "./brand-x.svg";
