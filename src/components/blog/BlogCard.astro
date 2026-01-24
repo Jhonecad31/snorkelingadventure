@@ -38,7 +38,7 @@ const posts: Post[] = await getPostsByPage({ page });
             <div class="mt-10 text-center">
                 <div class="flex flex-wrap justify-center gap-2 mb-4">
                     {post.categories.map((category) => (
-                        <p class="bg-cyan-600 text-white px-2 py-1 rounded-full font-semibold text-xs md:text-sm hover:underline">
+                        <p class="bg-cyan-500 text-white px-2 py-1 rounded-full font-semibold text-xs md:text-sm hover:underline">
                             <a
                                 href={`/blog/category/${category.slug}/`}
                                 aria-label={
