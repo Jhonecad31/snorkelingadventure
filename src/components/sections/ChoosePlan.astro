@@ -52,7 +52,7 @@ const plans = [
     <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 relative z-11">
         {
             plans.map((plan) => (
-                <div class={`${plan.priority ? "border-cyan-500 shadow-lg shadow-cyan-400 bg-linear-to-br from-zinc-400 via-white to-zinc-400" : "bg-white border-zinc-200 shadow-lg"} hover:scale-105 transition duration-300 md:mt-10 border rounded-xl px-6 py-10`}>
+                <div class={`${plan.priority ? "border-cyan-500 shadow-lg shadow-cyan-400 bg-linear-to-br from-zinc-400 via-zinc-100 to-zinc-400" : "bg-white border-zinc-200 shadow-lg"} hover:scale-105 transition duration-300 md:mt-10 border rounded-xl px-6 py-10`}>
                     <plan.icon class="size-22" />
                     <h3 class="mt-4 font-semibold text-xl lg:text-2xl">
                         {plan.title}
