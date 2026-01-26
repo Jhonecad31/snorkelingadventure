@@ -34,14 +34,15 @@ export const server = {
                 }
             );
 
-             // Send email to Reservations Team
+            // Send email to Reservations Team
             await resend.emails.send({
                 from: "Snorkeling Adventure <snorkelingadventure@sales.whattodoincancun.com>",
-                to: input.email,
+                to: "reservas@grupo-extreme.com",
                 subject: subjectAdmin,
-                replyTo: "reservas@grupo-extreme.com",
+                replyTo: input.email,
                 html: emailAdminHtml,
             });
+            
             // Send emailto Admin
             const { data, error } = await resend.emails.send({
                 from: "Snorkeling Adventure <snorkelingadventure@sales.whattodoincancun.com>",
