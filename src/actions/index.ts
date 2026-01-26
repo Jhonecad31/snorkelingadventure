@@ -33,7 +33,16 @@ export const server = {
                     },
                 }
             );
-            // Send email to admin
+
+             // Send email to Reservations Team
+            await resend.emails.send({
+                from: "Snorkeling Adventure <snorkelingadventure@sales.whattodoincancun.com>",
+                to: input.email,
+                subject: subjectAdmin,
+                replyTo: "reservas@grupo-extreme.com",
+                html: emailAdminHtml,
+            });
+            // Send emailto Admin
             const { data, error } = await resend.emails.send({
                 from: "Snorkeling Adventure <snorkelingadventure@sales.whattodoincancun.com>",
                 to: "info@snorkeladventuring.com",
