@@ -1,9 +1,9 @@
 ---
 import { getI18N } from "@/i18n";
-import { PlayerPause, PlayerPlay } from "@/icons/allIcons";
 import { User1, User2, User3 } from "@public/img/allImages";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import TagH1 from "@/components/global/TagH1.astro";
+import DetailVideo from "./DetailVideo";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -16,49 +16,16 @@ interface Props {
     reviews: string;
 };
 
-const { title, priceFrom, videoSrc, posterImg, reviews } = Astro.props;
+const { title, videoSrc, posterImg, reviews } = Astro.props;
 ---
 <section class="min-h-150 md:min-h-180 relative overflow-hidden mask-b-from-95%">
-    <video
-        id="video-hero"
-        autoplay
-        muted
-        loop
-        preload="auto"
-        poster={posterImg}
-        class="absolute top-0 left-0 w-full h-full object-cover object-center z-0 brightness-65"
-    >
-        <source
-            src={videoSrc}
-            type="video/mp4"
-        />
-    </video>
-    <button
-        id="btn-video-hero"
-        class="absolute bottom-10 right-5 md:right-10 bg-linear-to-br from-sky-700 via-cyan-400 to-sky-500 transition rounded-full p-2 md:p-3 shadow-lg group cursor-pointer"
-    >
-        <span class="sr-only">{i18n.ACCESSIBILITY.PLAY_PAUSE}</span>
-        <PlayerPlay id="iconPlay" class="size-6 md:size-8 text-white hidden group-hover:scale-110 transition duration-300" />
-        <PlayerPause id="iconPause" class="size-6 md:size-8 text-white group-hover:scale-110 transition duration-300" />
-    </button>
-    <script is:inline>
-        const videoHero = document.getElementById('video-hero');
-        const btnVideoHero = document.getElementById('btn-video-hero');
-        const iconPlay = btnVideoHero.querySelector('#iconPlay');
-        const iconPause = btnVideoHero.querySelector('#iconPause');
-
-        btnVideoHero.addEventListener('click', () => {
-            if (videoHero.paused) {
-                videoHero.play();
-                iconPlay.classList.add('hidden');
-                iconPause.classList.remove('hidden');
-            } else {
-                videoHero.pause();
-                iconPlay.classList.remove('hidden');
-                iconPause.classList.add('hidden');
-            }
-        });
-    </script>
+    <DetailVideo
+        client:load
+        videoSrc={videoSrc}
+        posterImg={posterImg}
+        titleVideo={title}
+        buttonLabel={i18n.ACCESSIBILITY.VIDEO.PLAY_PAUSE}
+    />
     <BlockContainer class="relative !mt-0">
         <div class="py-20 max-w-3xl mx-auto">
             <TagH1 class="text-center text-white text-shadow-lg/10">
