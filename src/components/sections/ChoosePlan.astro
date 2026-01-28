@@ -2,10 +2,10 @@
 import { getI18N } from "@/i18n";
 import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
 import { PrivateSnorkeling, SnorkelingAdventure, Check } from "@/icons/allIcons";
-import { Turtle } from "@public/img/allImages";
+import { Turtle, PrivateBoatSnorkel, CoverSA } from "@public/img/allImages";
 import TagH2 from "@/components/global/TagH2.astro";
 import BtnLinkCustom from "@/components/extras/BtnLinkCustom";
-import BannerVideo from "./BannerVideo.astro";
+import VideoHome from "./VideoHome";
 import TagP from "../global/TagP.astro";
 
 const { currentLocale } = Astro;
@@ -21,6 +21,7 @@ const plans = [
         price: 59,
         features: i18n.HOME_PAGE.CHOOSE_PLAN.PLANS.SHARED.FEATURES,
         icon: SnorkelingAdventure,
+        img: CoverSA,
         href: translatePath("/snorkel-adventuring-details/"),
     },
     {
@@ -30,9 +31,13 @@ const plans = [
         price: 115,
         features: i18n.HOME_PAGE.CHOOSE_PLAN.PLANS.PRIVATE.FEATURES,
         icon: PrivateSnorkeling,
+        img: PrivateBoatSnorkel,
         href: translatePath("/private-snorkeling-in-puerto-morelos/"),
     },
 ];
+
+const videoSrc = "VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgSUi02E";
+const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgSUi02E/thumbnail.png?height=121&width=214time=7"
 ---
 
 <section class="relative pb-20">
@@ -42,8 +47,8 @@ const plans = [
         alt={i18n.ACCESSIBILITY.IMAGES.TURTLE}
         class="absolute z-11 -top-14 md:-top-28 -left-10 md:-left-20 w-40 sm:w-60 lg:w-80 rotate-[12deg]"
     />
-    <BannerVideo />
-    <div class="relative z-11 h-full flex flex-col justify-center items-center text-center pt-14 md:pt-20 px-5">
+    <VideoHome client:visible videoSrc={videoSrc} posterImg={posterImg} i18n={i18n.ACCESSIBILITY.VIDEO} />
+    <div class="relative z-11 h-full flex flex-col justify-center items-center text-center pt-10 px-5">
         <TagH2 class="text-white max-w-2xl mx-auto">
             {i18n.HOME_PAGE.BEST_SNORKEL.TITLE}
         </TagH2>
@@ -52,38 +57,41 @@ const plans = [
     <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 relative z-11">
         {
             plans.map((plan) => (
-                <div class={`${plan.priority ? "border-cyan-500 shadow-lg shadow-cyan-400 bg-linear-to-br from-zinc-400 via-zinc-100 to-zinc-400" : "bg-white border-zinc-200 shadow-lg"} hover:scale-105 transition duration-300 md:mt-10 border rounded-xl px-6 py-10`}>
-                    <plan.icon class="size-22" />
-                    <h3 class="mt-4 font-semibold text-xl lg:text-2xl">
-                        {plan.title}
-                    </h3>
-                    <p class="mt-4 text-sm/loose">{plan.description}</p>
-                    <h4 class="text-4xl font-semibold mt-4">
-                        ${plan.price}
-                        <span class={`text-base md:text-xl`}>USD</span>
-                    </h4>
-                    <hr
-                        class={`my-8 ${plan.priority ? "border-white" : "border-zinc-300"}`}
-                    />
-                    <ul class="space-y-2 mt-4">
-                        {plan.features.map((item) => (
-                            <li>
-                                <p class="text-sm lg:text-base">
-                                    <Check class="text-cyan-500 size-5 inline-block mr-1" />
-                                    {item}
-                                </p>
-                            </li>
-                        ))}
-                    </ul>
-                    <div class="mt-8">
-                        <BtnLinkCustom
-                            client:visible
-                            text={
-                                i18n.PUERTO_MORELOS_PAGE.CTA_SECTION.BUTTON
-                            }
-                            url={plan.href}
-                            color="primary"
+                <div class={`${plan.priority ? "border-cyan-500 shadow-lg shadow-cyan-400 bg-linear-to-br from-zinc-400 via-zinc-100 to-zinc-400" : "bg-white border-zinc-200 shadow-lg"} hover:scale-105 transition duration-300 md:mt-10 border rounded-xl relative`}>
+                    <plan.icon class="size-18 absolute top-5 left-5" />
+                    <img src={plan.img.src} alt={plan.title} class="w-full h-70 object-cover rounded-2xl p-2.5" />
+                    <div class="px-6 pb-10 pt-5">
+                        <h3 class="mt-4 font-semibold text-xl lg:text-2xl">
+                            {plan.title}
+                        </h3>
+                        <p class="mt-4 text-sm/loose">{plan.description}</p>
+                        <h4 class="text-4xl font-semibold mt-4">
+                            ${plan.price}
+                            <span class={`text-base md:text-xl`}>USD</span>
+                        </h4>
+                        <hr
+                            class={`my-8 ${plan.priority ? "border-white" : "border-zinc-300"}`}
                         />
+                        <ul class="space-y-2 mt-4">
+                            {plan.features.map((item) => (
+                                <li>
+                                    <p class="text-sm lg:text-base">
+                                        <Check class="text-cyan-500 size-5 inline-block mr-1" />
+                                        {item}
+                                    </p>
+                                </li>
+                            ))}
+                        </ul>
+                        <div class="mt-8">
+                            <BtnLinkCustom
+                                client:visible
+                                text={
+                                    i18n.PUERTO_MORELOS_PAGE.CTA_SECTION.BUTTON
+                                }
+                                url={plan.href}
+                                color="primary"
+                            />
+                        </div>
                     </div>
                 </div>
             ))

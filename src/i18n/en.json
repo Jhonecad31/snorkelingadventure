@@ -94,6 +94,10 @@
             "EXPLORE_MAYAN_REEF": "Group of people exploring the Great Mayan Reef while snorkeling",
             "SWIM_MAYAN_REEF": "People swimming above the coral formations in the Great Mayan Reef",
             "FARO_INCLINADO": "Leaning Lighthouse in Puerto Morelos"
+        },
+        "VIDEO": {
+            "BANNER_VIDEO_HOME": "Video banner showing snorkeling adventure in the Great Mayan Reef",
+            "PLAY_PAUSE": "Play/Pause video"
         }
     },
     "HOME_PAGE": {

@@ -49,7 +49,6 @@
         "REVIEWS": "reseñas",
         "PRICE_FROM": "Desde",
         "PEOPLE_ENJOYED": "personas disfrutaron de esta experiencia",
-        "PLAY_PAUSE": "Reproducir/Pausar video",
         "MENU": {
             "OPEN_MENU": "Abrir menú",
             "CLOSE_MENU": "Cerrar menú"
@@ -94,6 +93,10 @@
             "EXPLORE_MAYAN_REEF": "Grupo de personas explorando la Gran Barrera de Arrecife mientras hacen snorkel",
             "SWIM_MAYAN_REEF": "Personas nadando sobre las formaciones de coral en la Gran Barrera de Arrecife",
             "FARO_INCLINADO": "Faro Inclinado en Puerto Morelos"
+        },
+        "VIDEO": {
+            "BANNER_VIDEO_HOME": "Video banner mostrando el tour de snorkeling adventure en la Gran Barrera de Arrecife",
+            "PLAY_PAUSE": "Reproducir/Pausar video"
         }
     },
     "HOME_PAGE": {
