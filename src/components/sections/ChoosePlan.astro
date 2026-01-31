@@ -61,8 +61,10 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
                     <plan.icon class="size-18 absolute top-5 left-5" />
                     <img src={plan.img.src} alt={plan.title} class="w-full h-70 object-cover rounded-2xl p-2.5" />
                     <div class="px-6 pb-10 pt-5">
-                        <h3 class="mt-4 font-semibold text-xl lg:text-2xl">
-                            {plan.title}
+                        <h3 class="mt-4 font-semibold text-xl lg:text-2xl hover:underline">
+                            <a href={plan.href}>
+                                {plan.title}
+                            </a>
                         </h3>
                         <p class="mt-4 text-sm/loose">{plan.description}</p>
                         <h4 class="text-4xl font-semibold mt-4">
