@@ -4,8 +4,6 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import BlogCategoryCard from "@/components/blog/BlogCategoryCard.astro";
 import SkeletonBlogCard from "@/components/blog/SkeletonBlogCard.astro";
-import TagH1 from "@/components/global/TagH1.astro";
-import TagP from "@/components/global/TagP.astro";
 import PaginationCategoryPosts from "@/components/blog/PaginationCategoryPosts.astro";
 import HeroGradient from "@/components/sections/HeroGradient.astro";
 import CategoriesPosts from "@/components/blog/CategoriesPosts.astro";
@@ -24,12 +22,12 @@ if (!id || !existsPage) {
 }
 const seoMetaDatos = {
     title: pageNumber > 1 ? `${name} Archives - Page ${pageNumber} - Snorkeling Adventure` : `${name} Archives - Snorkeling Adventure`,
-    description: pageNumber > 1 ? `Read the articles in our ${name} Archives for your next trip to Cancun and Riviera Maya. Page ${pageNumber}.` : `Read the articles in our ${name} Archives for your next trip to Cancun and Riviera Maya.`,
+    description: pageNumber > 1 ? `Read the articles in our ${name} Archives for your next trip to Puerto Morelos and Riviera Maya. Page ${pageNumber}.` : `Read the articles in our ${name} Archives for your next trip to Puerto Morelos and Riviera Maya.`,
 };
 
 const dataPosts = {
     title: pageNumber > 1 ? `${name} Archives - Page ${pageNumber}` : `${name} Archives`,
-    description: id != null ? `Read the articles in our ${name} Archives for your next trip to Cancun and Riviera Maya.` : "",
+    description: id != null ? `Read the articles in our ${name} Archives for your next trip to Puerto Morelos and Riviera Maya.` : "",
 };
 ---
 
