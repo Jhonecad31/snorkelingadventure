@@ -41,7 +41,7 @@
             "DESCRIPTION": "Ocurrió un error en el servidor. Por favor, inténtelo de nuevo más tarde."
         }
     },
-    "ACCESIBILITY": {
+    "ACCESSIBILITY": {
         "LOGO": "Logo de The Original Snorkeling Adventure",
         "CHANGE_LANGUAGE": "Cambiar idioma",
         "GO_TO_HOME": "Ir a inicio",
@@ -59,7 +59,7 @@
             "LOCATION": "Estamos ubicados en la calle Rafael E. Melgar, Puerto Morelos, Quintana Roo, México"
         },
         "BUTTON": {
-            "BOOK_NOW": "Reservar ahora"
+            "BOOK_NOW": "Reservar"
         },
         "SOCIAL_MEDIA": {
             "FOLLOW": "Síguenos",
