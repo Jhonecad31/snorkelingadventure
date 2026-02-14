@@ -41,7 +41,8 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
 ---
 
 <section class="relative pb-20">
-    <div class="absolute inset-0 w-full h-full bg-linear-to-br from-sky-700 via-cyan-400 to-cyan-600 z-5 mask-radial-[110%_85%] md:mask-radial-[100%_75%] mask-radial-from-100% mask-radial-at-top"></div>
+    <div class="absolute inset-0 w-full h-full bg-linear-to-br from-sky-700 via-cyan-400 to-cyan-600 z-5 mask-radial-[110%_85%] md:mask-radial-[100%_75%] mask-radial-from-95% mask-radial-at-top"></div>
+    <div class="absolute inset-0 w-full h-full bg-[url('/assets/img/bg/texture-table-white.webp')] bg-repeat bg-[auto_300px] mask-b-from-95%"></div>
     <img
         src={Turtle.src}
         alt={i18n.ACCESSIBILITY.IMAGES.TURTLE}
@@ -58,7 +59,7 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
         {
             plans.map((plan) => (
                 <div class={`${plan.priority ? "border-cyan-500 shadow-lg shadow-cyan-400 bg-linear-to-br from-zinc-400 via-zinc-100 to-zinc-400" : "bg-white border-zinc-200 shadow-lg"} hover:scale-105 transition duration-300 md:mt-10 border rounded-xl relative`}>
-                    <plan.icon class="size-18 absolute top-5 left-5" />
+                    <plan.icon class="size-26 absolute top-5 left-5" />
                     <img src={plan.img.src} alt={plan.title} class="w-full h-70 object-cover rounded-2xl p-2.5" />
                     <div class="px-6 pb-10 pt-5">
                         <h3 class="mt-4 font-semibold text-xl lg:text-2xl hover:underline">
@@ -87,9 +88,7 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
                         <div class="mt-8">
                             <BtnLinkCustom
                                 client:visible
-                                text={
-                                    i18n.PUERTO_MORELOS_PAGE.CTA_SECTION.BUTTON
-                                }
+                                text={i18n.PUERTO_MORELOS_PAGE.CTA_SECTION.BUTTON}
                                 url={plan.href}
                                 color="primary"
                             />

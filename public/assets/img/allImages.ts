@@ -16,12 +16,17 @@ import PrivateBoatSnorkel from "./gallery/private-snorkeling/best-private-boat-i
 // Gallery
 import ExperiencePrivateSnorkel from "./gallery/private-snorkeling/ceviche-on-board-private-snorkel.webp";
 // Extras
-import Corals from "./extras/corals-mayan-reef.webp";
 import ShapeMap from "./extras/shape-map-world.png";
 import SeaweedMinimalistWhite from "./extras/seaweed-minimalist-white.webp";
 import SeaweedBlue from "./extras/seaweed-blue.webp";
 import SeaweedWhite from "./extras/seaweed-white.webp";
 import Turtle from "./extras/sea-turtle-in-national-reef-park-of-puerto-morelos.webp";
+import Coral1 from "./extras/coral-snorkel-mexico.webp";
+import Coral2 from "./extras/corals-mexico-puerto-morelos.webp";
+import FishAngel from "./extras/pez-angel-puerto-morelos.webp";
+import FishSargent from "./extras/pez-sargento-mexico-puerto-morelos.webp";
+import FishBlur from "./extras/pez-blur.webp";
+import FishAngel2 from "./extras/life-marine-mexico-puerto-morelos.webp";
 // More Activities
 import CenoteAdventuring from "./cover-activities/cenote-adventuring-ruta-de-los-cenotes-fb.webp";
 import ExtremeAdventuring from "./cover-activities/extreme-adventuring-eco-park-in-cancun-fb.webp";
@@ -33,6 +38,12 @@ import User3 from "./testimonials/user-3.webp";
 
 export {
     Turtle,
+    Coral1,
+    Coral2,
+    FishAngel,
+    FishSargent,
+    FishBlur,
+    FishAngel2,
     FaroInclinado,
     CenoteAdventuring,
     ExtremeAdventuring,
@@ -50,7 +61,6 @@ export {
     BgFishes,
     PersonOkSnorkel,
     CoverSA,
-    Corals,
     ShapeMap,
     SeaweedMinimalistWhite,
     SeaweedBlue,
