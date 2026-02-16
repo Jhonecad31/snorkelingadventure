@@ -4,6 +4,7 @@ export const prerender = false;
 import { getPostInfo } from "@/services/wp";
 import { formatDate, replaceHtmlEntities } from "@/utils/functions";
 import { Schema } from "astro-seo-schema";
+import { siteName } from "@/utils/dataGlobal";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import TagH1 from "@/components/global/TagH1.astro";
@@ -54,7 +55,7 @@ const seoMetaData = {
             publisher: {
                 "@type": "Organization",
                 "@id": siteURL.origin,
-                name: "Snorkeling Adventure",
+                name: siteName,
                 logo: {
                     "@type": "ImageObject",
                     url: `${siteURL.origin}/assets/img/logos/logo-snorkel.png`,
@@ -62,7 +63,7 @@ const seoMetaData = {
             },
             author: {
                 "@type": "Organization",
-                name: "Snorkeling Adventure",
+                name: siteName,
                 url: siteURL.origin,
             },
         }}
@@ -112,12 +113,12 @@ const seoMetaData = {
             },
             author: {
                 "@type": "Organization",
-                name: "Snorkeling Adventure",
+                name: siteName,
                 url: siteURL.origin,
             },
             publisher: {
                 "@type": "Organization",
-                name: "Snorkeling Adventure",
+                name: siteName,
                 logo: {
                     "@type": "ImageObject",
                     url: `${siteURL.origin}/assets/img/logos/logo-snorkel.png`,
