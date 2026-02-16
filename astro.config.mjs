@@ -1,7 +1,5 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { siteURL } from '@/utils/dataGlobal';
-import { defaultLang } from '@/i18n/ui';
 import react from '@astrojs/react';
 import vercel from '@astrojs/vercel';
 import mdx from '@astrojs/mdx';
@@ -10,13 +8,13 @@ import tailwindcss from '@tailwindcss/vite';
 import partytown from '@astrojs/partytown';
 
 export default defineConfig({
-  site: siteURL,
+  site: "https://snorkelingadventure.com",
   adapter: vercel(),
   output: 'server',
   trailingSlash: 'always',
   integrations: [react(), mdx(), sitemap({
     i18n: {
-      defaultLocale: defaultLang,
+      defaultLocale: 'en',
       locales: {
         en: 'en-US',
         es: 'es-ES',
@@ -39,10 +37,10 @@ export default defineConfig({
   }),
   ],
   i18n: {
-    defaultLocale: defaultLang,
+    defaultLocale: 'en',
     locales: ['en', 'es'],
     fallback: {
-      es: defaultLang
+      es: 'en'
     },
     routing: {
       prefixDefaultLocale: false
