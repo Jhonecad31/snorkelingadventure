@@ -18,6 +18,8 @@ const { seo, offI18n } = Astro.props;
         <slot name="schema-jsonld" />
     </head>
     <body id="body">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV35K8DZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <Header offI18n={offI18n} />
         <main>
             <slot />
