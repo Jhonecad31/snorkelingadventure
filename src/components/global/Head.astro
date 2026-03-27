@@ -74,6 +74,10 @@ const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '804562681635258');
     fbq('track', 'PageView');
+    fbq('track', 'Purchase',{
+        value:0.00,
+        currency:'USD'
+        });
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=804562681635258&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
