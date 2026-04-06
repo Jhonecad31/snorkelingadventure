@@ -1,5 +1,6 @@
 ---
 import { Swiper, SwiperWrapper, SwiperSlide } from "astro-swiper";
+import { replaceHtmlEntities } from "@/utils/functions";
 import { getCategories } from "@/services/wp";
 
 const categories = await getCategories();
@@ -48,7 +49,7 @@ const { pathCurrent = "blog-home" } = Astro.props;
                             href={`/blog/category/${cat.slug}/`}
                             class={`inline-flex px-6 md:px-8 py-2 md:py-3 rounded-full ${pathCurrent === cat.slug ? "bg-cyan-500 hover:bg-cyan-400 font-semibold text-white" : "bg-gray-100 hover:bg-gray-200"} transition-colors duration-300 shadow-md my-2 whitespace-nowrap`}
                         >
-                            {cat.name}
+                            {replaceHtmlEntities(cat.name)}
                         </a>
                     </p>
                 </SwiperSlide>

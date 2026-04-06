@@ -43,9 +43,9 @@ const { posts } = await getPostsByCategoryByPage(idCategory, { page });
                             <p class="text-cyan-600 font-semibold text-xs md:text-sm hover:underline m-0">
                                 <a
                                     href={`/blog/category/${category.slug}/`}
-                                    aria-label={`View all posts of ${category.name}`}
+                                    aria-label={`View all posts of ${replaceHtmlEntities(category.name)}`}
                                 >
-                                    {category.name}
+                                    {replaceHtmlEntities(category.name)}
                                 </a>
                             </p>
                             {i < post.categories.length - 1 && (
