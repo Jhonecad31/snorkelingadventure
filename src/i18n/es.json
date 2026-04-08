@@ -226,7 +226,7 @@
             },
             "SUCCESS_FORM": {
                 "TITLE": "Gracias por contactarnos",
-                "DESCRIPTION": "Su mensaje ha sido enviado y nos pondremos en contacto con usted en breve. Si tiene alguna pregunta o necesita asistencia inmediata, llámenos al +52 998 249 0003 o envíenos un correo electrónico a info@snorkeladventuring.com."
+                "DESCRIPTION": "Su mensaje ha sido enviado y nos pondremos en contacto con usted en breve. Si tiene alguna pregunta o necesita asistencia inmediata, llámenos al +52 998 249 0003 o envíenos un correo electrónico a info@snorkelingadventure.com."
             },
             "ERROR_FORM": {
                 "TITLE": "¡Oops! Algo salió mal",
@@ -420,7 +420,7 @@
         "TITLE": "Gracias por su reserva",
         "DESCRIPTION": {
             "TEXT_1": "Hemos recibido su mensaje y nos pondremos en contacto con usted en breve.",
-            "TEXT_2": "Si tiene alguna pregunta o necesita asistencia inmediata, llámenos al +52 998 249 0003 o envíenos un correo electrónico a info@snorkeladventuring.com."
+            "TEXT_2": "Si tiene alguna pregunta o necesita asistencia inmediata, llámenos al +52 998 249 0003 o envíenos un correo electrónico a info@snorkelingadventure.com."
         }
     },
     "DETAIL_PAGE": {

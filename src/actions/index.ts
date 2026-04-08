@@ -46,7 +46,7 @@ export const server = {
             // Send emailto Admin
             const { data, error } = await resend.emails.send({
                 from: "Snorkeling Adventure <snorkelingadventure@sales.whattodoincancun.com>",
-                to: "info@snorkeladventuring.com",
+                to: "info@snorkelingadventure.com",
                 subject: subjectAdmin,
                 replyTo: input.email,
                 html: emailAdminHtml,
