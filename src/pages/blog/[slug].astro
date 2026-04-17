@@ -10,6 +10,10 @@ import BlockContainer from "@/components/global/BlockContainer.astro";
 import TagH1 from "@/components/global/TagH1.astro";
 import TagP from "@/components/global/TagP.astro";
 import SharePost from "@/components/extras/SharePost.astro";
+import CTASection from "@/components/sections/CTASection.astro";
+import BlogLastPostsCard from "@/components/blog/BlogLastPostsCard.astro";
+import SkeletonBlogCard from "@/components/blog/SkeletonBlogCard.astro";
+import TagH2 from "@/components/global/TagH2.astro";
 
 const { slug } = Astro.params;
 
@@ -167,7 +171,13 @@ const seoMetaData = {
             />
             <SharePost siteURL={siteURL} textCopy="Copied!" />
         </article>
+        <!-- Related Posts -->
+        <TagH2 class="mt-15 mb-5 text-center">Related Posts Blog</TagH2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <BlogLastPostsCard />
+        </div>
     </BlockContainer>
+    <CTASection />
     <style is:inline>
         .wp-block-code {
             background-color: #f8f8f8;
