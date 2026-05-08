@@ -5,23 +5,30 @@ import vercel from '@astrojs/vercel';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
+import indexnow from 'astro-indexnow';
 
 export default defineConfig({
   site: "https://snorkelingadventure.com",
   adapter: vercel(),
   output: 'static',
   trailingSlash: 'always',
-  integrations: [react(), mdx(), sitemap({
-    i18n: {
-      defaultLocale: 'en',
-      locales: {
-        en: 'en-US',
-        es: 'es-ES',
-      }
-    },
-    filter: (page) =>
-      !page.includes('/thanks')
-  })],
+  integrations: [
+    react(),
+    mdx(),
+    indexnow({
+      key: process.env.INDEXNOW_KEY,
+    }),
+    sitemap({
+      i18n: {
+        defaultLocale: 'en',
+        locales: {
+          en: 'en-US',
+          es: 'es-ES',
+        }
+      },
+      filter: (page) =>
+        !page.includes('/thanks')
+    })],
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es'],
