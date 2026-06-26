@@ -1,0 +1,78 @@
+---
+import { getI18N } from "@/i18n";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TagH1 from "@/components/global/TagH1.astro";
+import TagH2 from "@/components/global/TagH2.astro";
+import TagH3 from "@/components/global/TagH3.astro";
+import TagP from "@/components/global/TagP.astro";
+import BtnLinkCustom from "@/components/extras/BtnLinkCustom";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const seoMetaDatos = {
+    title: i18n.SEO.POLICY_PAGE.TITLE,
+    description: i18n.SEO.POLICY_PAGE.DESCRIPTION,
+    metaTitle: i18n.SEO.POLICY_PAGE.META_TITLE,
+};
+---
+
+<BaseLayout seo={seoMetaDatos}>
+    <section class="container max-w-4xl mx-auto p-5 mt-20 md:mt-30 mb-10">
+        <TagH1 class="text-center lg:text-start">{i18n.POLICY_PAGE.PRIVACY_NOTICE.TITLE}</TagH1>
+        <TagP>{i18n.POLICY_PAGE.PRIVACY_NOTICE.DESCRIPTION.TEXT_1}</TagP>
+        <TagP>{i18n.POLICY_PAGE.PRIVACY_NOTICE.DESCRIPTION.TEXT_2}</TagP>
+
+        <TagH2>{i18n.POLICY_PAGE.INFORMATION_COLLECTED.TITLE}</TagH2>
+        <TagP>{i18n.POLICY_PAGE.INFORMATION_COLLECTED.DESCRIPTION.TEXT_1}</TagP>
+        <TagP>{i18n.POLICY_PAGE.INFORMATION_COLLECTED.DESCRIPTION.TEXT_2}</TagP>
+        <TagP>{i18n.POLICY_PAGE.INFORMATION_COLLECTED.DESCRIPTION.TEXT_3}</TagP>
+
+        <TagH3>{i18n.POLICY_PAGE.WHAT_DO_WE_USE.TITLE}</TagH3>
+        <TagP>{i18n.POLICY_PAGE.WHAT_DO_WE_USE.DESCRIPTION.TEXT_1}</TagP>
+        <ul class="!list-disc ml-5 my-4 space-y-3 text-sm/loose md:text-lg/loose">
+            {i18n.POLICY_PAGE.WHAT_DO_WE_USE.DESCRIPTION.LIST_1.map((list) => (
+                <li>{list}</li>
+            ))}
+        </ul>
+        <TagP>{i18n.POLICY_PAGE.WHAT_DO_WE_USE.DESCRIPTION.TEXT_2}</TagP>
+        <ul class="!list-disc ml-5 my-4 space-y-3 text-sm/loose md:text-lg/loose">
+            {i18n.POLICY_PAGE.WHAT_DO_WE_USE.DESCRIPTION.LIST_2.map((list) => (
+                <li>{list}</li>
+            ))}
+        </ul>
+
+        <TagH3>{i18n.POLICY_PAGE.WHO_DO_WE_SHARE.TITLE}</TagH3>
+        <TagP>{i18n.POLICY_PAGE.WHO_DO_WE_SHARE.DESCRIPTION.TEXT_1}</TagP>
+        <TagP>{i18n.POLICY_PAGE.WHO_DO_WE_SHARE.DESCRIPTION.TEXT_2}</TagP>
+
+        <TagH3>{i18n.POLICY_PAGE.EXPOSURE_TO_INFORMATION.TITLE}</TagH3>
+        <TagP>{i18n.POLICY_PAGE.EXPOSURE_TO_INFORMATION.DESCRIPTION.TEXT_1}</TagP>
+        <TagP>{i18n.POLICY_PAGE.EXPOSURE_TO_INFORMATION.DESCRIPTION.TEXT_2}</TagP>
+
+        <TagH3>{i18n.POLICY_PAGE.REVOKE_CONSENT.TITLE}</TagH3>
+        <TagP>{i18n.POLICY_PAGE.REVOKE_CONSENT.DESCRIPTION.TEXT_1}</TagP>
+        <ul class="!list-disc ml-5 my-4 space-y-3 text-sm/loose md:text-lg/loose">
+            {i18n.POLICY_PAGE.REVOKE_CONSENT.DESCRIPTION.LIST_1.map((list) => (
+                <li>{list}</li>
+            ))}
+        </ul>
+        <TagP>{i18n.POLICY_PAGE.REVOKE_CONSENT.DESCRIPTION.TEXT_2}</TagP>
+        <TagP>{i18n.POLICY_PAGE.REVOKE_CONSENT.DESCRIPTION.TEXT_3}</TagP>
+
+        <TagH3>{i18n.POLICY_PAGE.LAW.TITLE}</TagH3>
+        <TagP>{i18n.POLICY_PAGE.LAW.DESCRIPTION.TEXT_1}</TagP>
+
+        <TagH3>{i18n.POLICY_PAGE.LAST_UPDATE.TITLE}</TagH3>
+        <TagP>
+            {i18n.POLICY_PAGE.LAST_UPDATE.MAIL} 
+            <a 
+                class="font-semibold text-cyan-600 hover:underline decoration-cyan-600 transition-colors duration-300"
+                href={`mailto:${i18n.POLICY_PAGE.LAST_UPDATE.EMAIL}`}
+            >
+                {i18n.POLICY_PAGE.LAST_UPDATE.EMAIL}
+            </a> 
+        </TagP>
+    </section>
+</BaseLayout>

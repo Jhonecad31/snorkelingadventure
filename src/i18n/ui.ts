@@ -24,6 +24,8 @@ export const ui = {
         'nav.contact': 'Contact',
         'footer.regularSnorkel': 'Snorkeling Adventure',
         'footer.privateSnorkel': 'Private Snorkeling',
+        'footer.policy': 'Policy & Privacy',
+        'footer.terms': 'Terms & Conditions',
         'footer.design': 'Design by Grupo Extreme',
     },
     es: {
@@ -33,6 +35,8 @@ export const ui = {
         'nav.contact': 'Contacto',
         'footer.regularSnorkel': 'Snorkeling Adventure',
         'footer.privateSnorkel': 'Snorkel Privado',
+        'footer.policy': 'Política de Privacidad',
+        'footer.terms': 'Términos y Condiciones',
         'footer.design': 'Diseñado por Grupo Extreme',
     }
 } as const;
