@@ -408,25 +408,36 @@
     "TERMS_PAGE": {
         "TITLE": "Términos y Condiciones",
         "USE_CAMERAS": {
-            "TITLE": "Política de uso de cámaras",
+            "TITLE": "Política de Cámaras",
             "DESCRIPTION": {
-                "TEXT_1": "Basado en estándares internacionales de seguridad y para garantizar la seguridad física de los visitantes, no se permite el uso de cámaras durante nuestras actividades de aventura. Nuestras actividades requieren que tus manos estén libres en todo momento. Esto incluye cámaras tipo “point and shoot”, DSLR y SLR, cámaras desechables y teléfonos celulares.",
+                "TEXT_1": "Para cumplir con los estándares internacionales de seguridad y garantizar la protección de todos los participantes, no se permite el uso de cámaras durante las actividades de aventura que requieran mantener ambas manos libres en todo momento. Esta restricción incluye cámaras digitales compactas, cámaras DSLR y SLR, cámaras desechables y teléfonos móviles.",
                 "TEXT_2": "Excepciones:",
-                "TEXT_3": "Cámaras GoPro y similares solo se permiten si están montadas en el casco con un soporte para la cabeza durante las actividades. El uso de palos de selfie, soportes para el pecho, en la mano o cualquier otra parte del cuerpo que no sea la cabeza (casco) está prohibido."
+                "TEXT_3": "Las cámaras GoPro® y cámaras de acción similares están permitidas únicamente cuando estén montadas de forma segura en el casco del participante utilizando un soporte para cabeza aprobado. Los bastones para selfis (selfie sticks), soportes de pecho, dispositivos de mano, soportes de muñeca o cualquier otro método de montaje que no sea la correa para casco están estrictamente prohibidos durante las actividades."
+            }
+        },
+        "TRANSPORTATION_POLICY": {
+            "TITLE": "Política de Transporte",
+            "DESCRIPTION": {
+                "TEXT_1": "Nuestro Departamento de Reservaciones se pondrá en contacto con usted por llamada telefónica o mensaje de WhatsApp para confirmar su hora y lugar de inicio antes de su actividad.",
+                "TEXT_2": "El servicio de transporte es compartido y no privado. Los huéspedes deben estar listos en el punto de encuentro confirmado antes de la hora programada. Los vehículos esperarán un máximo de 5 minutos después de la hora confirmada antes de continuar con su ruta.",
+                "TEXT_3": "Si su hotel, Airbnb, renta vacacional o alojamiento se encuentra fuera de nuestra zona de servicio de transporte, nuestro Departamento de Reservaciones le asignará el punto de encuentro disponible más cercano.",
+                "TEXT_4": "Los vehículos de transporte y sus asientos cuentan con dimensiones y especificaciones estándar, por lo que no están adaptados especialmente para cubrir necesidades específicas de accesibilidad."
             }
         },
         "CANCELLATION_POLICY": {
             "TITLE": "Política de Cancelación",
             "DESCRIPTION": {
-                "TEXT_1": "Reembolso del 100% si la cancelación se realiza 72 horas antes de la fecha de la actividad. Reembolso del 50% si la cancelación se realiza 48 horas antes de la fecha de la actividad. Reembolso del 0% si la cancelación se realiza 24 horas o menos antes de la fecha de la actividad.",
-                "TEXT_2": "No Presentarse: Por favor, llega al menos 5 min. antes de la hora de recogida confirmada, el transporte tendrá un máximo de 5 min de tolerancia de espera. En caso de no presentarse, el monto cobrado no será reembolsable bajo ninguna circunstancia."
+                "TEXT_1": "Los huéspedes son elegibles para recibir un reembolso del 100% si la cancelación se realiza al menos 72 horas antes de la actividad programada. Se aplicará un reembolso del 50% para las cancelaciones hechas al menos 48 horas antes de la actividad. Las cancelaciones realizadas dentro de las 24 horas previas a la actividad programada, o posterior a este plazo, no son reembolsables.",
+                "TEXT_2": "No Show (No presentación): Los huéspedes deben llegar al menos 5 minutos antes de su hora de transportación confirmada. Los vehículos de transporte esperarán un máximo de 5 minutos después de la hora programada. No presentarse dentro de este periodo de espera se considerará como No Show y la reservación no será reembolsable.",
+                "TEXT_3": "Los huéspedes que pierdan su transporte debido a un No Show podrán solicitar la reprogramación de su actividad, sujeto a disponibilidad, pagando una tarifa de reprogramación de transporte de $15 USD."
             }
         },
         "CLIMATE_GUARANTEE": {
             "TITLE": "Garantía Climática",
             "DESCRIPTION": {
-                "TEXT_1": "A veces, las actividades deben cancelarse debido a condiciones climáticas extremas. Tu actividad será reprogramada para otro día; si eso no es posible debido a tus planes de vacaciones, recibirás un reembolso del 100%. ¡Extreme Adventuring es el único que puede cancelar debido a condiciones climáticas! Los clientes que cancelen por clima generarán un cargo del 100% por cancelación.",
-                "TEXT_2": "El valor de la transacción puede estar sujeto a impuestos, aranceles, transacciones extranjeras, cambio de divisa u otras tarifas. Tu banco o la compañía de tu tarjeta de crédito o débito puede convertir el pago a la moneda local y cobrar tarifas, resultando en diferencias entre el monto mostrado en www.extreme-adventure.us y los sitios web afiliados a Extreme Adventuring, y el monto final cobrado a tu cuenta bancaria o estado de tarjeta de crédito o débito. Por favor, contacta a tu banco o compañía de tarjeta si tienes alguna pregunta sobre conversión o tarifas aplicables. Nota: Para reservas realizadas en Brasil, el impuesto IOF (Impuesto sobre Operaciones Financieras, 6.38%) no está incluido en el valor final de la reserva y será cargado a la tarjeta de crédito o débito utilizada para la compra."
+                "TEXT_1": "Las actividades pueden posponerse o cancelarse ocasionalmente debido a condiciones climáticas o ambientales extremas. Si esto ocurre, su actividad se reprogramará para otra fecha disponible. Si la reprogramación no es posible debido a su itinerario de viaje, recibirá un reembolso completo. Únicamente Extreme Adventuring tiene la autoridad para determinar si las condiciones climáticas o ambientales requieren la cancelación o posposición de una actividad. Los huéspedes que decidan cancelar debido a las condiciones del clima sin una cancelación oficial por parte de Extreme Adventuring estarán sujetos a un cargo por cancelación del 100%.",
+                "TEXT_2": "Si una actividad se cancela debido a condiciones climáticas o ambientales, los huéspedes deben ponerse en contacto con su agencia de viajes o con nuestro Departamento de Reservaciones para procesar la solicitud de reprogramación o reembolso correspondiente.",
+                "TEXT_3": "El monto total de la transacción puede estar sujeto a impuestos, tarifas por transacciones extranjeras, cargos por conversión de moneda u otras comisiones impuestas por su banco o emisor de la tarjeta de crédito/débito. Su institución financiera puede convertir el pago a su moneda local, lo que puede generar una diferencia entre el monto mostrado en nuestro sitio web y el monto final cargado a su cuenta. Por favor, póngase en contacto con su banco o emisor de la tarjeta si tiene preguntas sobre las tarifas aplicables o los tipos de cambio. Para reservaciones realizadas en Brasil, el IOF (Impuesto sobre Operaciones Financieras) no está incluido en el precio final de la reservación y se cobrará por separado en la tarjeta de crédito o débito utilizada para la compra."
             }
         }
     },
@@ -434,75 +445,76 @@
         "PRIVACY_NOTICE": {
             "TITLE": "Aviso de Privacidad",
             "DESCRIPTION": {
-                "TEXT_1": "De conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, le informamos nuestro Aviso de Privacidad (“Aviso de Privacidad”).",
-                "TEXT_2": "En OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV nos preocupamos por tu privacidad. Usaremos tus datos personales de manera responsable y confidencial. OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV es el responsable del tratamiento y uso de tus datos personales, ubicada en Calle Nogal, sm 313, Alamos II, Cancún, Quintana Roo, cp 77533."
+                "TEXT_1": "De conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, por medio de la presente ponemos a su disposición nuestro Aviso de Privacidad.",
+                "TEXT_2": "En OPERADORA DE EXCURSIONES NÁUTICAS S.A. de C.V., estamos comprometidos con la protección de su privacidad y el manejo de sus datos personales de manera responsable, segura y confidencial. OPERADORA DE EXCURSIONES NÁUTICAS S.A. de C.V. es la entidad responsable de recopilar, tratar y resguardar sus datos personales. Nuestro domicilio registrado se ubica en Calle Nogal, Supermanzana 313, Álamos II, Cancún, Quintana Roo, C.P. 77533, México."
             }
         },
         "INFORMATION_COLLECTED": {
             "TITLE": "¿Qué información recopilamos?",
             "DESCRIPTION": {
-                "TEXT_1": "OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV recopila tus datos personales a través de nuestro sitio web www.extreme-adventure.us (en adelante, el “Sitio Web”) y otros medios y formas. Recopilamos los siguientes datos personales: nombre, dirección, número(s) de teléfono, correo electrónico, fotografía, nacionalidad, ocupación y nombre del empleador, país de residencia, alias en redes sociales (Twitter), servicios contratados y número(s) de tarjeta de crédito. Estos datos personales se denominarán colectivamente “Datos Personales”. [Asimismo, cuando visitas nuestro Sitio Web, recopilamos tu dirección IP, navegador de Internet, preferencias de navegación en nuestro Sitio Web e historial de navegación].",
-                "TEXT_2": "www.snorkelingadventure.com no recopila ni procesa datos personales sensibles.",
-                "TEXT_3": "El Sitio Web de OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV utiliza cookies y web beacons. Las cookies son archivos descargados automáticamente, almacenados en tu equipo cuando navegas por un sitio web. Las cookies permiten que el servidor de Internet recuerde datos sobre el usuario y sus preferencias de navegación. [Los web beacons son imágenes insertadas dentro de un sitio web o mensaje de correo electrónico, que pueden usarse para recopilar datos o monitorear el comportamiento del usuario en el sitio web, o almacenar su dirección IP. Los Datos Personales que recopilamos por estos medios se usan exclusivamente para mejorar tu experiencia de navegación y uso en nuestro Sitio Web y servicios electrónicos.]"
+                "TEXT_1": "OPERADORA DE EXCURSIONES NÁUTICAS S.A. de C.V. recopila información personal a través de nuestro sitio web (www.extremeadventuringcancun.com), plataformas de reservación, canales de atención al cliente y otros medios autorizados. La información personal que podemos recabar incluye su nombre, dirección, número de teléfono, correo electrónico, fotografías, nacionalidad, ocupación, nombre del empleador, país de residencia, usuario de redes sociales (cuando aplique), servicios reservados y la información de pago necesaria para procesar su reservación. Para los efectos de este Aviso de Privacidad, esta información se denominará colectivamente como 'Datos Personales'. Al visitar nuestro sitio web, también podemos recopilar automáticamente información técnica como su dirección IP, tipo de navegador, información del dispositivo, comportamiento de navegación y datos de uso del sitio web.",
+                "TEXT_2": "www.extremeadventuringcancun.com no recopila ni trata intencionalmente datos personales sensibles según lo definido por la legislación de privacidad mexicana aplicable.",
+                "TEXT_3": "Nuestro sitio web utiliza cookies y tecnologías similares, incluyendo web beacons, para mejorar su experiencia de navegación y optimizar la funcionalidad de nuestros servicios en línea. Las cookies son pequeños archivos almacenados en su dispositivo que permiten a nuestro sitio web reconocer sus preferencias y mejorar futuras visitas. Los web beacons son pequeños elementos gráficos que nos ayudan a comprender el uso del sitio web, medir la efectividad de las comunicaciones y analizar el comportamiento de los visitantes. La información recopilada a través de estas tecnologías se utiliza exclusivamente para mejorar nuestro sitio web, la experiencia del cliente y nuestros servicios digitales."
             }
         },
         "WHAT_DO_WE_USE": {
-            "TITLE": "¿Para qué usamos tu información?",
+            "TITLE": "¿Cómo utilizamos su información?",
             "DESCRIPTION": {
-                "TEXT_1": "Tus Datos Personales se utilizarán para los siguientes fines: Fines esenciales:",
+                "TEXT_1": "Sus Datos Personales son tratados para las siguientes finalidades esenciales:",
                 "LIST_1": [
-                    "Identificación para acceder a nuestros eventos y Sitio Web;",
-                    "Reservas, compras o adquisición de servicios;",
-                    "Facturación y cobro de productos o servicios;",
-                    "Actualización y almacenamiento en la base de datos de clientes;",
-                    "Contactar para cualquiera de estos fines;",
-                    "Participar en sorteos, concursos y en general, cumplir nuestras obligaciones con nuestros clientes."
+                    "Para identificarlo y brindarle acceso a nuestros servicios y sitio web;",
+                    "Para procesar reservaciones, compras y solicitudes de servicios;",
+                    "Para emitir facturas y procesar pagos;",
+                    "Para mantener y actualizar nuestra base de datos de clientes;",
+                    "Para ponernos en contacto con usted en relación con su reservación, servicios adquiridos o consultas de atención al cliente;",
+                    "Para cumplir con nuestras obligaciones contractuales y proporcionar los servicios que ha solicitado."
                 ],
-                "TEXT_2": "Fines no esenciales: Además de los fines mencionados anteriormente, podemos usar tus Datos Personales para los siguientes fines no esenciales:",
+                "TEXT_2": "Con su consentimiento, también podemos utilizar sus Datos Personales para las siguientes finalidades no esenciales:",
                 "LIST_2": [
-                    "Informar sobre cambios, productos, servicios, regalos y/o ofertas especiales;",
-                    "Usar tu imagen en OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV; publicidad;",
-                    "Evaluar la calidad de los servicios de la Empresa y mejorar tu experiencia de navegación en nuestro Sitio Web."
+                    "Para informarle sobre nuevos productos, servicios, promociones, descuentos y ofertas especiales;",
+                    "Para utilizar fotografías o material audiovisual con fines publicitarios y promocionales, cuando esté autorizado;",
+                    "Para evaluar, mejorar y personalizar la calidad de nuestros servicios y su experiencia de navegación en nuestro sitio web."
                 ]
             }
         },
         "WHO_DO_WE_SHARE": {
-            "TITLE": "¿Con quién compartimos tus Datos Personales?",
+            "TITLE": "¿Con quién compartimos sus Datos Personales?",
             "DESCRIPTION": {
-                "TEXT_1": "OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV no transfiere tus Datos Personales a terceros sin tu consentimiento previo, salvo que la legislación aplicable disponga lo contrario. Si decides realizar una compra o reserva en línea en el Sitio Web, serás vinculado a una interfaz de reservas y un motor de reservas de terceros proporcionado por “Payworks online & PAY PAL”. Aunque parezca parte de nuestro Sitio Web, dicho motor de reservas es un servicio proporcionado por un tercero y se rige por su propia política de privacidad y prácticas. Tu privacidad nos importa, por lo que hemos seleccionado cuidadosamente el motor de reservas.",
-                "TEXT_2": "OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV puede revelar tus Datos Personales para cumplir con la ley aplicable o cualquier mandato de una autoridad competente. OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV no comercializará, venderá ni arrendará tus Datos Personales sin tu consentimiento previo."
+                "TEXT_1": "OPERADORA DE EXCURSIONES NÁUTICAS S.A. de C.V. no vende, renta ni divulga sus Datos Personales a terceros sin su consentimiento previo, excepto cuando lo requiera o permita la ley aplicable. Al realizar una reservación en línea a través de nuestro sitio web, es posible que se le redirija a plataformas seguras de reservación o pago de terceros, tales como PayPal u otros proveedores de pago autorizados. Estos proveedores operan bajo sus propias políticas de privacidad y son responsables de manera independiente del tratamiento de su información.",
+                "TEXT_2": "Podemos divulgar sus Datos Personales cuando sea necesario para cumplir con obligaciones legales, órdenes judiciales o requerimientos de autoridades gubernamentales competentes. Cualquier divulgación se realizará únicamente en la medida permitida o requerida por la legislación aplicable."
             }
         },
         "EXPOSURE_TO_INFORMATION": {
-            "TITLE": "¿Cómo puedes limitar el uso o exposición de tu información?",
+            "TITLE": "¿Cómo puede limitar el uso o divulgación de su información?",
             "DESCRIPTION": {
-                "TEXT_1": "Puedes deshabilitar el uso de cookies y web beacons accediendo a la configuración de opciones de navegación de la mayoría de los navegadores web.",
-                "TEXT_2": "Además, puedes ejercer tu derecho a revocar y oponerte al tratamiento de tus Datos Personales, o negarte a su uso para fines no esenciales, a través del procedimiento descrito en el punto 5 de este Aviso de Privacidad."
+                "TEXT_1": "Usted puede configurar su navegador web para rechazar o deshabilitar las cookies y tecnologías similares. Tenga en cuenta que algunas funciones del sitio web podrían no operar correctamente si las cookies se encuentran deshabilitadas.",
+                "TEXT_2": "Asimismo, puede ejercer su derecho a oponerse o limitar el tratamiento de sus Datos Personales para finalidades no esenciales siguiendo el procedimiento descrito en la sección posterior relativa a sus Derechos ARCO."
             }
         },
         "REVOKE_CONSENT": {
-            "TITLE": "¿Cómo revocar el consentimiento para el uso de tus Datos Personales o ejercer tus derechos ARCO?",
+            "TITLE": "¿Cómo puede revocar su consentimiento o ejercer sus Derechos ARCO?",
             "DESCRIPTION": {
-                "TEXT_1": "Tienes derecho a acceder a tus Datos Personales en nuestra posesión; rectificarlos si son incorrectos o incompletos; cancelar tus Datos Personales cuando consideres que ya no son necesarios para los fines establecidos, no se están usando para los fines que has consentido, o si la relación legal ha terminado; y oponerte al tratamiento de tus Datos Personales para fines específicos (acceso, rectificación, cancelación y oposición, en adelante denominados derechos “ARCO”). También tienes derecho a revocar el consentimiento que nos hayas otorgado para el tratamiento de tus Datos Personales, para que dejemos de usarlos. Puedes ejercer tus derechos ARCO y de revocación en cualquier momento, para lo cual debes enviar un correo electrónico directamente a Email webmaster Extreme Adventuring. Dicho mensaje deberá incluir al menos la siguiente información:",
+                "TEXT_1": "Usted tiene derecho a acceder a los Datos Personales que poseemos sobre usted, solicitar correcciones en caso de que su información sea inexacta o incompleta, solicitar su cancelación cuando sus datos ya no sean necesarios para los fines descritos en este Aviso de Privacidad, oponerse al tratamiento de sus Datos Personales para fines específicos y revocar el consentimiento previamente otorgado para su tratamiento, siempre que sea legalmente aplicable. Para ejercer cualquiera de estos derechos (conocidos en México como Derechos ARCO), por favor envíe su solicitud por correo electrónico a info@extremeadventurecancun.com. Su solicitud debe incluir la siguiente información:",
                 "LIST_1": [
-                    "Nombre, firma y dirección u otra información de contacto para notificarte la respuesta a tu solicitud.",
-                    "Documentos que acrediten tu identidad o representación legal, si corresponde.",
-                    "Descripción clara y precisa de los Datos Personales sobre los cuales deseas ejercer cualquiera de tus derechos ARCO, y cualquier otra información que facilite la identificación de tus Datos Personales."
+                    "Su nombre completo y la información de contacto de su preferencia;",
+                    "Documentación que acredite su identidad o representación legal, según corresponda;",
+                    "Una descripción clara de los Datos Personales y del Derecho ARCO específico que desea ejercer, junto con cualquier información adicional que nos ayude a localizar sus registros."
                 ],
-                "TEXT_2": "OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV puede responder tu solicitud por correo electrónico. OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV tiene la obligación de responder a tu solicitud dentro de los siguientes 20 (veinte) días hábiles posteriores a la recepción de la misma. Una vez transcurrido dicho plazo, y en caso de que OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV no haya respondido tu solicitud, podrás iniciar el procedimiento de protección de derechos ante el Instituto Federal de Acceso a la Información y Protección de Datos (IFAI). Modificaciones al Aviso de Privacidad.",
-                "TEXT_3": "OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV puede modificar este Aviso de Privacidad de vez en cuando. Cualquier modificación será informada a través de nuestro Sitio Web o correo electrónico. No seremos responsables si no te enteras de alguna modificación de este Aviso de Privacidad o si no recibes la comunicación distribuida por OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV. Puedes revisar el contenido de este Aviso de Privacidad en cualquier momento en nuestro Sitio Web o enviando una solicitud a nuestro correo electrónico info@snorkelingadventure.com."
+                "TEXT_2": "Confirmaremos la recepción de su solicitud y responderemos dentro del plazo establecido por la legislación mexicana aplicable. Si se requiere información adicional para procesar su solicitud, nos pondremos en contacto con usted utilizando los datos proporcionados. Las solicitudes se atenderán de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y sus reglamentos aplicables.",
+                "TEXT_3": "OPERADORA DE EXCURSIONES NÁUTICAS S.A. de C.V. se reserva el derecho de modificar o actualizar este Aviso de Privacidad en cualquier momento para reflejar cambios en los requisitos legales, prácticas comerciales o en nuestros servicios. Cualquier actualización será publicada en nuestro sitio web. Le sugerimos revisar este Aviso de Privacidad periódicamente para mantenerse informado sobre cualquier cambio."
             }
         },
         "LAW": {
-            "TITLE": "Ley aplicable",
+            "TITLE": "Legislación aplicable",
             "DESCRIPTION": {
-                "TEXT_1": "OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV se encuentra en México y la ley mexicana regula todos los asuntos relacionados con los Datos Personales. Al proporcionar tu información a OPERADORA DE EXCURSIONES NÁUTICAS SA DE CV, acceder o usar nuestro Sitio Web, nos das tu consentimiento para usar tus Datos Personales como se menciona anteriormente y aceptas este Aviso de Privacidad."
+                "TEXT_1": "Este Aviso de Privacidad se rige por las leyes de los Estados Unidos Mexicanos. Al proporcionar sus Datos Personales, acceder a nuestro sitio web o utilizar nuestros servicios, usted reconoce que ha leído y entendido este Aviso de Privacidad y otorga su consentimiento para el tratamiento de sus Datos Personales de conformidad con sus términos y la legislación mexicana aplicable."
             }
         },
         "LAST_UPDATE": {
-            "TITLE": "Última actualización de este Aviso de Privacidad: enero 2022.",
+            "TITLE": "Última actualización",
+            "DATE": "Julio de 2026",
             "MAIL": "Correo electrónico:",
-            "EMAIL": "info@snorkelingadventure.com"
+            "EMAIL": "info@extremeadventurecancun.com"
         }
     },
     "NOT_FOUND_PAGE": {
