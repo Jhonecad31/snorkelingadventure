@@ -435,7 +435,7 @@
         "CLIMATE_GUARANTEE": {
             "TITLE": "Climate Guarantee",
             "DESCRIPTION": {
-                "TEXT_1": "Activities may occasionally be postponed or canceled due to extreme weather or environmental conditions. If this occurs, your activity will be rescheduled for another available date. If rescheduling is not possible due to your travel itinerary, you will receive a full refund. Only Extreme Adventuring has the authority to determine whether weather or environmental conditions require the cancellation or postponement of an activity. Guests who choose to cancel due to weather conditions without an official cancellation by Extreme Adventuring will be subject to a 100% cancellation fee.",
+                "TEXT_1": "Activities may occasionally be postponed or canceled due to extreme weather or environmental conditions. If this occurs, your activity will be rescheduled for another available date. If rescheduling is not possible due to your travel itinerary, you will receive a full refund. Only Snorkeling Adventure has the authority to determine whether weather or environmental conditions require the cancellation or postponement of an activity. Guests who choose to cancel due to weather conditions without an official cancellation by Snorkeling Adventure will be subject to a 100% cancellation fee.",
                 "TEXT_2": "If an activity is canceled due to weather or environmental conditions, guests must contact either their travel agency or our Reservations Department to process the corresponding rescheduling or refund request.",
                 "TEXT_3": "The total transaction amount may be subject to taxes, foreign transaction fees, currency conversion charges, or other fees imposed by your bank or credit/debit card issuer. Your financial institution may convert the payment into your local currency, resulting in a difference between the amount displayed on our website and the final amount charged to your account. Please contact your bank or card issuer if you have questions regarding applicable fees or exchange rates. For bookings made in Brazil, the IOF (Tax on Financial Operations) is not included in the final booking price and will be charged separately to the credit or debit card used for the purchase."
             }
@@ -452,8 +452,8 @@
         "INFORMATION_COLLECTED": {
             "TITLE": "What Information Do We Collect?",
             "DESCRIPTION": {
-                "TEXT_1": "OPERADORA DE EXCURSIONES NÁUTICAS S.A. de C.V. collects personal information through our website (www.extremeadventuringcancun.com), reservation platforms, customer service channels, and other authorized means. The personal information we may collect includes your name, address, telephone number, email address, photographs, nationality, occupation, employer's name, country of residence, social media username (where applicable), booked services, and payment information necessary to process your reservation. For the purposes of this Privacy Notice, this information is collectively referred to as 'Personal Data'. When you visit our website, we may also automatically collect technical information such as your IP address, browser type, device information, browsing behavior, and website usage data.",
-                "TEXT_2": "www.extremeadventuringcancun.com does not intentionally collect or process sensitive personal data as defined by applicable Mexican privacy legislation.",
+                "TEXT_1": "OPERADORA DE EXCURSIONES NÁUTICAS S.A. de C.V. collects personal information through our website (www.snorkelingadventure.com), reservation platforms, customer service channels, and other authorized means. The personal information we may collect includes your name, address, telephone number, email address, photographs, nationality, occupation, employer's name, country of residence, social media username (where applicable), booked services, and payment information necessary to process your reservation. For the purposes of this Privacy Notice, this information is collectively referred to as 'Personal Data'. When you visit our website, we may also automatically collect technical information such as your IP address, browser type, device information, browsing behavior, and website usage data.",
+                "TEXT_2": "www.snorkelingadventure.com does not intentionally collect or process sensitive personal data as defined by applicable Mexican privacy legislation.",
                 "TEXT_3": "Our website uses cookies and similar technologies, including web beacons, to improve your browsing experience and enhance the functionality of our online services. Cookies are small files stored on your device that allow our website to recognize your preferences and improve future visits. Web beacons are small graphic elements that help us understand website usage, measure the effectiveness of communications, and analyze visitor behavior. The information collected through these technologies is used exclusively to improve our website, customer experience, and digital services."
             }
         },
@@ -494,7 +494,7 @@
         "REVOKE_CONSENT": {
             "TITLE": "How Can You Revoke Your Consent or Exercise Your ARCO Rights?",
             "DESCRIPTION": {
-                "TEXT_1": "You have the right to access the Personal Data we hold about you, request corrections if your information is inaccurate or incomplete, request deletion when your data is no longer necessary for the purposes described in this Privacy Notice, object to the processing of your Personal Data for specific purposes, and revoke the consent previously granted for its processing, whenever legally applicable. To exercise any of these rights (commonly known in Mexico as ARCO Rights), please send your request by email to info@extremeadventurecancun.com. Your request should include the following information:",
+                "TEXT_1": "You have the right to access the Personal Data we hold about you, request corrections if your information is inaccurate or incomplete, request deletion when your data is no longer necessary for the purposes described in this Privacy Notice, object to the processing of your Personal Data for specific purposes, and revoke the consent previously granted for its processing, whenever legally applicable. To exercise any of these rights (commonly known in Mexico as ARCO Rights), please send your request by email to info@snorkelingadventure.com. Your request should include the following information:",
                 "LIST_1": [
                     "Your full name and preferred contact information;",
                     "Documentation proving your identity or legal representation, when applicable;",
@@ -514,7 +514,7 @@
             "TITLE": "Last Updated",
             "DATE": "July 2026",
             "MAIL": "Email:",
-            "EMAIL": "info@extremeadventurecancun.com"
+            "EMAIL": "info@snorkelingadventure.com"
         }
     },
     "NOT_FOUND_PAGE": {
