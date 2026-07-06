@@ -3,6 +3,7 @@ import { getI18N } from "@/i18n";
 import { getLangFromUrl, useTranslatedPath, useTranslations } from "@/i18n/utils";
 import { Coral1, Coral2, FishAngel2, FishSargent } from "@public/img/allImages";
 import { Facebook, Instagram, Tiktok, Youtube, Tripadvisor, SnorkelingAdventure } from "@/icons/allIcons";
+import { dataSettings } from "@/utils/dataGlobal";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -46,27 +47,27 @@ const socialMedia = [
     {
         title: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_FACEBOOK,
         icon: Facebook,
-        link: "https://www.facebook.com/snorkelingadventurecancun",
+        link: dataSettings.linkFacebook,
     },
     {
         title: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_INSTAGRAM,
         icon: Instagram,
-        link: "https://www.instagram.com/snorkelingadventurecancun/",
+        link: dataSettings.linkInstagram,
     },
     {
         title: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_TIKTOK,
         icon: Tiktok,
-        link: "https://www.tiktok.com/@snorkelingadventure",
+        link: dataSettings.linkTiktok,
     },
     {
         title: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_YOUTUBE,
         icon: Youtube,
-        link: "https://www.youtube.com/@snorkelingadventure",
+        link: dataSettings.linkYoutube,
     },
     {
         title: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_TRIPADVISOR,
         icon: Tripadvisor,
-        link: "https://www.tripadvisor.com/Attraction_Review-g150807-d28040463-Reviews-Snorkel_Adventuring-Cancun_Yucatan_Peninsula.html",
+        link: dataSettings.linkTripadvisor,
     },
 ];
 ---
@@ -115,11 +116,9 @@ const socialMedia = [
                 role="contentinfo"
                 aria-label={i18n.ACCESSIBILITY.COPYRIGHT}
             >
-                &copy; 2026 Snorkeling Adventure. &bull; <a
-                    class="hover:underline"
-                    href="mailto:info@snorkelingadventure.com"
-                    >info@snorkelingadventure.com</a
-                >
+                &copy; 2026 Snorkeling Adventure. &bull; <a class="hover:underline" href={`mailto:${dataSettings.email}`}>
+                    {dataSettings.email}
+                    </a>
             </small>
         </div>
         <div class="text-center mt-2 mb-10 font-semibold">

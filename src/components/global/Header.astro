@@ -1,6 +1,7 @@
 ---
 import { getI18N } from "@/i18n";
 import { Link, Button } from "@heroui/react";
+import { dataSettings } from "@/utils/dataGlobal";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/i18n/utils";
 import { Facebook, Instagram, Youtube, Tiktok, Tripadvisor, Menu, Close } from "@/icons/allIcons";
 import { SnorkelingAdventure } from "@/icons/allIcons";
@@ -46,27 +47,27 @@ const socialMedia = [
     {
         alt: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_FACEBOOK,
         icon: Facebook,
-        href: "https://www.facebook.com/snorkeladventuringcancun",
+        href: dataSettings.linkFacebook,
     },
     {
         alt: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_INSTAGRAM,
         icon: Instagram,
-        href: "https://www.instagram.com/snorkelingadventurecancun",
+        href: dataSettings.linkInstagram,
     },
     {
         alt: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_TIKTOK,
         icon: Tiktok,
-        href: "https://www.tiktok.com/@snorkelingadventure",
+        href: dataSettings.linkTiktok,
     },
     {
         alt: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_YOUTUBE,
         icon: Youtube,
-        href: "https://www.youtube.com/@snorkeladventuringcancun",
+        href: dataSettings.linkYoutube,
     },
     {
         alt: i18n.ACCESSIBILITY.SOCIAL_MEDIA.GO_TO_TRIPADVISOR,
         icon: Tripadvisor,
-        href: "https://www.tripadvisor.com/Attraction_Review-g150807-d28040463-Reviews-Snorkeling_Adventure_Cancun-Cancun_Yucatan_Peninsula.html",
+        href: dataSettings.linkTripadvisor,
     }
 ];
 ---

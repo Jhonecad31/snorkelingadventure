@@ -2,6 +2,7 @@
 import { Schema } from "astro-seo-schema";
 import { getI18N } from "@/i18n";
 import { Phone, Mail, MapPin } from "@/icons/allIcons";
+import { dataSettings } from "@/utils/dataGlobal";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import HeroGradient from "@/components/sections/HeroGradient.astro";
@@ -17,20 +18,20 @@ const optionsContact = [
     {
         icon: Phone,
         title: i18n.CONTACT_PAGE.INFO.OPTIONS.PHONE,
-        value: "+52 998 249 0003",
-        href: "tel:+529982490003",
+        value: dataSettings.phoneDisplay,
+        href: `tel:+${dataSettings.phoneHref}`
     },
     {
         icon: Mail,
         title: i18n.CONTACT_PAGE.INFO.OPTIONS.EMAIL,
-        value: "info@snorkelingadventure.com",
-        href: "mailto:info@snorkelingadventure.com",
+        value: dataSettings.email,
+        href: `mailto:${dataSettings.email}`,
     },
     {
         icon: MapPin,
         title: i18n.CONTACT_PAGE.INFO.OPTIONS.LOCATION,
-        value: "Rafael E. Melgar Street, Puerto Morelos, Quintana Roo, México",
-        href: "https://maps.app.goo.gl/2WnNvjq37taZGhvh9",
+        value: dataSettings.streetAddress,
+        href: dataSettings.linkGoogleMaps,
     },
 ];
 

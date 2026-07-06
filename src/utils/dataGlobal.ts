@@ -1,2 +1,23 @@
-export const siteName = "The Original Snorkeling Adventure";
-export const siteURL = "https://snorkelingadventure.com";
+export const dataSettings = {
+    nameWebsite: "The Original Snorkeling Adventure",
+    alternateName: "Snorkeling Adventure",
+    urlWebsite: "https://snorkelingadventure.com",
+    logo: "https://snorkelingadventure.com/assets/img/logos/logo-snorkel.png",
+    streetAddress: "Rafael E. Melgar Street, Puerto Morelos, Quintana Roo, México",
+    addressLocality: "Puerto Morelos",
+    addressRegion: "Quintana Roo",
+    postalCode: "77580",
+    addressCountry: "MX",
+    awardTripadvisor: "TripAdvisor Best of the Best: 2019-2024-2025",
+    awardWTA: "World Travel Awards winner: 2022-2025",
+    awardNationalGeographic: "Featured by National Geographic Traveller",
+    phoneHref: 529982490003,
+    phoneDisplay: "+52 1 998 249 0003",
+    email: "info@snorkelingadventure.com",
+    linkGoogleMaps: "https://maps.app.goo.gl/2WnNvjq37taZGhvh9",
+    linkFacebook: "https://www.facebook.com/snorkelingadventurecancun",
+    linkInstagram: "https://www.instagram.com/snorkelingadventurecancun/",
+    linkTiktok: "https://www.tiktok.com/@snorkelingadventure",
+    linkTripadvisor: "https://www.tripadvisor.com/Attraction_Review-g150807-d28040463-Reviews-Snorkel_Adventuring-Cancun_Yucatan_Peninsula.html",
+    linkYoutube: "hhttps://www.youtube.com/@snorkelingadventure",
+}

@@ -4,7 +4,7 @@ export const prerender = false;
 import { getPostInfo } from "@/services/wp";
 import { formatDate, replaceHtmlEntities } from "@/utils/functions";
 import { Schema } from "astro-seo-schema";
-import { siteName } from "@/utils/dataGlobal";
+import { dataSettings } from "@/utils/dataGlobal";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import TagH1 from "@/components/global/TagH1.astro";
@@ -12,7 +12,6 @@ import TagP from "@/components/global/TagP.astro";
 import SharePost from "@/components/extras/SharePost.astro";
 import CTASection from "@/components/sections/CTASection.astro";
 import BlogLastPostsCard from "@/components/blog/BlogLastPostsCard.astro";
-import SkeletonBlogCard from "@/components/blog/SkeletonBlogCard.astro";
 import TagH2 from "@/components/global/TagH2.astro";
 
 const { slug } = Astro.params;
@@ -49,16 +48,16 @@ const seoMetaData = {
             publisher: {
                 "@type": "Organization",
                 "@id": siteURL.origin,
-                name: siteName,
+                name: dataSettings.nameWebsite,
                 logo: {
                     "@type": "ImageObject",
-                    url: `${siteURL.origin}/assets/img/logos/logo-snorkel.png`,
+                    url: dataSettings.logo,
                 },
             },
             author: {
                 "@type": "Organization",
-                name: siteName,
-                url: siteURL.origin,
+                name: dataSettings.nameWebsite,
+                url: dataSettings.urlWebsite,
             },
         }}
     />
@@ -107,15 +106,15 @@ const seoMetaData = {
             },
             author: {
                 "@type": "Organization",
-                name: siteName,
-                url: siteURL.origin,
+                name: dataSettings.nameWebsite,
+                url: dataSettings.urlWebsite,
             },
             publisher: {
                 "@type": "Organization",
-                name: siteName,
+                name: dataSettings.nameWebsite,
                 logo: {
                     "@type": "ImageObject",
-                    url: `${siteURL.origin}/assets/img/logos/logo-snorkel.png`,
+                    url: dataSettings.logo,
                     width: "546",
                     height: "546",
                 },
