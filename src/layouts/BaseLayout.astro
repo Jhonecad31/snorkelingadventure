@@ -7,7 +7,7 @@ import Footer from "@/components/global/Footer.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
-const { seo, offI18n } = Astro.props;
+const { seo, offI18n, ctaModal } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,7 +20,7 @@ const { seo, offI18n } = Astro.props;
     <body id="body">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV35K8DZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <Header offI18n={offI18n} />
+        <Header offI18n={offI18n} ctaModal={ctaModal} />
         <main>
             <slot />
         </main>

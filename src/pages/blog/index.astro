@@ -7,7 +7,7 @@ import SkeletonBlogCard from "@/components/blog/SkeletonBlogCard.astro";
 import PaginationPosts from "@/components/blog/PaginationPosts.astro";
 import CategoriesPosts from "@/components/blog/CategoriesPosts.astro";
 
-const seoMetaDatos = {
+const seoMetaData = {
     title: "Explore Our Blog - Snorkeling Adventure",
     description: "Discover tips, stories, and insights for your next snorkeling adventure in Puerto Morelos and the Riviera Maya.",
 };
@@ -18,7 +18,7 @@ const dataPosts = {
 };
 ---
 
-<BaseLayout seo={seoMetaDatos} offI18n={true}>
+<BaseLayout seo={seoMetaData} offI18n={true} ctaModal={true}>
     <HeroGradient
         title={dataPosts.title}
         text={dataPosts.description}

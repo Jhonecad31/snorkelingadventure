@@ -17,7 +17,7 @@ if (!existsPage) {
     return new Response(null, { status: 404 });
 }
 
-const seoMetaDatos = {
+const seoMetaData = {
     title: `Explore Our Blog - Snorkeling Adventure - Page ${pageNumber}`,
     description: `Get more information in our Blog for your next trip to Cancun and Riviera Maya. Any doubt you have, we will offer the answer. Page ${pageNumber}.`,
 };
@@ -29,7 +29,7 @@ const dataPosts = {
 };
 ---
 
-<BaseLayout seo={seoMetaDatos} offI18n={true}>
+<BaseLayout seo={seoMetaData} offI18n={true} ctaModal={true}>
     <HeroGradient title={dataPosts.title} text={dataPosts.description} />
     <BlockContainer>
         <!-- Categories -->

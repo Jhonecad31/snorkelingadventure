@@ -6,15 +6,17 @@ import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/i18n/utils
 import { Facebook, Instagram, Youtube, Tiktok, Tripadvisor, Menu, Close } from "@/icons/allIcons";
 import { SnorkelingAdventure } from "@/icons/allIcons";
 import LanguageSelector from "./LanguageSelector.astro";
+import BtnModalBokun from "@/components/extras/BtnModalBokun";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 interface Props {
     offI18n?: boolean;
+    ctaModal?: boolean;
 }
 
-const { offI18n } = Astro.props;
+const { offI18n, ctaModal } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -70,6 +72,14 @@ const socialMedia = [
         href: dataSettings.linkTripadvisor,
     }
 ];
+
+const dataForm = {
+    bookingChannel: "e17819cf-e2f5-4ea6-83ab-c37adaf3faa1",
+    idCalendar: "887245",
+    title: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.TITLE,
+    btnBook: i18n.ACCESSIBILITY.BUTTON.BOOK_NOW,
+    btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE 
+}
 ---
 <header>
     <div class="fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full px-4 md:px-0 md:w-fit mt-4">
@@ -98,15 +108,7 @@ const socialMedia = [
                 </ul>
             </nav>
             <div class="flex gap-2 items-center">
-                <Button
-                    as={Link}
-                    size="sm"
-                    className="bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 text-white font-semibold text-xs"
-                    href={translatePath("/snorkel-adventuring-details/")}
-                    radius="full"
-                >
-                    {i18n.ACCESSIBILITY.BUTTON.BOOK_NOW}
-                </Button>
+                {ctaModal && <BtnModalBokun client:visible data={dataForm} isHeader={true} /> }
                 {!offI18n && <LanguageSelector />}
             </div>
             <!-- Button Open Menu Mobile -->

@@ -11,14 +11,14 @@ import BtnLinkCustom from "@/components/extras/BtnLinkCustom";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
-const seoMetaDatos = {
+const seoMetaData = {
     title: i18n.SEO.POLICY_PAGE.TITLE,
     description: i18n.SEO.POLICY_PAGE.DESCRIPTION,
     metaTitle: i18n.SEO.POLICY_PAGE.META_TITLE,
 };
 ---
 
-<BaseLayout seo={seoMetaDatos}>
+<BaseLayout seo={seoMetaData} ctaModal={true}>
     <section class="container max-w-4xl mx-auto p-5 mt-20 md:mt-30 mb-10">
         <TagH1 class="text-center lg:text-start">{i18n.POLICY_PAGE.PRIVACY_NOTICE.TITLE}</TagH1>
         <TagP>{i18n.POLICY_PAGE.PRIVACY_NOTICE.DESCRIPTION.TEXT_1}</TagP>

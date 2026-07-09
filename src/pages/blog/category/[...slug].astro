@@ -22,7 +22,7 @@ const existsPage = await getPostsByCategoryByPageValidation(id ?? null, { page: 
 if (!id || !existsPage) {
     return new Response(null, { status: 404 });
 }
-const seoMetaDatos = {
+const seoMetaData = {
     title: pageNumber > 1 ? `${replaceHtmlEntities(name)} Archives - Page ${pageNumber} - Snorkeling Adventure` : `${replaceHtmlEntities(name)} Archives - Snorkeling Adventure`,
     description: pageNumber > 1 ? `Read the articles in our ${replaceHtmlEntities(name)} Archives for your next trip to Puerto Morelos and Riviera Maya. Page ${pageNumber}.` : `Read the articles in our ${replaceHtmlEntities(name)} Archives for your next trip to Puerto Morelos and Riviera Maya.`,
 };
@@ -33,7 +33,7 @@ const dataPosts = {
 };
 ---
 
-<BaseLayout seo={seoMetaDatos} offI18n={true}>
+<BaseLayout seo={seoMetaData} offI18n={true} ctaModal={true}>
     <HeroGradient
         title={dataPosts.title}
         text={dataPosts.description}

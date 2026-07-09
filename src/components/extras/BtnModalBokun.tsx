@@ -1,5 +1,5 @@
-import { lazy, Suspense, useState } from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@heroui/react";
+import { lazy, Suspense } from "react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Link } from "@heroui/react";
 
 interface BtnModalBokunProps {
     bookingChannel: string;
@@ -9,18 +9,29 @@ interface BtnModalBokunProps {
     btnCloseText: string;
 }
 
-export default function BtnModalBokun({ data }: { data: BtnModalBokunProps }) {
+export default function BtnModalBokun({ data, isHeader }: { data: BtnModalBokunProps; isHeader?: boolean }) {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const LazyLoadBokunScript = lazy(() => import('@/utils/LoadBokunScript'));
 
     return (
         <>
-            <button
-                onClick={onOpen}
-                className="inline-block w-full md:w-auto bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 hover:opacity-80 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full transition-all cursor-pointer"
-            >
-                {data.btnBook}
-            </button>
+            {isHeader ? (
+                <Button
+                    onPress={onOpen}
+                    size="sm"
+                    radius="full"
+                    className="bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 text-white font-semibold text-xs"
+                >
+                    {data.btnBook}
+                </Button>
+            ) : (
+                <button
+                    onClick={onOpen}
+                    className="inline-block w-full md:w-auto bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 hover:opacity-80 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full transition-all cursor-pointer"
+                >
+                    {data.btnBook}
+                </button>
+            )}
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="opaque" placement="bottom-center" scrollBehavior="inside" size="2xl">
                 <ModalContent>
                     {(onClose) => (
