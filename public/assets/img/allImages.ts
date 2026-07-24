@@ -13,6 +13,7 @@ import HandLikeSnorkel from "./bg/persona-pulgares-arriba-en-snorkel.webp";
 import SnorkelMayanReef from "./bg/grupo-en-snorkeling-en-arrecife-maya.webp";
 import MiddleViewSnorkel from "./bg/vista-snorkel-con-fauna-marina.webp";
 import PrivateBoatSnorkel from "./gallery/private-snorkeling/best-private-boat-in-puerto-morelos.webp";
+import BeachClubMexOnTheBeach from "./bg/beach-club-in-puerto-morelos.webp";
 // Gallery
 import ExperiencePrivateSnorkel from "./gallery/private-snorkeling/ceviche-on-board-private-snorkel.webp";
 // Extras
@@ -37,6 +38,7 @@ import User2 from "./testimonials/user-2.webp";
 import User3 from "./testimonials/user-3.webp";
 
 export {
+    BeachClubMexOnTheBeach,
     Turtle,
     Coral1,
     Coral2,
