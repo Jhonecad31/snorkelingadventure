@@ -567,15 +567,20 @@
             "TEXTS": {
                 "EXPLORE_PUERTO_MORELOS": {
                     "TITLE": "Explora el paraíso submarino de Puerto Morelos",
-                    "DESCRIPTION": "Descubra uno de los ecosistemas más impresionantes del Caribe: la Barrera de Coral Mesoamericana, el segundo sistema de arrecifes más grande del mundo. Este santuario marino ofrece una biodiversidad increíble, que incluye rayas, tortugas marinas, peces de colores y jardines de corales vivos."
+                    "DESCRIPTION": [
+                        "Lo primero es que compartirás la experiencia con un grupo pequeño de viajeros con intereses similares, en lugar de formar parte de una multitud. Gracias a ello, recibirás atención personalizada por parte de un guía profesional bilingüe mientras exploras las aguas protegidas de Puerto Morelos.",
+                        "Antes de abordar la embarcación, tu guía te brindará una completa charla de seguridad. Después, recibirás equipo de snorkel de alta calidad, incluyendo máscara, aletas ajustadas y chaleco salvavidas.",
+                        "En cuestión de minutos llegarás a las cristalinas y tranquilas aguas protegidas del <strong>Parque Nacional Arrecife de Puerto Morelos</strong>.",
+                        "Tu recorrido en grupo reducido también incluye acceso exclusivo a uno de los mejores lugares de la zona: el <strong>C  lub de playa Mex On The Beach</strong>. Allí podrás disfrutar de bebidas refrescantes, saborear deliciosos platillos locales y relajarte cómodamente bajo el cálido sol del Caribe."
+                    ]
                 },
                 "SNORKELING_EXPERIENCE": {
-                    "TITLE": "Tu experiencia inolvidable de snorkel",
-                    "DESCRIPTION": "Tu aventura de snorkel comienza con un cómodo transporte desde tu hotel hasta Puerto Morelos. Una vez a bordo del barco, guías expertos te informarán sobre seguridad y preservación marina. Luego, sumérgete en aguas cristalinas para una hora completa de exploración guiada del arrecife. Después del snorkel, disfruta de un refrigerio junto a la playa y tour guiado por Puerto Morelos."
-                },
-                "DIVE_INTO_UNSEEN": {
-                    "TITLE": "Sumérgete en la belleza oculta",
-                    "DESCRIPTION": "Prepárate para despertar a tu espíritu aventurero mientras te sumerges en las aguas cristalinas de Puerto Morelos, hogar de algunos de los mejores lugares para hacer snorkel en Puerto Morelos. Esta sección del Arrecife Mesoamericano te invita a deslizarte sobre coloridas formaciones de coral, observar peces tropicales y encontrarte con vida marina en su entorno natural. Cada momento revela una nueva maravilla submarina: rayas, tortugas marinas, peces ángel y vibrantes jardines de coral que prosperan bajo la superficie."
+                    "TITLE": "Marveling at Coral Formations and Relaxing by the Shore",
+                    "DESCRIPTION": [
+                        "As you glide smoothly through the warm water, keep your eyes open for diverse marine life. You will likely spot graceful <strong>sea turtles, southern stingrays</strong>, and moray eels weaving through the coral structures. Furthermore, the <strong>Mesoamerican Barrier Reef</strong> in Mexico serves as a natural nursery for hundreds of species of <strong>colorful tropical fish</strong>. You might encounter shimmering schools of parrotfish, angelfish, and even nurse sharks resting peacefully on the sandy bottom.",
+                        "After spending time exploring the vibrant mesoamerican reef Cancun sites, you will likely work up a healthy appetite. Fortunately, this small-group excursion features a fantastic post-snorkel perk. You get to spend relaxing hours at the premier <strong>Puerto Morelos beach club</strong> named <strong>Mex On The Beach</strong>.",
+                        "Transitioning from the open water to a cozy lounge chair on the sand is pure bliss. You can taste authentic local cuisine, enjoy refreshing beverages, and reflect on your <strong>snorkeling adventure in Puerto Morelos</strong>. Whether you want to stroll along the shoreline or simply listen to the gentle waves, this <strong>snorkel park beach club</strong> setting provides the ultimate atmospheric reward."
+                    ]
                 }
             },
             "SCHEDULES": {
@@ -670,6 +675,14 @@
                     {
                         "question": "¿Por qué no se permite el uso de bloqueador solar durante la actividad de snorkel?",
                         "answer": "El uso de bloqueador solar está prohibido para proteger el ecosistema marino y evitar daños a los corales y la vida marina. Se recomienda usar ropa de protección solar en su lugar."
+                    },
+                    {
+                        "question": "¿Compartiré la embarcación con muchas personas o es un tour privado?",
+                        "answer": "Este tour está diseñado como una experiencia en grupo reducido, no como un recorrido privado. Compartirás la embarcación con un número limitado de viajeros, lo que crea un ambiente agradable y social, al mismo tiempo que garantiza suficiente espacio personal y atención personalizada por parte de la tripulación."
+                    },
+                    {
+                        "question": "¿Qué incluye el acceso a Mex On The Beach?",
+                        "answer": "Tu experiencia en grupo reducido incluye el acceso al popular club de playa Mex On The Beach en Puerto Morelos. Después de tu aventura de snorkel, podrás relajarte en cómodos camastros, disfrutar de deliciosa gastronomía regional y refrescarte con bebidas mientras contemplas el mar Caribe."
                     }
                 ]
             },

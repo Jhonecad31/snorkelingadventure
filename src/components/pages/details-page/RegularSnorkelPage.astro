@@ -1,6 +1,7 @@
 ---
+import { Schema } from "astro-seo-schema";
 import { getI18N } from "@/i18n";
-import { PMAereal, MujerSalvavidas, PersonOkSnorkel, CoverSA } from "@public/img/allImages";
+import { PMAereal, MujerSalvavidas, PersonOkSnorkel, CoverSA, BeachClubMexOnTheBeach } from "@public/img/allImages";
 import { FlipFlop, Towel, Cash, Swimwear, Clock, UserUp, CalendarTime, Bus, Ticket, BtnNext } from "@/icons/allIcons";
 import { Exclamation, Check, Close, Star } from "@/icons/allIcons"
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -14,7 +15,6 @@ import TagH3 from "@/components/global/TagH3.astro";
 import TagP from "@/components/global/TagP.astro";
 import Faqs from "@/components/extras/Faqs";
 import AccordionComponent from "@/components/sections/AccordionComponent";
-import { Schema } from "astro-seo-schema";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -218,12 +218,20 @@ const seoMetaData = {
             <img src={PMAereal.src} alt={i18n.ACCESSIBILITY.IMAGES.PUERTO_MORELOS_AEREAL} class="object-cover w-full h-full rounded-lg" />
             <div class="lg:p-10">
                 <TagH2>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.EXPLORE_PUERTO_MORELOS.TITLE}</TagH2>
-                <TagP>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.EXPLORE_PUERTO_MORELOS.DESCRIPTION}</TagP>
-                <TagH3>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.SNORKELING_EXPERIENCE.TITLE}</TagH3>
-                <TagP>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.SNORKELING_EXPERIENCE.DESCRIPTION}</TagP>
-                <TagH3>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.DIVE_INTO_UNSEEN.TITLE}</TagH3>
-                <TagP>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.DIVE_INTO_UNSEEN.DESCRIPTION}</TagP>
+                {i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.EXPLORE_PUERTO_MORELOS.DESCRIPTION.map((paragraph) => (
+                    <p class="text-base/loose text-justify mt-5" set:html={paragraph} />
+                ))}
             </div>
+        </div>
+        <!-- Texts Snorkeling Experience -->
+        <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-10 mb-10 lg:mb-20">
+            <div class="lg:p-10 order-2 lg:order-1">
+                <TagH2>{i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.SNORKELING_EXPERIENCE.TITLE}</TagH2>
+                {i18n.DETAIL_PAGE.REGULAR_SNORKELING.TEXTS.SNORKELING_EXPERIENCE.DESCRIPTION.map((paragraph) => (
+                    <p class="text-base/loose text-justify mt-5" set:html={paragraph} />
+                ))}
+            </div>
+            <img src={BeachClubMexOnTheBeach.src} alt={i18n.ACCESSIBILITY.IMAGES.PUERTO_MORELOS_AEREAL} class="order-1 lg:order-2 object-cover w-full h-full rounded-lg" />
         </div>
         <!-- Inclusions -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
