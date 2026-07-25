@@ -19,11 +19,15 @@ const plans = [
     {
         title: i18n.HOME_PAGE.CHOOSE_PLAN.PLANS.SHARED.TITLE,
         description: i18n.HOME_PAGE.CHOOSE_PLAN.PLANS.SHARED.DESCRIPTION,
-        price: 59,
+        price: 69.99,
         features: i18n.HOME_PAGE.CHOOSE_PLAN.PLANS.SHARED.FEATURES,
         icon: SnorkelingAdventure,
         img: CoverSA,
         href: translatePath("/snorkel-adventuring-details/"),
+        earlyBooking: [
+            { days: 15, discount: 15 },
+            { days: 30, discount: 20 },
+        ]
     },
     {
         priority: true,
@@ -70,12 +74,26 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
                         </h3>
                         <p class="mt-4 text-sm/loose">{plan.description}</p>
                         <h4 class="text-4xl font-semibold mt-4">
-                            ${plan.price}
+                            ${Math.ceil(plan.price)}
                             <span class={`text-base md:text-xl`}>USD</span>
                         </h4>
                         <hr
                             class={`my-8 ${plan.priority ? "border-white" : "border-zinc-300"}`}
                         />
+                        <div class="grid grid-cols-2 gap-3 mb-8">
+                            {plan.earlyBooking?.map((tier) => (
+                                <div class="relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50">
+                                    <span class="absolute -top-3 -right-3 bg-linear-to-br from-amber-500 to-red-500 text-white text-xs font-semibold rounded-full size-9 flex items-center justify-center shadow-md">
+                                        -{tier.discount}%
+                                    </span>
+                                    <p class="text-xs text-zinc-500">{i18n.DETAIL_PAGE.GENERAL.BOOK} <strong>{tier.days}</strong> {i18n.DETAIL_PAGE.GENERAL.DAYS_IN_ADVANCE}</p>
+                                    <p class="text-sm text-zinc-400 line-through">${plan.price} USD</p>
+                                    <p class="text-xl font-semibold text-cyan-600">
+                                        ${Math.round(plan.price * (1 - tier.discount / 100))} <span class="text-xs font-normal">USD</span>
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                         <ul class="space-y-2 mt-4">
                             {plan.features.map((item) => (
                                 <li>

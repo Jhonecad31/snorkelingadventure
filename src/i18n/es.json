@@ -557,7 +557,9 @@
             "OFFERED_IN": "Ofrecido en",
             "OFFERED_LANG": "Inglés y Español",
             "AGE_REQUIREMENT": "Edad mínima",
-            "YEARS_AND_OLDER": "años o más"
+            "YEARS_AND_OLDER": "años o más",
+            "BOOK": "Reserva",
+            "DAYS_IN_ADVANCE": "días antes"
         },
         "REGULAR_SNORKELING": {
             "HERO": {

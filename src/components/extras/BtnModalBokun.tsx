@@ -9,7 +9,7 @@ interface BtnModalBokunProps {
     btnCloseText: string;
 }
 
-export default function BtnModalBokun({ data, isHeader }: { data: BtnModalBokunProps; isHeader?: boolean }) {
+export default function BtnModalBokun({ data, isHeader, children }: { data: BtnModalBokunProps; isHeader?: boolean; children?: React.ReactNode }) {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const LazyLoadBokunScript = lazy(() => import('@/utils/LoadBokunScript'));
 
@@ -44,6 +44,7 @@ export default function BtnModalBokun({ data, isHeader }: { data: BtnModalBokunP
                                         <LazyLoadBokunScript BookingChannel={data.bookingChannel} />
                                     </Suspense>
                                 )}
+                                {children}
                                 <div className="bokunWidget mb-10 mt-5" data-src={`https://widgets.bokun.io/online-sales/${data.bookingChannel}/experience-calendar/${data.idCalendar}`}></div>
                             </ModalBody>
                             <ModalFooter>

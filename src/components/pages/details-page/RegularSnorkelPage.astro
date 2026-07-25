@@ -19,7 +19,11 @@ import AccordionComponent from "@/components/sections/AccordionComponent";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
-const priceFrom = 59;
+const priceFrom = Math.ceil(69.99);
+const earlyBooking = [
+    { days: 15, discount: 15 },
+    { days: 30, discount: 20 },
+];
 const countStars = 4.8;
 const duration = 4;
 const minimumAge = 6;
@@ -390,7 +394,22 @@ const seoMetaData = {
             <BtnModalBokun  
                 client:visible
                 data={dataForm}
-            />
+            >
+                <div class="grid grid-cols-2 gap-3 my-8">
+                    {earlyBooking.map((tier) => (
+                        <div class="relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50">
+                            <span class="absolute -top-3 -right-3 bg-linear-to-br from-amber-500 to-red-500 text-white text-xs font-semibold rounded-full size-9 flex items-center justify-center shadow-md">
+                                -{tier.discount}%
+                            </span>
+                            <p class="text-xs text-zinc-500">{i18n.DETAIL_PAGE.GENERAL.BOOK} <strong>{tier.days}</strong> {i18n.DETAIL_PAGE.GENERAL.DAYS_IN_ADVANCE}</p>
+                            <p class="text-sm text-zinc-400 line-through">${priceFrom} USD</p>
+                            <p class="text-xl font-semibold text-cyan-600">
+                                ${Math.round(priceFrom * (1 - tier.discount / 100))} <span class="text-xs font-normal">USD</span>
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </BtnModalBokun>
         </div>
         <button
             id="expandBtn"

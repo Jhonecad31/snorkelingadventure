@@ -557,7 +557,9 @@
             "OFFERED_IN": "Offered in",
             "OFFERED_LANG": "English & Spanish",
             "AGE_REQUIREMENT": "Minimum Age",
-            "YEARS_AND_OLDER": "years and older"
+            "YEARS_AND_OLDER": "years and older",
+            "BOOK": "Book",
+            "DAYS_IN_ADVANCE": "days in advance"
         },
         "REGULAR_SNORKELING": {
             "HERO": {
@@ -695,7 +697,7 @@
         },
         "PRIVATE_SNORKELING": {
             "HERO": {
-                "TITLE": "Private Snorkeling Tour in Puerto Morelos",
+                "TITLE": "Ultimate Private Snorkel & Beach Club Experience in Puerto Morelos",
                 "DESCRIPTION": "Experience an exclusive <span>Private snorkeling tour in Puerto Morelos</span>. Explore the Mesoamerican Reef by private boat with expert guides, drinks, and transportation included."
             },
             "TEXTS": {
@@ -774,6 +776,10 @@
                     {
                         "question": "What marine life can I see during the tour?",
                         "answer": "You can expect tropical fish, coral reefs, rays, and occasionally sea turtles within Puerto Morelos’ protected marine park."
+                    },
+                    {
+                        "question": "Are food and drinks included at the beach club?",
+                        "answer": "Yes! Your private excursion includes access to the popular Mex On The Beach beach club Puerto Morelos. Depending on your specific booking package, you can enjoy delicious meals, refreshing drinks, and comfortable seating right on the sand after your snorkeling adventure."
                     },
                     {
                         "question": "Does this private tour include transportation?",
