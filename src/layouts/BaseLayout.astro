@@ -8,6 +8,8 @@ import Footer from "@/components/global/Footer.astro";
 const lang = getLangFromUrl(Astro.url);
 
 const { seo, offI18n, ctaModal } = Astro.props;
+const enableTrackingScripts =
+    import.meta.env.ENABLE_TRACKING_SCRIPTS === "true";
 ---
 
 <!doctype html>
@@ -19,7 +21,13 @@ const { seo, offI18n, ctaModal } = Astro.props;
     </head>
     <body id="body">
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV35K8DZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        {
+            enableTrackingScripts && (
+                <noscript>
+                    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV35K8DZ" height="0" width="0" style="display:none;visibility:hidden" />
+                </noscript>
+            )
+        }
         <Header offI18n={offI18n} ctaModal={ctaModal} />
         <main>
             <slot />
