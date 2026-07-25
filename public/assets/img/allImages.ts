@@ -36,8 +36,11 @@ import CityTacoTour from "./cover-activities/city-taco-tour-puerto-morelos-fb.we
 import User1 from "./testimonials/user-1.webp";
 import User2 from "./testimonials/user-2.webp";
 import User3 from "./testimonials/user-3.webp";
+// Baner Ad
+import BannerDiscount from "./banner-ads/discount-snorkel-in-puerto-morelos.webp";
 
 export {
+    BannerDiscount,
     BeachClubMexOnTheBeach,
     Turtle,
     Coral1,
