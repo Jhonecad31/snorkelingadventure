@@ -20,10 +20,6 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 const priceFrom = Math.ceil(69.99);
-const earlyBooking = [
-    { days: 15, discount: 15 },
-    { days: 30, discount: 20 },
-];
 const countStars = 4.8;
 const duration = 4;
 const minimumAge = 6;
@@ -42,7 +38,11 @@ const dataForm = {
     idCalendar: "887245",
     title: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.TITLE,
     btnBook: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_BOOK,
-    btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE 
+    btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE,
+    earlyBooking: [
+        { days: 15, discount: 15 },
+        { days: 30, discount: 20 },
+    ]
 }
 
 const seoMetaData = {
@@ -396,7 +396,7 @@ const seoMetaData = {
                 data={dataForm}
             >
                 <div class="grid grid-cols-2 gap-3 my-8">
-                    {earlyBooking.map((tier) => (
+                    {dataForm.earlyBooking.map((tier) => (
                         <div class="relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50">
                             <span class="absolute -top-3 -right-3 bg-linear-to-br from-amber-500 to-red-500 text-white text-xs font-semibold rounded-full size-9 flex items-center justify-center shadow-md">
                                 -{tier.discount}%

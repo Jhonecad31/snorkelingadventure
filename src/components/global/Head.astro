@@ -36,7 +36,7 @@ const metaType = Astro.props.metaType || "website";
 const robots = Astro.props.robots || "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 const ogLocale = currentLocale === "en" ? "en_US" : "es_ES";
 
-const enableTrackingScripts = import.meta.env.ENABLE_TRACKING_SCRIPTS === "true";
+const enableTrackingScripts = import.meta.env.ENABLE_TRACKING_SCRIPTS === 1;
 ---
 
 <meta charset="utf-8" />
