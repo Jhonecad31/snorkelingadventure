@@ -19,26 +19,26 @@ import PrivateSnorkelMobES from "./es/mobile/private-snorkel-in-puerto-morelos-m
 const images = {
     en: {
         desktop: [
-            { img: NatGeoSnorkelDesk, alt: "Snorkeling Adventure Experience Recognized by National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
             { img: RegularSnorkelDesk, alt: "snorkel in puerto morelos", href: "/snorkel-adventuring-details/" },
             { img: PrivateSnorkelDesk, alt: "private boat and snorkel in puerto morelos", href: "/private-snorkeling-in-puerto-morelos/" },
+            { img: NatGeoSnorkelDesk, alt: "Snorkeling Adventure Experience Recognized by National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
         ],
         mobile: [
-            { img: NatGeoSnorkelMob, alt: "Snorkeling Adventure Experience Recognized by National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
             { img: RegularSnorkelMob, alt: "snorkel in puerto morelos",  href: "/snorkel-adventuring-details/" },
             { img: PrivateSnorkelMob, alt: "private boat and snorkel in puerto morelos", href: "/private-snorkeling-in-puerto-morelos/" },
+            { img: NatGeoSnorkelMob, alt: "Snorkeling Adventure Experience Recognized by National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
         ]
     },
     es: {
         desktop: [
-            { img: NatGeoSnorkelDesk, alt: "Experiencia de aventura de snorkel reconocida por National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
             { img: RegularSnorkelDeskES, alt: "snorkel en puerto morelos", href: "/snorkel-adventuring-details/" },
             { img: PrivateSnorkelDeskES, alt: "private boat and snorkel in puerto morelos", href: "/private-snorkeling-in-puerto-morelos/" },
+            { img: NatGeoSnorkelDesk, alt: "Experiencia de aventura de snorkel reconocida por National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
         ],
         mobile: [
-            { img: NatGeoSnorkelMob, alt: "Experiencia de aventura de snorkel reconocida por National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
             { img: RegularSnorkelMobES, alt: "snorkel en puerto morelos", href: "/snorkel-adventuring-details/" },
-            { img: PrivateSnorkelMobES, alt: "private boat and snorkel in puerto morelos", href: "/private-snorkeling-in-puerto-morelos/" }
+            { img: PrivateSnorkelMobES, alt: "private boat and snorkel in puerto morelos", href: "/private-snorkeling-in-puerto-morelos/" },
+            { img: NatGeoSnorkelMob, alt: "Experiencia de aventura de snorkel reconocida por National Geographic Traveller", href: "https://snorkelingadventure.com/blog/puerto-morelos-national-reef-park/", target: true },
         ]
     }
 };

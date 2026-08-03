@@ -37,10 +37,12 @@ import User1 from "./testimonials/user-1.webp";
 import User2 from "./testimonials/user-2.webp";
 import User3 from "./testimonials/user-3.webp";
 // Baner Ad
-import BannerDiscount from "./banner-ads/discount-snorkel-in-puerto-morelos.webp";
+import BannerDiscountDesktop from "./banner-ads/discount-snorkel-in-puerto-morelos.webp";
+import BannerDiscountMobile from "./banner-ads/mobile/discount-snorkel-in-puerto-morelos-mobile.webp";
 
 export {
-    BannerDiscount,
+    BannerDiscountDesktop,
+    BannerDiscountMobile,
     BeachClubMexOnTheBeach,
     Turtle,
     Coral1,
