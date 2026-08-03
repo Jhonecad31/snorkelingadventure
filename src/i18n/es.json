@@ -146,7 +146,7 @@
             "DESCRIPTION": "Ofrecemos opciones flexibles para adaptarnos a tus necesidades. Ya sea que busques un tour privado o una experiencia en grupo. Disfruta del mejor snorkel en Puerto Morelos.",
             "PLANS": {
                 "PRIVATE": {
-                    "TITLE": "Experiencia de snorkel en barco privado",
+                    "TITLE": "Experiencia de snorkel privado en Puerto Morelos",
                     "DESCRIPTION": "Experimenta una aventura exclusiva de snorkel con un barco privado, servicio personalizado y más comodidades.",
                     "FEATURES": [
                         "Bebidas ilimitadas incluidas en el barco",
@@ -159,7 +159,7 @@
                     ]
                 },
                 "SHARED": {
-                    "TITLE": "Aventura de snorkel compartida",
+                    "TITLE": "Tour de snorkel en grupo en Puerto Morelos",
                     "DESCRIPTION": "Únete a un tour grupal para una experiencia de snorkel divertida y social a un precio accesible.",
                     "FEATURES": [
                         "Snack en restaurante junto a la playa",
@@ -563,7 +563,7 @@
         },
         "REGULAR_SNORKELING": {
             "HERO": {
-                "TITLE": "Snorkeling Adventure en el arrecife de Puerto Morelos",
+                "TITLE": "Snorkeling en el arrecife de Puerto Morelos con Club de Playa",
                 "DESCRIPTION": "Sumérgete en el fascinante mundo submarino del <span>Gran Arrecife Maya en Puerto Morelos</span>. Experimente vibrantes formaciones de coral, diversa vida marina y aguas cristalinas en nuestro inolvidable tour de snorkel."
             },
             "TEXTS": {
@@ -573,7 +573,7 @@
                         "Lo primero es que compartirás la experiencia con un grupo pequeño de viajeros con intereses similares, en lugar de formar parte de una multitud. Gracias a ello, recibirás atención personalizada por parte de un guía profesional bilingüe mientras exploras las aguas protegidas de Puerto Morelos.",
                         "Antes de abordar la embarcación, tu guía te brindará una completa charla de seguridad. Después, recibirás equipo de snorkel de alta calidad, incluyendo máscara, aletas ajustadas y chaleco salvavidas.",
                         "En cuestión de minutos llegarás a las cristalinas y tranquilas aguas protegidas del <strong>Parque Nacional Arrecife de Puerto Morelos</strong>.",
-                        "Tu recorrido en grupo reducido también incluye acceso exclusivo a uno de los mejores lugares de la zona: el <strong>C  lub de playa Mex On The Beach</strong>. Allí podrás disfrutar de bebidas refrescantes, saborear deliciosos platillos locales y relajarte cómodamente bajo el cálido sol del Caribe."
+                        "Tu recorrido en grupo reducido también incluye acceso exclusivo a uno de los mejores lugares de la zona: el <strong>Club de playa Mex On The Beach</strong>. Allí podrás disfrutar de bebidas refrescantes, saborear deliciosos platillos locales y relajarte cómodamente bajo el cálido sol del Caribe."
                     ]
                 },
                 "SNORKELING_EXPERIENCE": {
@@ -697,7 +697,7 @@
         },
         "PRIVATE_SNORKELING": {
             "HERO": {
-                "TITLE": "La mejor experiencia privada de snorkel y club de playa en Puerto Morelos.",
+                "TITLE": "Experiencia privada de snorkel y club de playa en Puerto Morelos.",
                 "DESCRIPTION": "Experimenta un <span>Exclusivo tour Privado de snorkel en Puerto Morelos</span>. Explora el Arrecife Mesoamericano en un barco privado con guías expertos, bebidas y transporte incluido."
             },
             "TEXTS": {
