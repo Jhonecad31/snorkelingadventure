@@ -1,6 +1,6 @@
 // Backgrounds
 import ExploreMayanReef from "./bg/explorando-el-gran-arrecife-maya.webp";
-import FaroInclinado from "./bg/faro-inclinado-puerto-morelos.webp"
+import FaroInclinado from "./extras/faro-inclinado-puerto-morelos.webp"
 import BgCorales from "./bg/fauna-marina-en-puerto-morelos.webp";
 import SnorkelHorizontal from "./bg/formacion-snorkel-en-puerto-morelos.webp";
 import MujerSalvavidas from "./bg/mujer-posando-con-salvavidas.webp";

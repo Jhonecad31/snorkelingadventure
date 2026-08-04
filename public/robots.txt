@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /thanks
+Disallow: /assets/img/extras/
 
 Sitemap: https://snorkelingadventure.com/sitemap-index.xml
