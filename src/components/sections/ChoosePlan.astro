@@ -24,6 +24,7 @@ const plans = [
         icon: SnorkelingAdventure,
         img: CoverSA,
         href: translatePath("/snorkel-adventuring-details/"),
+        badge: i18n.HOME_PAGE.CHOOSE_PLAN.PLANS.SHARED.BADGE,
         earlyBooking: [
             { days: 15, discount: 15 },
             { days: 30, discount: 20 },
@@ -72,9 +73,14 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
                                 {plan.title}
                             </a>
                         </h3>
+                        {plan.badge && 
+                            <a href={plan.href} class="inline-flex items-center gap-1 text-xs font-semibold bg-red-100 text-red-700 rounded-full px-3 py-1 my-2">
+                                🔥 {plan.badge}
+                            </a>
+                        }
                         <p class="mt-4 text-sm/loose">{plan.description}</p>
                         <h4 class="text-4xl font-semibold mt-4">
-                            ${Math.ceil(plan.price)}
+                            ${plan.price}
                             <span class={`text-base md:text-xl`}>USD</span>
                         </h4>
                         <hr

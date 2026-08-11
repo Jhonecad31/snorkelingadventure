@@ -161,6 +161,7 @@
                 "SHARED": {
                     "TITLE": "Shared Snorkeling Adventure Experience",
                     "DESCRIPTION": "Join a group tour for a fun and social snorkeling experience at an affordable price. Enjoy the beauty of the reef with others.",
+                    "BADGE": "Up to 40% OFF booking in advance",
                     "FEATURES": [
                         "Snack at beachside restaurant",
                         "Specialized and bilingual guides",
@@ -565,6 +566,15 @@
             "HERO": {
                 "TITLE": "Discovering the Best Snorkel & Beach Club in Puerto Morelos",
                 "DESCRIPTION": "Dive into the mesmerizing underwater world of the <span>Great Mayan Reef in Puerto Morelos</span>. Experience vibrant coral formations, diverse marine life, and crystal clear waters on our unforgettable snorkeling tour."
+            },
+            "EARLY_BIRD": {
+                "TITLE": "Book earlier, save more",
+                "DESCRIPTION": "Book your snorkeling adventure in advance and enjoy exclusive discounts. The earlier you book, the more you save.",
+                "OPTIONS": {
+                    "OPTION_1": "Book 15 days in advance and save 10%",
+                    "OPTION_2": "Book 30 days in advance and save 20%",
+                    "OPTION_3": "Book 60 days in advance and save 40%"
+                }
             },
             "TEXTS": {
                 "EXPLORE_PUERTO_MORELOS": {

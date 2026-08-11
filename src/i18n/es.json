@@ -161,6 +161,7 @@
                 "SHARED": {
                     "TITLE": "Tour de snorkel en grupo en Puerto Morelos",
                     "DESCRIPTION": "Únete a un tour grupal para una experiencia de snorkel divertida y social a un precio accesible.",
+                    "BADGE": "Hasta 40% OFF reservando con anticipación",
                     "FEATURES": [
                         "Snack en restaurante junto a la playa",
                         "Guías especializados y bilingües",
@@ -565,6 +566,15 @@
             "HERO": {
                 "TITLE": "Snorkeling en el arrecife de Puerto Morelos con Club de Playa",
                 "DESCRIPTION": "Sumérgete en el fascinante mundo submarino del <span>Gran Arrecife Maya en Puerto Morelos</span>. Experimente vibrantes formaciones de coral, diversa vida marina y aguas cristalinas en nuestro inolvidable tour de snorkel."
+            },
+            "EARLY_BIRD": {
+                "TITLE": "Reserva antes, ahorra más",
+                "DESCRIPTION": "Reserva tu aventura de snorkel con antelación y disfruta de descuentos exclusivos. Entre antes reserves tu lugar, mayor es tu descuento.",
+                "OPTIONS": {
+                    "OPTION_1": "Reserva 15 días antes y ahorra 10%",
+                    "OPTION_2": "Reserva 30 días antes y ahorra 20%",
+                    "OPTION_3": "Reserva 60 días antes y ahorra 40%"
+                }
             },
             "TEXTS": {
                 "EXPLORE_PUERTO_MORELOS": {
