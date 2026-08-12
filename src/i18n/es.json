@@ -571,9 +571,9 @@
                 "TITLE": "Reserva antes, ahorra más",
                 "DESCRIPTION": "Reserva tu aventura de snorkel con antelación y disfruta de descuentos exclusivos. Entre antes reserves tu lugar, mayor es tu descuento.",
                 "OPTIONS": {
-                    "OPTION_1": "Reserva 15 días antes y ahorra 10%",
-                    "OPTION_2": "Reserva 30 días antes y ahorra 20%",
-                    "OPTION_3": "Reserva 60 días antes y ahorra 40%"
+                    "OPTION_1": "Reservando 15 días antes",
+                    "OPTION_2": "Reservando 30 días antes",
+                    "OPTION_3": "Reservando 60 días antes"
                 }
             },
             "TEXTS": {

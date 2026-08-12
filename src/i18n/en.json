@@ -571,9 +571,9 @@
                 "TITLE": "Book earlier, save more",
                 "DESCRIPTION": "Book your snorkeling adventure in advance and enjoy exclusive discounts. The earlier you book, the more you save.",
                 "OPTIONS": {
-                    "OPTION_1": "Book 15 days in advance and save 10%",
-                    "OPTION_2": "Book 30 days in advance and save 20%",
-                    "OPTION_3": "Book 60 days in advance and save 40%"
+                    "OPTION_1": "Booking 15 days in advance",
+                    "OPTION_2": "Booking 30 days in advance",
+                    "OPTION_3": "Booking 60 days in advance"
                 }
             },
             "TEXTS": {

@@ -18,7 +18,7 @@ interface Props {
 
 const { title, videoSrc, posterImg, reviews } = Astro.props;
 ---
-<section class="min-h-150 md:min-h-180 relative overflow-hidden mask-b-from-95%">
+<section class="min-h-150 md:min-h-180 relative z-1 overflow-hidden mask-b-from-95%">
     <DetailVideo
         client:load
         videoSrc={videoSrc}
