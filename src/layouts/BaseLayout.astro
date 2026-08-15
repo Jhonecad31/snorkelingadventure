@@ -8,8 +8,7 @@ import Footer from "@/components/global/Footer.astro";
 const lang = getLangFromUrl(Astro.url);
 
 const { seo, offI18n, ctaModal } = Astro.props;
-const enableTrackingScripts =
-    import.meta.env.ENABLE_TRACKING_SCRIPTS === "true";
+const enableTrackingScripts = import.meta.env.ENABLE_TRACKING_SCRIPTS === 1;
 ---
 
 <!doctype html>
