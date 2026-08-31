@@ -19,7 +19,7 @@ import AccordionComponent from "@/components/sections/AccordionComponent";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
-const priceFrom = 69.99;
+const priceFrom = 59.99;
 const countStars = 4.8;
 const duration = 4;
 const minimumAge = 6;
@@ -431,7 +431,7 @@ const seoMetaData = {
             >
                 <div class="grid grid-cols-2 gap-3 my-8">
                     {dataForm.earlyBooking.map((tier) => (
-                        <div class="relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50">
+                        <div class={`relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50 ${tier.days === dataForm.earlyBooking.at(-1)?.days ? "col-span-2" : ""}`}>
                             <span class="absolute -top-3 -right-3 bg-linear-to-br from-amber-500 to-red-500 text-white text-xs font-semibold rounded-full size-9 flex items-center justify-center shadow-md">
                                 -{tier.discount}%
                             </span>

@@ -79,10 +79,11 @@ const dataForm = {
     title: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.TITLE,
     btnBook: i18n.ACCESSIBILITY.BUTTON.BOOK_NOW,
     btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE,
-    priceFrom: 69.99,
+    priceFrom: 59.99,
     earlyBooking: [
         { days: 15, discount: 15 },
         { days: 30, discount: 20 },
+        { days: 60, discount: 40 },
     ]
 }
 ---
@@ -117,7 +118,7 @@ const dataForm = {
                     <BtnModalBokun client:visible data={dataForm} isHeader={true}>
                         <div class="grid grid-cols-2 gap-3 my-8">
                             {dataForm.earlyBooking.map((tier) => (
-                                <div class="relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50">
+                                <div class={`relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50 ${tier.days === dataForm.earlyBooking.at(-1)?.days ? "col-span-2" : ""}`}>
                                     <span class="absolute -top-3 -right-3 bg-linear-to-br from-amber-500 to-red-500 text-white text-xs font-semibold rounded-full size-9 flex items-center justify-center shadow-md">
                                         -{tier.discount}%
                                     </span>
