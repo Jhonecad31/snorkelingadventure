@@ -19,5 +19,5 @@ export const dataSettings = {
     linkInstagram: "https://www.instagram.com/snorkelingadventurecancun/",
     linkTiktok: "https://www.tiktok.com/@snorkelingadventure",
     linkTripadvisor: "https://www.tripadvisor.com/Attraction_Review-g150807-d28040463-Reviews-Snorkel_Adventuring-Cancun_Yucatan_Peninsula.html",
-    linkYoutube: "hhttps://www.youtube.com/@snorkelingadventure",
+    linkYoutube: "https://www.youtube.com/@snorkelingadventure",
 }
