@@ -1,6 +1,6 @@
 export const dataSettings = {
-    nameWebsite: "The Original Snorkeling Adventure",
-    alternateName: "Snorkeling Adventure",
+    nameWebsite: "Snorkeling Adventure Cancun®",
+    alternateName: "Snorkeling Adventure Cancun®",
     urlWebsite: "https://snorkelingadventure.com",
     logo: "https://snorkelingadventure.com/assets/img/logos/logo-snorkel.png",
     streetAddress: "Rafael E. Melgar Street, Puerto Morelos, Quintana Roo, México",

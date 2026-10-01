@@ -3,28 +3,28 @@
         "HOME_PAGE": {
             "TITLE": "Snorkel en Cancun: La mejor actividad en Riviera maya",
             "DESCRIPTION": "Experimente la mejor aventura de snorkel en el Gran Arrecife Maya, una de las maravillas naturales más espectaculares del Caribe mexicano.",
-            "META_TITLE": "The original Snorkeling Adventure: El mejor snorkel en Cancún y la Riviera Maya"
+            "META_TITLE": "Snorkeling Adventure Cancun®: El mejor snorkel en Cancún y la Riviera Maya"
         },
         "MAYAN_REEF_PAGE": {
             "TITLE": "Gran barrera de arrecife maya en Puerto Morelos: Un tesoro submarino",
             "DESCRIPTION": "Experimente la impresionante belleza del Parque Nacional Arrecife de Puerto Morelos, el segundo arrecife de coral más grande del mundo.",
-            "META_TITLE": "The original Snorkeling Adventure: La Gran Barrera de Arrecife Maya"
+            "META_TITLE": "Snorkeling Adventure Cancun®: La Gran Barrera de Arrecife Maya"
         },
         "PUERTO_MORELOS_PAGE": {
             "TITLE": "Puerto Morelos: La joya oculta de la Riviera Maya",
             "DESCRIPTION": "Explore la encantadora ciudad de Puerto Morelos, una joya oculta en la Riviera Maya, conocida por su ambiente relajado y su impresionante belleza natural.",
-            "META_TITLE": "The original Snorkeling Adventure: Descubre Puerto Morelos"
+            "META_TITLE": "Snorkeling Adventure Cancun®: Descubre Puerto Morelos"
         },
         "CONTACT_PAGE": {
             "TITLE": "Contáctenos para su aventura de snorkel en la Riviera Maya",
             "DESCRIPTION": "Póngase en contacto con nosotros para reservar su inolvidable tour de snorkel en Puerto Morelos y experimentar las maravillas del Caribe mexicano.",
-            "META_TITLE": "The original Snorkeling Adventure: Contáctenos"
+            "META_TITLE": "Snorkeling Adventure Cancun®: Contáctenos"
         },
         "DETAIL_PAGE": {
             "REGULAR_SNORKELING": {
                 "TITLE": "Snorkeling Adventure en el arrecife de Puerto Morelos en la Riviera Maya",
                 "DESCRIPTION": "Experimente la mejor aventura de snorkel en el Parque Nacional de Arrecifes de Puerto Morelos, uno de los principales destinos de snorkel en la Riviera Maya.",
-                "META_TITLE": "The Original Snorkeling Adventure: Snorkeling Adventure en el arrecife de Puerto Morelos"
+                "META_TITLE": "Snorkeling Adventure Cancun®: Snorkeling Adventure en el arrecife de Puerto Morelos"
             },
             "PRIVATE_SNORKELING": {
                 "TITLE": "Snorkel Privado en Puerto Morelos - Tour en Bote Privado",
@@ -52,7 +52,7 @@
         }
     },
     "ACCESSIBILITY": {
-        "LOGO": "Logo de The Original Snorkeling Adventure",
+        "LOGO": "Logo de Snorkeling Adventure Cancun®",
         "CHANGE_LANGUAGE": "Cambiar idioma",
         "GO_TO_HOME": "Ir a inicio",
         "COPYRIGHT": "Todos los derechos reservados a Snorkeling Adventure",
