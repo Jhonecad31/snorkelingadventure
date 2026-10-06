@@ -64,7 +64,7 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
     <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 relative z-11">
         {
             plans.map((plan) => (
-                <div class={`${plan.priority ? "border-cyan-500 shadow-lg shadow-cyan-400 bg-linear-to-br from-zinc-400 via-zinc-100 to-zinc-400" : "bg-white border-zinc-200 shadow-lg"} hover:scale-105 transition duration-300 md:mt-10 border rounded-xl relative`}>
+                <div class={`${plan.priority ? "border-neutral-400 shadow-xl shadow-neutral-200 bg-linear-to-br from-zinc-400 via-zinc-100 to-zinc-400" : "bg-white border-zinc-200 shadow-lg"} hover:scale-105 transition duration-300 md:mt-10 border rounded-xl relative`}>
                     <plan.icon class="size-26 absolute top-5 left-5" />
                     <Image src={plan.img} alt={plan.title} class="w-full h-70 object-cover rounded-2xl p-2.5" />
                     <div class="px-6 pb-10 pt-5">
