@@ -4,6 +4,7 @@ import { User1, User2, User3 } from "@public/img/allImages";
 import BlockContainer from "@/components/global/BlockContainer.astro";
 import TagH1 from "@/components/global/TagH1.astro";
 import DetailVideo from "./DetailVideo";
+import { Tripadvisor2026 } from "@/icons/allIcons";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -14,9 +15,10 @@ interface Props {
     videoSrc: string;
     posterImg: string;
     reviews: string;
+    award: boolean;
 };
 
-const { title, videoSrc, posterImg, reviews } = Astro.props;
+const { title, videoSrc, posterImg, reviews, award } = Astro.props;
 ---
 <section class="min-h-150 md:min-h-180 relative z-1 overflow-hidden mask-b-from-95%">
     <DetailVideo
@@ -26,40 +28,49 @@ const { title, videoSrc, posterImg, reviews } = Astro.props;
         titleVideo={title}
         buttonLabel={i18n.ACCESSIBILITY.VIDEO.PLAY_PAUSE}
     />
-    <BlockContainer class="relative !mt-0">
-        <div class="py-20 max-w-3xl mx-auto">
-            <TagH1 class="text-center text-white text-shadow-lg/10">
-                {title}
-            </TagH1>
-            <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white">
-                <div class="flex items-center -space-x-3">
-                    <img
-                        class="size-7 rounded-full border-2 border-white"
-                        height={50}
-                        width={50}
-                        src={User1.src}
-                        alt=""
-                    />
-                    <img
-                        class="size-7 rounded-full border-2 border-white"
-                        height={50}
-                        width={50}
-                        src={User2.src}
-                        alt=""
-                    />
-                    <img
-                        class="size-7 rounded-full border-2 border-white"
-                        height={50}
-                        width={50}
-                        src={User3.src}
-                        alt=""
-                    />
+    <div class="py-20 px-5 max-w-4xl mx-auto relative mt-10">
+        <TagH1 class="text-center text-white text-shadow-lg/10">
+            {title}
+        </TagH1>
+        <div class="w-fit mx-auto flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-10 rounded-full border border-slate-300 bg-white">
+            <div class="flex items-center -space-x-3">
+                <img
+                    class="size-7 rounded-full border-2 border-white"
+                    height={50}
+                    width={50}
+                    src={User1.src}
+                    alt=""
+                />
+                <img
+                    class="size-7 rounded-full border-2 border-white"
+                    height={50}
+                    width={50}
+                    src={User2.src}
+                    alt=""
+                />
+                <img
+                    class="size-7 rounded-full border-2 border-white"
+                    height={50}
+                    width={50}
+                    src={User3.src}
+                    alt=""
+                />
+            </div>
+            <p class="text-xs">
+                {reviews}
+                {i18n.ACCESSIBILITY.PEOPLE_ENJOYED}
+            </p>
+        </div>
+    </div>
+    {award && ( 
+        <div class="absolute bottom-10 left-5 md:left-10 text-white max-w-50 md:max-w-max">
+            <div class="flex items-center gap-2">
+                <Tripadvisor2026 class="size-14" />
+                <div class="flex flex-col">
+                    <span class="text-sm font-semibold">Travelers’ Choice Best of the Best</span>
+                    <span class="text-xs">2026</span>
                 </div>
-                <p class="text-xs">
-                    {reviews}
-                    {i18n.ACCESSIBILITY.PEOPLE_ENJOYED}
-                </p>
             </div>
         </div>
-    </BlockContainer>
+    )}
 </section>

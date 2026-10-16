@@ -5,6 +5,7 @@ import IconFlagMEX from "./flags/mex.svg";
 import TripadvisorBOTB from "./awards/tripadvisor-tbotb.svg";
 import NatGeoTraveller from "./awards/natgeo-traveller-black.svg";
 import WorldTravelAwards from "./awards/world-travel-awards.svg";
+import Tripadvisor2026 from "./awards/tripadvisor-2026-botb.svg";
 // Brands
 import PrivateSnorkeling from "./brands/snorkeling-private.svg";
 import SnorkelingAdventure from "./brands/snorkeling-adventure.svg";
@@ -89,5 +90,6 @@ export {
     UserUp,
     World,
     Youtube,
-    WhatsApp
+    WhatsApp,
+    Tripadvisor2026
 }
