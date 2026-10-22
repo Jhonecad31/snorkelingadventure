@@ -161,7 +161,7 @@
                 "SHARED": {
                     "TITLE": "Tour de snorkel en grupo en Puerto Morelos",
                     "DESCRIPTION": "Únete a un tour grupal para una experiencia de snorkel divertida y social a un precio accesible.",
-                    "BADGE": "Hasta 50% OFF reservando con anticipación",
+                    "BADGE": "Hasta 50% OFF",
                     "FEATURES": [
                         "Snack en restaurante junto a la playa",
                         "Guías especializados y bilingües",
@@ -169,7 +169,8 @@
                         "Degustación de tequila"
                     ]
                 }
-            }
+            },
+            "FOOT_NOTE": "Las promociones no son válidas durante la temporada alta. Verifica la disponibilidad y los precios al momento de reservar."
         },
         "FAQS": {
             "TITLE": "Explora nuestra sección de preguntas frecuentes para respuestas a preguntas comunes",
