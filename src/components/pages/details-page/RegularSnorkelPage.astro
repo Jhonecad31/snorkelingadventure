@@ -40,9 +40,8 @@ const dataForm = {
     btnBook: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_BOOK,
     btnCloseText: i18n.DETAIL_PAGE.REGULAR_SNORKELING.FORM_FLOATER.BUTTON_CLOSE,
     earlyBooking: [
-        { days: 15, discount: 15, label: i18n.DETAIL_PAGE.REGULAR_SNORKELING.EARLY_BIRD.OPTIONS.OPTION_1, background: "bg-linear-to-br from-amber-400 to-orange-500" },
-        { days: 30, discount: 20, label: i18n.DETAIL_PAGE.REGULAR_SNORKELING.EARLY_BIRD.OPTIONS.OPTION_2, background: "bg-linear-to-br from-amber-500 to-red-500" },
-        { days: 60, discount: 40, label: i18n.DETAIL_PAGE.REGULAR_SNORKELING.EARLY_BIRD.OPTIONS.OPTION_3, background: "bg-linear-to-br from-orange-500 to-red-600" },
+        { days: 15, discount: 50, label: i18n.DETAIL_PAGE.REGULAR_SNORKELING.EARLY_BIRD.OPTIONS.OPTION_1, background: "bg-linear-to-br from-red-500 to-orange-500" },
+        { days: 30, discount: 40, label: i18n.DETAIL_PAGE.REGULAR_SNORKELING.EARLY_BIRD.OPTIONS.OPTION_2, background: "bg-linear-to-br from-amber-400 to-red-500" },
     ],
 }
 
@@ -432,14 +431,14 @@ const seoMetaData = {
             >
                 <div class="grid grid-cols-2 gap-3 my-8">
                     {dataForm.earlyBooking.map((tier) => (
-                        <div class={`relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50 ${tier.days === dataForm.earlyBooking.at(-1)?.days ? "col-span-2" : ""}`}>
+                        <div class="relative border border-zinc-200 rounded-xl p-4 text-center bg-zinc-50">
                             <span class="absolute -top-3 -right-3 bg-linear-to-br from-amber-500 to-red-500 text-white text-xs font-semibold rounded-full size-9 flex items-center justify-center shadow-md">
                                 -{tier.discount}%
                             </span>
                             <p class="text-xs text-zinc-500">{i18n.DETAIL_PAGE.GENERAL.BOOK} <strong>{tier.days}</strong> {i18n.DETAIL_PAGE.GENERAL.DAYS_IN_ADVANCE}</p>
                             <p class="text-sm text-zinc-400 line-through">${priceFrom} USD</p>
                             <p class="text-xl font-semibold text-cyan-600">
-                                ${Math.round(priceFrom * (1 - tier.discount / 100))} <span class="text-xs font-normal">USD</span>
+                                ${Math.trunc(priceFrom * (1 - tier.discount / 100))} <span class="text-xs font-normal">USD</span>
                             </p>
                         </div>
                     ))}
