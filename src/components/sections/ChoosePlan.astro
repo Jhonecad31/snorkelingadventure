@@ -2,12 +2,12 @@
 import { Image } from "astro:assets";
 import { getI18N } from "@/i18n";
 import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
-import { PrivateSnorkeling, SnorkelingAdventure, Check } from "@/icons/allIcons";
-import { Turtle, PrivateBoatSnorkel, CoverSA } from "@public/img/allImages";
-import TagH2 from "@/components/global/TagH2.astro";
+import { PrivateSnorkeling, SnorkelingAdventure } from "@/icons/allIcons";
+import { Turtle, PrivateBoatSnorkel, CoverSA, BeachTaco1 } from "@public/img/allImages";
 import BtnLinkCustom from "@/components/extras/BtnLinkCustom";
 import VideoHome from "./VideoHome";
-import TagP from "../global/TagP.astro";
+import TagH2 from "@/components/global/TagH2.astro";
+import TagP from "@/components/global/TagP.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -43,11 +43,20 @@ const plans = [
 
 const videoSrc = "VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgSUi02E";
 const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgSUi02E/thumbnail.png?width=214&height=121&time=7"
+
+const beachTacoTour = {
+    title: i18n.HOME_PAGE.CHOOSE_PLAN.BEACH_TACO.TITLE,
+    description: i18n.HOME_PAGE.CHOOSE_PLAN.BEACH_TACO.DESCRIPTION,
+    duration: `4 ${i18n.DETAIL_PAGE.GENERAL.HOURS}`,
+    price: 49,
+    img: BeachTaco1.src,
+    href: translatePath("/puerto-morelos-food-tour/"),
+    features: i18n.HOME_PAGE.CHOOSE_PLAN.BEACH_TACO.FEATURES
+};
 ---
 
-<section class="relative pb-20">
+<section class="relative pb-10 bg-[#fff8ed]">
     <div class="absolute inset-0 w-full h-full bg-linear-to-br from-sky-700 via-cyan-400 to-cyan-600 z-5 mask-radial-[110%_85%] md:mask-radial-[100%_75%] mask-radial-from-95% mask-radial-at-top"></div>
-    <div class="absolute inset-0 w-full h-full bg-[url('/assets/img/extras/texture-table-white.webp')] bg-repeat bg-[auto_300px] mask-b-from-95%"></div>
     <Image
         src={Turtle}
         alt={i18n.ACCESSIBILITY.IMAGES.TURTLE}
@@ -114,3 +123,80 @@ const posterImg = "https://image.mux.com/VCfDSYqcCW4vUiAvE9HLxNRobPEXicmQLnJ9DgS
         </p>
     </div>
 </section>
+
+<section id="taco-tour" aria-labelledby="taco-tour-title" class="relative isolate overflow-hidden bg-[#fff8ed] py-16 sm:py-20">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div class="absolute -left-32 top-10 h-72 w-72 rounded-full bg-cyan-200/35 blur-3xl"></div>
+        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white/70 to-transparent"></div>
+    </div>
+
+    <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+        <div class="relative z-10 order-2 max-w-2xl lg:order-1">
+            <TagH2 id="taco-tour-title" class="max-w-md font-extrabold">
+                {beachTacoTour.title}
+            </TagH2>
+            <TagP class="mt-5 max-w-lg">
+                {beachTacoTour.description}
+            </TagP>
+
+            <div class="mt-5 rounded-2xl border border-orange-100/90 bg-white/85 p-5 shadow-sm sm:p-6">
+                <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-slate-900">What’s included</h3>
+                <ul class="mt-4 space-y-3">
+                    {beachTacoTour.features.map((item) => (
+                        <li class="flex items-start gap-3 text-sm leading-6 text-slate-700 sm:text-base">
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" class="mt-0.5 h-5 w-5 shrink-0 text-teal-700">
+                                <path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>  
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+
+                <div class="mt-6 flex flex-col gap-5 border-t border-slate-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                        <p class="text-sm text-slate-500">{i18n.ACCESSIBILITY.PRICE_FROM}</p>
+                        <p class="mt-1 flex items-baseline gap-1.5 text-slate-950">
+                            <span class="text-4xl font-extrabold tracking-tight">${beachTacoTour.price}</span>
+                            <span class="text-sm font-semibold text-slate-600">USD</span>
+                        </p>
+                    </div>
+                    <a href={beachTacoTour.href} class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-orange-500 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:-translate-y-0.5 hover:bg-orange-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-600">
+                        {i18n.PUERTO_MORELOS_PAGE.CTA_SECTION.BUTTON}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative order-1 mx-auto flex min-h-[19rem] w-full max-w-xl items-center justify-center sm:min-h-[26rem] lg:order-2 lg:min-h-[38rem]">
+            <div aria-hidden="true" class="absolute left-[8%] top-[12%] h-24 w-24 rounded-full bg-orange-300/50 blur-2xl sm:h-36 sm:w-36"></div>
+            <div aria-hidden="true" class="absolute bottom-[9%] right-[6%] h-28 w-28 rounded-full bg-cyan-300/50 blur-2xl sm:h-40 sm:w-40"></div>
+
+            <div aria-hidden="true" class="taco-float taco-float-one absolute left-[1%] top-[8%] z-20 select-none text-5xl drop-shadow-lg sm:text-7xl">
+                <img src="/assets/img/extras/habanero-chili-pepper.webp" alt="Cebollita" class="w-32" />
+            </div>
+            <div aria-hidden="true" class="taco-float taco-float-two absolute right-[1%] top-[18%] z-20 select-none text-4xl drop-shadow-lg sm:text-6xl">
+                <img src="/assets/img/extras/cilantro.webp" alt="Cebollita" class="w-32" />
+            </div>
+            <div aria-hidden="true" class="taco-float taco-float-three absolute bottom-[7%] left-[4%] z-20 select-none text-4xl drop-shadow-lg sm:text-6xl">
+                <img src="/assets/img/extras/onion-rings.webp" alt="Cebollita" class="w-32" />
+            </div>
+
+            <div class="relative z-10 w-full">
+                <img src={beachTacoTour.img} alt={beachTacoTour.title} loading="lazy" decoding="async" class="taco-cover relative z-10 mx-auto max-h-[34rem] rounded-2xl w-fit object-cover drop-shadow-[0_24px_30px_rgba(88,53,20,0.18)]" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+  .taco-float { animation: taco-drift 6s ease-in-out infinite; transform-origin: center; }
+  .taco-float-two { animation-delay: -2s; }
+  .taco-float-three { animation-delay: -4s; }
+  @keyframes taco-drift {
+    0%, 100% { transform: translate3d(0, 0, 0) rotate(-8deg); }
+    50% { transform: translate3d(0, -12px, 0) rotate(7deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .taco-float, .taco-float-two, .taco-float-three { animation: none; }
+  }
+</style>

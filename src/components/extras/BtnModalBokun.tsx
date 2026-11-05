@@ -9,25 +9,28 @@ interface BtnModalBokunProps {
     btnCloseText: string;
 }
 
-export default function BtnModalBokun({ data, isHeader, children }: { data: BtnModalBokunProps; isHeader?: boolean; children?: React.ReactNode }) {
+interface colorProps {
+    primary?: string;
+    secondary?: string;
+}
+
+export default function BtnModalBokun({ data, isHeader, color, children }: { data: BtnModalBokunProps; isHeader?: boolean; color?: colorProps; children?: React.ReactNode }) {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const LazyLoadBokunScript = lazy(() => import('@/utils/LoadBokunScript'));
 
     return (
         <>
             {isHeader ? (
-                <Button
-                    onPress={onOpen}
-                    size="sm"
-                    radius="full"
-                    className="bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 text-white font-semibold text-xs"
+                <button
+                    onClick={onOpen}
+                    className="bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 text-white font-semibold text-xs rounded-full px-4 py-2 transition-all hover:opacity-80 cursor-pointer"
                 >
                     {data.btnBook}
-                </Button>
+                </button>
             ) : (
                 <button
                     onClick={onOpen}
-                    className="inline-block w-full md:w-auto bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 hover:opacity-80 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full transition-all cursor-pointer"
+                    className="inline-block w-full md:w-auto bg-linear-to-br from-sky-700 via-sky-400 to-cyan-500 text-white font-semibold text-base rounded-full px-6 py-3 transition-all hover:opacity-80 cursor-pointer"
                 >
                     {data.btnBook}
                 </button>

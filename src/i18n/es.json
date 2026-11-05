@@ -30,6 +30,11 @@
                 "TITLE": "Snorkel Privado en Puerto Morelos - Tour en Bote Privado",
                 "DESCRIPTION": "Disfruta de un tour privado de snorkel en Puerto Morelos. Explora el Arrecife Mesoamericano en un barco privado con guías, bebidas y transporte incluido.",
                 "META_TITLE": "Snorkel privado en Puerto Morelos | Bote Privado en Puerto Morelos"
+            },
+            "BEACH_TACO": {
+                "TITLE": "Beach Taco Tour en Puerto Morelos - Experiencia Gastronómica",
+                "DESCRIPTION": "Descubre los sabores de Puerto Morelos en un Beach Taco Tour, visitando taquerías locales, disfrutando de una degustación guiada de tequila y explorando el pueblo.",
+                "META_TITLE": "Beach Taco Tour en Puerto Morelos | Experiencia Gastronómica"
             }
         },
         "TERMS_PAGE": {
@@ -169,6 +174,17 @@
                         "Degustación de tequila"
                     ]
                 }
+            },
+            "BEACH_TACO": {
+                "TITLE": "Descubre Puerto Morelos, un taco a la vez",
+                "DESCRIPTION": "Explora las coloridas calles de Puerto Morelos y prueba los sabores locales en un recorrido gastronómico relajado hecho para viajeros curiosos.",
+                "FEATURES": [
+                    "3 lugares para tacos",
+                    "Paseo por Puerto Morelos",
+                    "Paletas heladas tradicionales locales",
+                    "Compras en el mercado artesanal local",
+                    "Disfruta degustando Tequila"
+                ]
             },
             "FOOT_NOTE": "Las promociones no son válidas durante la temporada alta. Verifica la disponibilidad y los precios al momento de reservar."
         },
@@ -561,7 +577,10 @@
             "AGE_REQUIREMENT": "Edad mínima",
             "YEARS_AND_OLDER": "años o más",
             "BOOK": "Reserva",
-            "DAYS_IN_ADVANCE": "días antes"
+            "DAYS_IN_ADVANCE": "días antes",
+            "BOOK_NOW": "Reservar ahora",
+            "CHECK_AVAILABILITY": "Verificar disponibilidad",
+            "WANT_TO_LIVE": "Quiero vivirlo"
         },
         "REGULAR_SNORKELING": {
             "HERO": {
@@ -809,6 +828,120 @@
             "FORM_FLOATER": {
                 "TITLE": "¿Listo para explorar el Gran Arrecife Maya?",
                 "DESCRIPTION": "Reserva tu Snorkeling Adventure hoy y descubre las maravillas submarinas que te esperan en Puerto Morelos.",
+                "BUTTON_BOOK": "Consultar Disponibilidad",
+                "BUTTON_CLOSE": "Cerrar"
+            }
+        },
+        "BEACH_TACO": {
+            "HERO": {
+                "TITLE": "Taco Tour en Puerto Morelos: El sabor del México auténtico",
+                "DESCRIPTION": "Descubre los sabores, tradiciones y rincones ocultos del Caribe mexicano en nuestro <span>Taco Tour en Puerto Morelos</span>. Esta experiencia culinaria te invita a explorar un encantador pueblo costero a través de su gastronomía tradicional, cultura local y ambiente acogedor."
+            },
+            "TEXTS": {
+                "TACO_TOUR_EXPERIENCE": {
+                    "TITLE": "Descubre los sabores de la cocina mexicana",
+                    "DESCRIPTION": [
+                        "Conoce las tradiciones culinarias de México mientras visitas tres taquerías locales, cada una con sus propios sabores y especialidades. Aprende sobre los ingredientes regionales, las recetas tradicionales y las influencias culturales detrás de algunos de los platillos más amados de México.",
+                        "Desde carnes regionales cocinadas a fuego lento hasta mariscos frescos, este tour gastronómico te presenta una deliciosa variedad de tacos, mientras te da una mirada cercana a la escena culinaria local de Puerto Morelos.",
+                        "Descubre las historias, ingredientes y tradiciones culinarias que hacen que la gastronomía regional mexicana sea tan memorable."
+                    ]
+                },
+                "EXPLORE_PUERTO_MORELOS": {
+                    "TITLE": "Explora Puerto Morelos más allá de sus playas",
+                    "DESCRIPTION": [
+                        "Puerto Morelos es más que un hermoso destino en la costa del Caribe mexicano. Es un pueblo costero con sus propias tradiciones, comercios locales y vida cotidiana.",
+                        "Durante este recorrido a pie guiado, descubre algunos de los puntos más emblemáticos de la localidad, sus pintorescos rincones y sus vibrantes espacios públicos. Conoce de cerca el destino más allá de sus playas y adéntrate en el ambiente local que lo distingue de los grandes centros turísticos como Cancún."
+                    ]
+                },
+                "TASTE_POPSICLE": {
+                    "TITLE": "Prueba una paleta artesanal mexicana",
+                    "DESCRIPTION": "Disfruta de una refrescante paleta helada tradicional durante tu experiencia. Este dulce antojo local añade otro toque de sabor a tu recorrido y ofrece una manera simple y deliciosa de descubrir un lado diferente de la cultura gastronómica mexicana."
+                },
+                "TEQUILA_TASTING": {
+                    "TITLE": "Disfruta de una cata guiada de tequila",
+                    "DESCRIPTION": "Participa en una cata guiada de tequila donde podrás explorar diferentes variedades, aprender más sobre sus notas distintivas y apreciar una parte fundamental de las tradiciones tequileras de México. Al finalizar, disfruta de tiempo libre para pasear por la plaza principal, contagiarte del ambiente del pueblo y aprovechar al máximo tu visita."
+                }
+            },
+            "GALLERY": {
+                "TITLE": "Un vistazo a las delicias culinarias de Puerto Morelos",
+                "DESCRIPTION": "Explora la vibrante escena gastronómica de Puerto Morelos a través de nuestra galería. Contempla los deliciosos tacos, las especialidades locales y los momentos inolvidables de nuestros tours gastronómicos."
+            },
+            "INCLUSIONS": {
+                "TITLE": "Inclusiones y Exclusiones",
+                "INCLUDES": [
+                    "Transportación de ida y vuelta desde tu hotel",
+                    "Visita a tres taquerías",
+                    "Paleta helada tradicional mexicana",
+                    "Recorrido guiado por los puntos clave de Puerto Morelos",
+                    "Tiempo para compras en Mi Pueblito",
+                    "Cata guiada de tequila"
+                ],
+                "NOT_INCLUDES": [
+                    "Fotografías profesionales",
+                    "Propinas",
+                    "Recuerdos y compras personales"
+                ]
+            },
+            "WHAT_YOU_SHOULD_KNOW": {
+                "TITLE": "Información relevante para tu taco tour",
+                "LIST": [
+                    "Usa ropa y calzado cómodo adecuado para caminar.",
+                    "Trae una cámara o smartphone para capturar la experiencia culinaria.",
+                    "Informa a tu guía con anticipación sobre cualquier restricción alimentaria o alergia.",
+                    "El tour puede incluir caminatas por calles transitadas, así que prepárate para una actividad física ligera."
+                ]
+            },
+            "WHAT_TO_BRING": {
+                "TITLE": "Qué llevar a tu taco tour",
+                "COMFORTABLE_CLOTHING": {
+                    "TITLE": "Ropa cómoda",
+                    "DESCRIPTION": "Usa ropa ligera y fresca adecuada para caminar y explorar el pueblo."
+                },
+                "HAT": {
+                    "TITLE": "Sombrero o gorra",
+                    "DESCRIPTION": "Un sombrero te proporcionará sombra y protección contra el sol."
+                },
+                "CASH": {
+                    "TITLE": "Efectivo",
+                    "DESCRIPTION": "Trae algo de dinero en efectivo para gastos adicionales o compras que puedas querer hacer."
+                },
+                "SUN_PROTECTION": {
+                    "TITLE": "Protección solar",
+                    "DESCRIPTION": "Trae bloqueador solar, sombrero y lentes de sol para protegerte del sol."
+                }
+            },
+            "FAQS": {
+                "TITLE": "Preguntas frecuentes sobre el Beach Taco Tour en Puerto Morelos",
+                "FAQS": [
+                    {
+                        "question": "¿Qué incluye el Taco Tour en Puerto Morelos?",
+                        "answer": "El Taco Tour incluye transportación de ida y vuelta desde tu hotel, visitas a tres taquerías, una paleta helada tradicional, un recorrido guiado por puntos clave de Puerto Morelos, tiempo para compras en Mi Pueblito y una cata guiada de tequila. Es una excelente manera de descubrir sabores locales y vivir la cultura de este encantador pueblo del Caribe mexicano."
+                    },
+                    {
+                        "question": "¿El Taco Tour incluye cata de tequila?",
+                        "answer": "¡Sí! La experiencia incluye una cata guiada de tequila donde descubrirás diferentes variedades de este destilado icónico de México. Es la oportunidad ideal para aprender sobre el tequila mientras añades un toque mexicano auténtico a tu aventura culinaria."
+                    },
+                    {
+                        "question": "¿Está incluida la transportación en el Taco Tour de Puerto Morelos?",
+                        "answer": "Sí. La transportación de ida y vuelta desde tu hotel está incluida. Tras recibir tu reservación, nuestro equipo se pondrá en contacto contigo para confirmar la hora y el punto de recogida. Recomendamos verificar estos detalles con anticipación para planificar tu día."
+                    },
+                    {
+                        "question": "¿Hay opciones vegetarianas o veganas disponibles?",
+                        "answer": "Si tienes requerimientos dietéticos vegetarianos o veganos, por favor contáctanos antes de reservar para confirmar si hay alternativas adecuadas disponibles en las taquerías participantes. Las opciones pueden variar según los establecimientos incluidos en el itinerario."
+                    },
+                    {
+                        "question": "¿El Taco Tour es apto para familias con niños?",
+                        "answer": "El tour combina degustaciones de comida, descubrimientos culturales, compras y una caminata guiada por Puerto Morelos. Si viajas con niños, recomendamos contactar a nuestro equipo antes de reservar para verificar los requisitos de edad y las opciones de alimentos disponibles."
+                    },
+                    {
+                        "question": "¿Qué tipo de tacos probaré durante el tour?",
+                        "answer": "Visitarás tres taquerías distintas y descubrirás una amplia variedad de sabores mexicanos. La experiencia puede incluir especialidades regionales, la tradicional cochinita pibil de la Península de Yucatán y deliciosos tacos de pescado. Cada parada ofrece una oportunidad única para explorar las ricas tradiciones culinarias de México."
+                    }
+                ]
+            },
+            "FORM_FLOATER": {
+                "TITLE": "¿Listo para explorar los sabores de Puerto Morelos?",
+                "DESCRIPTION": "Reserva tu Beach Taco Tour hoy y descubre la auténtica gastronomía mexicana en un encantador pueblo costero.",
                 "BUTTON_BOOK": "Consultar Disponibilidad",
                 "BUTTON_CLOSE": "Cerrar"
             }

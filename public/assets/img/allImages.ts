@@ -14,6 +14,8 @@ import SnorkelMayanReef from "./bg/grupo-en-snorkeling-en-arrecife-maya.webp";
 import MiddleViewSnorkel from "./bg/vista-snorkel-con-fauna-marina.webp";
 import PrivateBoatSnorkel from "./gallery/private-snorkeling/best-private-boat-in-puerto-morelos.webp";
 import BeachClubMexOnTheBeach from "./bg/beach-club-in-puerto-morelos.webp";
+import BeachTaco1 from "./gallery/beach-taco-tour/beach-taco-tour-near-cancun.webp";
+import BeachTaco2 from "./gallery/beach-taco-tour/beachclub-in-puerto-morelos.webp";
 // Gallery
 import ExperiencePrivateSnorkel from "./gallery/private-snorkeling/ceviche-on-board-private-snorkel.webp";
 // Extras
@@ -75,5 +77,7 @@ export {
     PMAereal,
     User1,
     User2,
-    User3
+    User3,
+    BeachTaco1,
+    BeachTaco2
 }
