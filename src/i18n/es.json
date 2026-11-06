@@ -580,7 +580,8 @@
             "DAYS_IN_ADVANCE": "días antes",
             "BOOK_NOW": "Reservar ahora",
             "CHECK_AVAILABILITY": "Verificar disponibilidad",
-            "WANT_TO_LIVE": "Quiero vivirlo"
+            "WANT_TO_LIVE": "Quiero vivirlo",
+            "WHAT_INCLUDED": "Qué está incluido"
         },
         "REGULAR_SNORKELING": {
             "HERO": {

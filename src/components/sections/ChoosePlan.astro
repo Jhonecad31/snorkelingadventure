@@ -51,7 +51,8 @@ const beachTacoTour = {
     price: 49,
     img: BeachTaco1.src,
     href: translatePath("/puerto-morelos-beach-taco-tour/"),
-    features: i18n.HOME_PAGE.CHOOSE_PLAN.BEACH_TACO.FEATURES
+    features: i18n.HOME_PAGE.CHOOSE_PLAN.BEACH_TACO.FEATURES,
+    earlyBooking: { days: 15, discount: 40 }
 };
 ---
 
@@ -90,7 +91,7 @@ const beachTacoTour = {
                                     ${Math.trunc(tour.price * (1 - tour.earlyBooking.discount / 100))} <span class="text-xs">USD</span>
                                 </p>
                             </div>
-                            <span class="rounded-full bg-sky-100 px-2 py-1 text-[10px] font-bold text-zinc-700">{i18n.DETAIL_PAGE.GENERAL.BOOK} <strong>{tour.earlyBooking.days}</strong> {i18n.DETAIL_PAGE.GENERAL.DAYS_IN_ADVANCE}</span>
+                            <span class="rounded-full bg-red-100 px-2 py-1 text-[10px] font-bold text-red-800">{i18n.DETAIL_PAGE.GENERAL.BOOK} <strong>{tour.earlyBooking.days}</strong> {i18n.DETAIL_PAGE.GENERAL.DAYS_IN_ADVANCE}</span>
                         </div>
                     ) : (
                         <div class="mt-5 flex flex-wrap items-end justify-between gap-3 border-y border-zinc-100 py-4">
@@ -124,7 +125,7 @@ const beachTacoTour = {
     </div>
 </section>
 
-<section id="taco-tour" aria-labelledby="taco-tour-title" class="relative isolate overflow-hidden bg-[#fff8ed] py-16 sm:py-20">
+<section id="taco-tour" aria-labelledby="taco-tour-title" class="relative isolate overflow-hidden bg-[#fff8ed] py-14 sm:py-20">
     <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div class="absolute -left-32 top-10 h-72 w-72 rounded-full bg-cyan-200/35 blur-3xl"></div>
         <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white/70 to-transparent"></div>
@@ -140,7 +141,7 @@ const beachTacoTour = {
             </TagP>
 
             <div class="mt-5 rounded-2xl border border-orange-100/90 bg-white/85 p-5 shadow-sm sm:p-6">
-                <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-slate-900">What’s included</h3>
+                <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-slate-900">{i18n.DETAIL_PAGE.GENERAL.WHAT_INCLUDED}</h3>
                 <ul class="mt-4 space-y-3">
                     {beachTacoTour.features.map((item) => (
                         <li class="flex items-start gap-3 text-sm leading-6 text-slate-700 sm:text-base">
@@ -153,16 +154,35 @@ const beachTacoTour = {
                 </ul>
 
                 <div class="mt-6 flex flex-col gap-5 border-t border-slate-100 pt-5 sm:flex-row sm:items-end sm:justify-between">
-                    <div>
-                        <p class="text-sm text-slate-500">{i18n.ACCESSIBILITY.PRICE_FROM}</p>
-                        <p class="mt-1 flex items-baseline gap-1.5 text-slate-950">
-                            <span class="text-4xl font-extrabold tracking-tight">${beachTacoTour.price}</span>
-                            <span class="text-sm font-semibold text-slate-600">USD</span>
-                        </p>
-                    </div>
-                    <a href={beachTacoTour.href} class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-orange-500 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:-translate-y-0.5 hover:bg-orange-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-600">
-                        {i18n.PUERTO_MORELOS_PAGE.CTA_SECTION.BUTTON}
-                    </a>
+                    {beachTacoTour.earlyBooking ? (
+                        <div class="mt-5 flex flex-wrap items-end justify-between gap-3 border-y border-red-100 py-4">
+                            <div>
+                                <p class="text-xs text-zinc-600">{i18n.ACCESSIBILITY.PRICE_FROM}</p>
+                                <p class="text-sm text-red-500 line-through">${beachTacoTour.price} USD</p>
+                                <p class="mt-1 flex items-baseline gap-1.5 text-slate-950">
+                                    <span class="text-4xl font-extrabold tracking-tight">${Math.trunc(beachTacoTour.price * (1 - beachTacoTour.earlyBooking.discount / 100))}</span>
+                                    <span class="text-sm font-semibold text-slate-600">USD</span>
+                                </p>
+                            </div>
+                            <span class="rounded-full bg-red-100 px-2 py-1 text-[10px] font-bold text-red-800">{i18n.DETAIL_PAGE.GENERAL.BOOK} <strong>{beachTacoTour.earlyBooking.days}</strong> {i18n.DETAIL_PAGE.GENERAL.DAYS_IN_ADVANCE}</span>
+                        </div>
+                    ) : (
+                        <div class="mt-5 flex flex-wrap items-end justify-between gap-3 border-y border-zinc-100 py-4">
+                            <div>
+                                <p class="text-xs text-zinc-600">{i18n.ACCESSIBILITY.PRICE_FROM}</p>
+                                <p class="mt-1 flex items-baseline gap-1.5 text-slate-950">
+                                    <span class="text-4xl font-extrabold tracking-tight">${beachTacoTour.price}</span>
+                                    <span class="text-sm font-semibold text-slate-600">USD</span>
+                                </p>
+                            </div>
+                        </div>
+                    )}
+                    <BtnLinkCustom
+                        client:visible
+                        text={i18n.PUERTO_MORELOS_PAGE.CTA_SECTION.BUTTON}
+                        url={beachTacoTour.href}
+                        color="tertiary"
+                    />
                 </div>
             </div>
         </div>
@@ -172,13 +192,13 @@ const beachTacoTour = {
             <div aria-hidden="true" class="absolute bottom-[9%] right-[6%] h-28 w-28 rounded-full bg-cyan-300/50 blur-2xl sm:h-40 sm:w-40"></div>
 
             <div aria-hidden="true" class="taco-float taco-float-one absolute left-[1%] top-[8%] z-20 select-none text-5xl drop-shadow-lg sm:text-7xl">
-                <img src="/assets/img/extras/habanero-chili-pepper.webp" alt="Cebollita" class="w-32" />
+                <img src="/assets/img/extras/habanero-chili-pepper.webp" alt="Cebollita" class="w-24 lg:w-32" />
             </div>
             <div aria-hidden="true" class="taco-float taco-float-two absolute right-[1%] top-[18%] z-20 select-none text-4xl drop-shadow-lg sm:text-6xl">
-                <img src="/assets/img/extras/cilantro.webp" alt="Cebollita" class="w-32" />
+                <img src="/assets/img/extras/cilantro.webp" alt="Cebollita" class="w-24 lg:w-32" />
             </div>
             <div aria-hidden="true" class="taco-float taco-float-three absolute bottom-[7%] left-[4%] z-20 select-none text-4xl drop-shadow-lg sm:text-6xl">
-                <img src="/assets/img/extras/onion-rings.webp" alt="Cebollita" class="w-32" />
+                <img src="/assets/img/extras/onion-rings.webp" alt="Cebollita" class="w-24 lg:w-32" />
             </div>
 
             <div class="relative z-10 w-full">

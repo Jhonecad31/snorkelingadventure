@@ -580,7 +580,8 @@
             "DAYS_IN_ADVANCE": "days in advance",
             "BOOK_NOW": "Book now",
             "CHECK_AVAILABILITY": "Check availability",
-            "WANT_TO_LIVE": "I want to live it"
+            "WANT_TO_LIVE": "I want to live it",
+            "WHAT_INCLUDED": "What's included"
         },
         "REGULAR_SNORKELING": {
             "HERO": {
