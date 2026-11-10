@@ -39,8 +39,8 @@ import User1 from "./testimonials/user-1.webp";
 import User2 from "./testimonials/user-2.webp";
 import User3 from "./testimonials/user-3.webp";
 // Baner Ad
-import BannerDiscountDesktop from "./banner-ads/discount-snorkel-in-puerto-morelos.webp";
-import BannerDiscountMobile from "./banner-ads/mobile/discount-snorkel-in-puerto-morelos-mobile.webp";
+import BannerDiscountDesktop from "./hero-carousel/discover-the-reef-life-snorkel-puerto-morelos.webp";
+import BannerDiscountMobile from "./hero-carousel/mobile/discover-the-reef-life-snorkel-puerto-morelos-mobile.webp";
 
 export {
     BannerDiscountDesktop,
