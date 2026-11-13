@@ -8,7 +8,42 @@ import { dataSettings } from "@/utils/dataGlobal";
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: dataSettings.nameWebsite,
+        url: dataSettings.urlWebsite,
+    }}
+/>
+<Schema
+    item={{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: dataSettings.nameWebsite,
         alternateName: dataSettings.alternateName,
         url: dataSettings.urlWebsite,
+        logo: dataSettings.logo,
+        telephone: dataSettings.phoneDisplay,
+        award: [
+            dataSettings.awardTripadvisor,
+            dataSettings.awardWTA,
+            dataSettings.awardNationalGeographic,
+        ],
+        sameAs: [
+            dataSettings.linkFacebook,
+            dataSettings.linkInstagram,
+            dataSettings.linkTiktok,
+            dataSettings.linkTripadvisor,
+            dataSettings.linkYoutube,
+        ],
+        address: {
+            "@type": "PostalAddress",
+            streetAddress: dataSettings.streetAddress,
+            addressLocality: dataSettings.addressLocality,
+            addressRegion: dataSettings.addressRegion,
+            postalCode: dataSettings.postalCode,
+            addressCountry: dataSettings.addressCountry,
+        },
+        image: [
+            "https://snorkelingadventure.com/assets/img/gallery/snorkeling-adventure/snorkeling-adventure-mesoamerican-reef-puerto-morelos.webp",
+            "https://snorkelingadventure.com/assets/img/gallery/snorkeling-adventure/snorkeling-adventure-puerto-morelos-reef.webp",
+            "https://snorkelingadventure.com/assets/img/gallery/snorkeling-adventure/puerto-morelos-snorkeling-experience-reef.webp",
+        ]
     }}
 />
